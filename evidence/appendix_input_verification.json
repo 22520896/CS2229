@@ -1,0 +1,41 @@
+{
+  "purpose": "Independent checks of historical author CSV bytes and task membership",
+  "source_commit": "5b2d812329d191f949f9d085616a6c41d3198688",
+  "training_runs": 0,
+  "workers": [
+    {
+      "worker": "Dell",
+      "source": "random_search_benchmark_numerical.csv",
+      "sha256": "395ea2c330a1e1e414b8e15ccba9bbf23f497241c265ea675670f6ae0e222e62",
+      "rows_with_elapsed_time": {
+        "numerical_classif_medium": 83502,
+        "numerical_regression_medium": 51697,
+        "numerical_classif_large": 17169,
+        "numerical_regression_large": 12502
+      },
+      "datasets": {
+        "numerical_classif_medium": 15,
+        "numerical_regression_medium": 19,
+        "numerical_classif_large": 4,
+        "numerical_regression_large": 3
+      }
+    },
+    {
+      "worker": "Desktop",
+      "source": "random_search_benchmark_categorical.csv",
+      "sha256": "d035715efaaf54261dd31c107159f28a96804164485a3c53de656f8fc632020b",
+      "rows_with_elapsed_time": {
+        "categorical_classif_medium": 50946,
+        "categorical_regression_medium": 59178,
+        "categorical_classif_large": 22792,
+        "categorical_regression_large": 20841
+      },
+      "datasets": {
+        "categorical_classif_medium": 7,
+        "categorical_regression_medium": 13,
+        "categorical_classif_large": 2,
+        "categorical_regression_large": 5
+      }
+    }
+  ]
+}

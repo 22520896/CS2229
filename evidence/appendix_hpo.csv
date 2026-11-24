@@ -1,0 +1,71 @@
+table,model,parameter,distribution,default
+1,FT Transformer,Num layers,"UniformInt [1, 6]",3
+1,FT Transformer,Feature embedding size,"UniformInt [64, 512]",192
+1,FT Transformer,Residual dropout,"Uniform [0, 0.5]",0
+1,FT Transformer,Attention dropout,"Uniform [0, 0.5]",0.2
+1,FT Transformer,FFN dropout,"Uniform [0, 0.5]",0.1
+1,FT Transformer,FFN factor,"Uniform [2/3, 8/3]",4/3
+1,FT Transformer,Learning rate,"LogUniform[1e − 5, 1e − 3]",1e − 4
+1,FT Transformer,Weight decay,"LogUniform [1e − 6, 1e − 3]",1e − 5
+1,FT Transformer,kv compression,"[True, False]",True
+1,FT Transformer,kv compression sharing,"[headwise, key-value]",headwise
+1,FT Transformer,Learning rate scheduler,"[True, False]",False
+1,FT Transformer,Batch size,"[256, 512, 1024]",512
+2,Resnet,Num layers,"UniformInt [1, 16]",8
+2,Resnet,Layer size,"UniformInt [64, 1024]",256
+2,Resnet,Hidden factor,"Uniform [1, 4]",2
+2,Resnet,Hidden dropout,"[0, 0.5]",0.2
+2,Resnet,Residual dropout,"Uniform[0, 0.5]",0.2
+2,Resnet,Learning rate,"LogUniform[1e − 5, 1e − 2]",1e − 3
+2,Resnet,Weight decay,"LogUniform [1e − 8, 1e − 3]",1e − 7
+2,Resnet,Category embedding size,"UniformInt [64, 512]",128
+2,Resnet,Normalization,"[batchnorm, layernorm]",batchnorm
+2,Resnet,Learning rate scheduler,"[True, False]",True
+2,Resnet,Batch size,"[256, 512, 1024]",512
+3,MLP,Num layers,"UniformInt [1, 8]",4
+3,MLP,Layer size,"UniformInt [16, 1024]",256
+3,MLP,Dropout,"[0, 0.5]",0.2
+3,MLP,Learning rate,"LogUniform[1e − 5, 1e − 2]",1e − 3
+3,MLP,Category embedding size,"UniformInt [64, 512]",128
+3,MLP,Learning rate scheduler,"[True, False]",True
+3,MLP,Batch size,"[256, 512, 1024]",512
+4,SAINT,Num layers,"UniformInt [1, 2, 3, 6, 12]",3
+4,SAINT,Num heads,"[2, 4, 8]",4
+4,SAINT,Layer size,"UniformInt [32, 64, 128]",128
+4,SAINT,Dropout,"[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]",0.1
+4,SAINT,Learning rate,"LogUniform[1e − 5, 1e − 3]",3e − 5
+4,SAINT,Batch size,"[128, 256]",512
+5,XGBoost,Max depth,"UniformInt[1,11]",
+5,XGBoost,Num estimators,1000,
+5,XGBoost,Min child weight,"LogUniformInt[1, 1e2]",
+5,XGBoost,Subsample,"Uniform[0.5,1]",
+5,XGBoost,Learning rate,"LogUniform[1e-5,0.7]",
+5,XGBoost,Col sample by level,"Uniform[0.5,1]",
+5,XGBoost,Col sample by tree,"Uniform[0.5, 1]",
+5,XGBoost,Gamma,"LogUniform[1e-8,7]",
+5,XGBoost,Lambda,"LogUniform[1,4]",
+5,XGBoost,Alpha,"LogUniform[1e-8,1e2]",
+6,RandomForest,Max depth,"[None, 2, 3, 4] ([0.7, 0.1, 0.1, 0.1])",
+6,RandomForest,Num estimators,250,
+6,RandomForest,Criterion,"[gini, entropy] (classif) [squared_error, absolute_error] (regression)",
+6,RandomForest,Max features,"[sqrt, sqrt, log2, None, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]",
+6,RandomForest,Min samples split,"[2, 3] ([0.95, 0.05])",
+6,RandomForest,Min samples leaf,"LogUniformInt[1.5, 50.5]",
+6,RandomForest,Boostrap,"[True, False]",
+6,RandomForest,Min impurity decrease,"[0.0, 0.01, 0.02, 0.05] ([0.85, 0.05, 0.05, 0.05])",
+7,GradientBoosting,Loss,"[deviance, exponential] (classif) [squared_error, absolute_error, huber] (regression)",
+7,GradientBoosting,Learning rate,"LogNormal[log(0.01), log(10)]",
+7,GradientBoosting,Subsample,"Uniform[0.5, 1]",
+7,GradientBoosting,Num estimators,1000,
+7,GradientBoosting,Criterion,"[friedman_mse, squared_error]",
+7,GradientBoosting,Max depth,"[None, 2, 3, 4, 5] ([0.1, 0.1, 0.6, 0.1, 0.1])",
+7,GradientBoosting,Min samples split,"[2, 3] ([0.95, 0.05])",
+7,GradientBoosting,Min samples leaf,"LogUniformInt[1.5, 50.5]",
+7,GradientBoosting,Min impurity decrease,"[0.0, 0.01, 0.02, 0.05] ([0.85, 0.05, 0.05, 0.05])",
+7,GradientBoosting,Max leaf nodes,"[None, 5, 10, 15] ([0.85, 0.05, 0.05, 0.05])",
+8,HistGradientBoosting,Loss,"[squared_error, absolute_error] (regression)",
+8,HistGradientBoosting,Learning rate,"LogNormal[log(0.01), log(10)]",
+8,HistGradientBoosting,Max iter,1000,
+8,HistGradientBoosting,Max depth,"[None, 2, 3, 4] ([0.1, 0.1, 0.7, 0.1])",
+8,HistGradientBoosting,Min samples leaf,"NormalInt[20, 2]",
+8,HistGradientBoosting,Max leaf nodes,"NormalInt[31, 5]",

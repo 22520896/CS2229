@@ -27,6 +27,20 @@ ABLATIONS = ("high_frequencies", "show_uninformative_features",
              "remove_uninformative_features", "add_uninformative_features", "random_rotation")
 PANELS = ("numerical_classification_medium", "numerical_regression_medium",
           "categorical_classification_medium", "categorical_regression_medium")
+TIME_REVISION = "5b2d812329d191f949f9d085616a6c41d3198688"
+TIME_PANELS = (
+    "numerical_classif_medium", "numerical_regression_medium",
+    "categorical_classif_medium", "categorical_regression_medium",
+)
+LARGE_PANELS = tuple(panel.replace("_medium", "_large") for panel in TIME_PANELS)
+BO_COLUMNS = (MODEL, TASK, VALID, TEST, "mean_time", "step", "data__categorical",
+              "data__regression", "mean_r2_test", "mean_r2_val")
+BO_PINS = {
+    "bo_nn": "5ba3c8ca0dc2848b5e17d678d69dc4170f1e2d8693b0847972abec3746f1cfc1",
+    "bo_nn_2": "a9c3e801ea7a9e268c87abbaa9c4ad0e575cb056c7855660a5bd8508cf10c113",
+    "bo_trees": "1361fc25fb1c98d1d59f2432b9165cce42a5a9e65df4399011dc77b23646b017",
+    "bo_trees_2": "f8b16766304a356a043c9efde9030fcacfb8ca298ce056423a0f9c66545d034c",
+}
 
 
 @dataclass(frozen=True)
@@ -50,7 +64,32 @@ SOURCES = {
         "25314ccb2d138dae43fd23840f729f62fba0b5f5ab559aeb3727403dedb4e429",
         ("xp", *COMMON, "method", REMOVE, ADD, SMOOTH, ROTATE), "xp", ABLATIONS,
     ),
+    "time_numerical": Source(
+        f"https://media.githubusercontent.com/media/LeoGrin/tabular-benchmark/"
+        f"{TIME_REVISION}/analyses/results/random_search_benchmark_numerical.csv?source=cs2229-time",
+        "395ea2c330a1e1e414b8e15ccba9bbf23f497241c265ea675670f6ae0e222e62",
+        ("benchmark", *COMMON), "benchmark", TIME_PANELS[:2],
+    ),
+    "time_categorical": Source(
+        f"https://media.githubusercontent.com/media/LeoGrin/tabular-benchmark/"
+        f"{TIME_REVISION}/analyses/results/random_search_benchmark_categorical.csv?source=cs2229-time",
+        "d035715efaaf54261dd31c107159f28a96804164485a3c53de656f8fc632020b",
+        ("benchmark", *COMMON), "benchmark", TIME_PANELS[2:],
+    ),
 }
+SOURCES.update({
+    f"large_{kind}": Source(source.url, source.sha256, source.columns, "benchmark", panels)
+    for kind, panels in (("numerical", LARGE_PANELS[:2]), ("categorical", LARGE_PANELS[2:]))
+    for source in (SOURCES[f"time_{kind}"],)
+})
+SOURCES.update({
+    name: Source(
+        "https://media.githubusercontent.com/media/LeoGrin/tabular-benchmark/"
+        f"{TIME_REVISION}/analyses/results/{name}.csv?source=cs2229-bo",
+        digest, BO_COLUMNS, "data__categorical", ("0.0",),
+    )
+    for name, digest in BO_PINS.items()
+})
 
 
 class HashingReader(io.RawIOBase):

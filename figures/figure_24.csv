@@ -1,0 +1,3361 @@
+model_name,data__keyword,rank,shuffle,score,weight,condition
+FT Transformer,Higgs,20,1,0.70326,1,True
+FT Transformer,Higgs,20,1,0.714,1,False
+FT Transformer,MagicTelescope,20,1,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,1,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,1,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,1,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,1,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,1,0.7745274527452746,1,False
+FT Transformer,california,20,1,0.8880977968833961,1,True
+FT Transformer,california,20,1,0.891456206340677,1,False
+FT Transformer,covertype,20,1,0.7861,1,True
+FT Transformer,covertype,20,1,0.7965,1,False
+FT Transformer,credit,20,1,0.7351063829787234,1,True
+FT Transformer,credit,20,1,0.7347872340425532,1,False
+FT Transformer,electricity,20,1,0.7987658037326911,1,True
+FT Transformer,electricity,20,1,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,1,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,1,0.5286637481759433,1,False
+FT Transformer,house_16H,20,1,0.8657489116366631,1,True
+FT Transformer,house_16H,20,1,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,1,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,1,0.879204892966361,1,False
+FT Transformer,phoneme,20,1,0.8107946026986508,1,True
+FT Transformer,phoneme,20,1,0.808095952023988,1,False
+FT Transformer,pol,20,1,0.940195152659742,1,True
+FT Transformer,pol,20,1,0.9803273528485992,1,False
+FT Transformer,wine,20,1,0.7545623836126629,1,True
+FT Transformer,wine,20,1,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,1,0.69204,1,True
+GradientBoostingTree,Higgs,20,1,0.71082,1,False
+GradientBoostingTree,MagicTelescope,20,1,0.8281138790035586,1,True
+GradientBoostingTree,MagicTelescope,20,1,0.8427046263345196,1,False
+GradientBoostingTree,MiniBooNE,20,1,0.9283883988299054,1,True
+GradientBoostingTree,MiniBooNE,20,1,0.926891766253203,1,False
+GradientBoostingTree,bank-marketing,20,1,0.7586258625862586,1,True
+GradientBoostingTree,bank-marketing,20,1,0.7751275127512751,1,False
+GradientBoostingTree,california,20,1,0.8706340677055346,1,True
+GradientBoostingTree,california,20,1,0.8944116066630844,1,False
+GradientBoostingTree,covertype,20,1,0.78776,1,True
+GradientBoostingTree,covertype,20,1,0.81328,1,False
+GradientBoostingTree,credit,20,1,0.7337234042553191,1,True
+GradientBoostingTree,credit,20,1,0.7362765957446809,1,False
+GradientBoostingTree,electricity,20,1,0.7994180212723259,1,True
+GradientBoostingTree,electricity,20,1,0.8723158739715031,1,False
+GradientBoostingTree,eye_movements,20,1,0.5399207838232228,1,True
+GradientBoostingTree,eye_movements,20,1,0.559724828017511,1,False
+GradientBoostingTree,house_16H,20,1,0.8506883162725026,1,True
+GradientBoostingTree,house_16H,20,1,0.8641016590187082,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,1,0.8666666666666667,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,1,0.881651376146789,1,False
+GradientBoostingTree,phoneme,20,1,0.8119940029985008,1,True
+GradientBoostingTree,phoneme,20,1,0.8185907046476762,1,False
+GradientBoostingTree,pol,20,1,0.8956562795089708,1,True
+GradientBoostingTree,pol,20,1,0.9806421152030216,1,False
+GradientBoostingTree,wine,20,1,0.7839851024208565,1,True
+GradientBoostingTree,wine,20,1,0.7873370577281193,1,False
+RandomForest,Higgs,20,1,0.68686,1,True
+RandomForest,Higgs,20,1,0.70916,1,False
+RandomForest,MagicTelescope,20,1,0.8352313167259786,1,True
+RandomForest,MagicTelescope,20,1,0.8379596678529063,1,False
+RandomForest,MiniBooNE,20,1,0.9186376108301776,1,True
+RandomForest,MiniBooNE,20,1,0.9233542710719064,1,False
+RandomForest,bank-marketing,20,1,0.7601260126012601,1,True
+RandomForest,bank-marketing,20,1,0.7706270627062706,1,False
+RandomForest,california,20,1,0.8723804406233208,1,True
+RandomForest,california,20,1,0.8844707146695325,1,False
+RandomForest,covertype,20,1,0.7866,1,True
+RandomForest,covertype,20,1,0.80862,1,False
+RandomForest,credit,20,1,0.7206382978723405,1,True
+RandomForest,credit,20,1,0.7340425531914894,1,False
+RandomForest,electricity,20,1,0.7996688741721855,1,True
+RandomForest,electricity,20,1,0.8527493477824604,1,False
+RandomForest,eye_movements,20,1,0.5313737752762143,1,True
+RandomForest,eye_movements,20,1,0.565978736710444,1,False
+RandomForest,house_16H,20,1,0.8565713613366278,1,True
+RandomForest,house_16H,20,1,0.8616307800917754,1,False
+RandomForest,kdd_ipums_la_97-small,20,1,0.8697247706422019,1,True
+RandomForest,kdd_ipums_la_97-small,20,1,0.880428134556575,1,False
+RandomForest,phoneme,20,1,0.830584707646177,1,True
+RandomForest,phoneme,20,1,0.8248875562218891,1,False
+RandomForest,pol,20,1,0.8977022348127163,1,True
+RandomForest,pol,20,1,0.9800125904941768,1,False
+RandomForest,wine,20,1,0.794413407821229,1,True
+RandomForest,wine,20,1,0.7932960893854748,1,False
+Resnet,Higgs,20,1,0.7019,1,True
+Resnet,Higgs,20,1,0.70846,1,False
+Resnet,MagicTelescope,20,1,0.840332147093713,1,True
+Resnet,MagicTelescope,20,1,0.8400948991696322,1,False
+Resnet,MiniBooNE,20,1,0.9268690900020408,1,True
+Resnet,MiniBooNE,20,1,0.9307920814530942,1,False
+Resnet,bank-marketing,20,1,0.7536753675367537,1,True
+Resnet,bank-marketing,20,1,0.7626762676267628,1,False
+Resnet,california,20,1,0.8907845244492208,1,True
+Resnet,california,20,1,0.8859484148307362,1,False
+Resnet,covertype,20,1,0.79512,1,True
+Resnet,covertype,20,1,0.79922,1,False
+Resnet,credit,20,1,0.7346808510638299,1,True
+Resnet,credit,20,1,0.7353191489361701,1,False
+Resnet,electricity,20,1,0.807244631747943,1,True
+Resnet,electricity,20,1,0.7981135861930564,1,False
+Resnet,eye_movements,20,1,0.538044611215343,1,True
+Resnet,eye_movements,20,1,0.5242860120908902,1,False
+Resnet,house_16H,20,1,0.8649252853276858,1,True
+Resnet,house_16H,20,1,0.8659842334392281,1,False
+Resnet,kdd_ipums_la_97-small,20,1,0.8776758409785933,1,True
+Resnet,kdd_ipums_la_97-small,20,1,0.8819571865443425,1,False
+Resnet,phoneme,20,1,0.8113943028485757,1,True
+Resnet,phoneme,20,1,0.7997001499250375,1,False
+Resnet,pol,20,1,0.9617563739376772,1,True
+Resnet,pol,20,1,0.9494806421152032,1,False
+Resnet,wine,20,1,0.7579143389199255,1,True
+Resnet,wine,20,1,0.7571694599627561,1,False
+FT Transformer,Higgs,20,2,0.69978,1,True
+FT Transformer,Higgs,20,2,0.714,1,False
+FT Transformer,MagicTelescope,20,2,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,2,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,2,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,2,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,2,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,2,0.7685268526852685,1,False
+FT Transformer,california,20,2,0.8917248790972595,1,True
+FT Transformer,california,20,2,0.891456206340677,1,False
+FT Transformer,covertype,20,2,0.7861,1,True
+FT Transformer,covertype,20,2,0.79492,1,False
+FT Transformer,credit,20,2,0.7351063829787234,1,True
+FT Transformer,credit,20,2,0.7340425531914894,1,False
+FT Transformer,electricity,20,2,0.801475015051174,1,True
+FT Transformer,electricity,20,2,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,2,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,2,0.5374192203460496,1,False
+FT Transformer,house_16H,20,2,0.8578656312507352,1,True
+FT Transformer,house_16H,20,2,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,2,0.8694189602446483,1,True
+FT Transformer,kdd_ipums_la_97-small,20,2,0.8807339449541285,1,False
+FT Transformer,phoneme,20,2,0.8107946026986508,1,True
+FT Transformer,phoneme,20,2,0.8071964017991003,1,False
+FT Transformer,pol,20,2,0.940195152659742,1,True
+FT Transformer,pol,20,2,0.9817437834435,1,False
+FT Transformer,wine,20,2,0.7545623836126629,1,True
+FT Transformer,wine,20,2,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,2,0.68428,1,True
+GradientBoostingTree,Higgs,20,2,0.70956,1,False
+GradientBoostingTree,MagicTelescope,20,2,0.836061684460261,1,True
+GradientBoostingTree,MagicTelescope,20,2,0.8384341637010676,1,False
+GradientBoostingTree,MiniBooNE,20,2,0.9248962561509332,1,True
+GradientBoostingTree,MiniBooNE,20,2,0.9245787886346628,1,False
+GradientBoostingTree,bank-marketing,20,2,0.7637263726372637,1,True
+GradientBoostingTree,bank-marketing,20,2,0.7764776477647765,1,False
+GradientBoostingTree,california,20,2,0.8715744223535733,1,True
+GradientBoostingTree,california,20,2,0.8966953250940355,1,False
+GradientBoostingTree,covertype,20,2,0.78776,1,True
+GradientBoostingTree,covertype,20,2,0.81932,1,False
+GradientBoostingTree,credit,20,2,0.7257446808510638,1,True
+GradientBoostingTree,credit,20,2,0.7347872340425532,1,False
+GradientBoostingTree,electricity,20,2,0.7982640979329721,1,True
+GradientBoostingTree,electricity,20,2,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,2,0.5401292474463206,1,True
+GradientBoostingTree,eye_movements,20,2,0.5766103814884302,1,False
+GradientBoostingTree,house_16H,20,2,0.8506883162725026,1,True
+GradientBoostingTree,house_16H,20,2,0.8679844687610307,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,2,0.8669724770642202,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,2,0.8773700305810398,1,False
+GradientBoostingTree,phoneme,20,2,0.8263868065967015,1,True
+GradientBoostingTree,phoneme,20,2,0.8209895052473763,1,False
+GradientBoostingTree,pol,20,2,0.9066729619137552,1,True
+GradientBoostingTree,pol,20,2,0.982530689329556,1,False
+GradientBoostingTree,wine,20,2,0.7973929236499069,1,True
+GradientBoostingTree,wine,20,2,0.7750465549348231,1,False
+RandomForest,Higgs,20,2,0.68734,1,True
+RandomForest,Higgs,20,2,0.70924,1,False
+RandomForest,MagicTelescope,20,2,0.8355871886120997,1,True
+RandomForest,MagicTelescope,20,2,0.8379596678529063,1,False
+RandomForest,MiniBooNE,20,2,0.9179119707929884,1,True
+RandomForest,MiniBooNE,20,2,0.9164380144674482,1,False
+RandomForest,bank-marketing,20,2,0.761026102610261,1,True
+RandomForest,bank-marketing,20,2,0.767026702670267,1,False
+RandomForest,california,20,2,0.8726491133799033,1,True
+RandomForest,california,20,2,0.8950832885545406,1,False
+RandomForest,covertype,20,2,0.78938,1,True
+RandomForest,covertype,20,2,0.81014,1,False
+RandomForest,credit,20,2,0.732872340425532,1,True
+RandomForest,credit,20,2,0.7340425531914894,1,False
+RandomForest,electricity,20,2,0.8018763796909493,1,True
+RandomForest,electricity,20,2,0.8569636765001003,1,False
+RandomForest,eye_movements,20,2,0.5403377110694184,1,True
+RandomForest,eye_movements,20,2,0.565978736710444,1,False
+RandomForest,house_16H,20,2,0.8578656312507354,1,True
+RandomForest,house_16H,20,2,0.8606894928815154,1,False
+RandomForest,kdd_ipums_la_97-small,20,2,0.8721712538226299,1,True
+RandomForest,kdd_ipums_la_97-small,20,2,0.8788990825688074,1,False
+RandomForest,phoneme,20,2,0.8326836581709145,1,True
+RandomForest,phoneme,20,2,0.8287856071964018,1,False
+RandomForest,pol,20,2,0.8939250865596474,1,True
+RandomForest,pol,20,2,0.9795404469625434,1,False
+RandomForest,wine,20,2,0.7802607076350093,1,True
+RandomForest,wine,20,2,0.7761638733705774,1,False
+Resnet,Higgs,20,2,0.7068,1,True
+Resnet,Higgs,20,2,0.70846,1,False
+Resnet,MagicTelescope,20,2,0.8387900355871887,1,True
+Resnet,MagicTelescope,20,2,0.8333333333333334,1,False
+Resnet,MiniBooNE,20,2,0.9272092337694732,1,True
+Resnet,MiniBooNE,20,2,0.9282976938252568,1,False
+Resnet,bank-marketing,20,2,0.755025502550255,1,True
+Resnet,bank-marketing,20,2,0.7538253825382538,1,False
+Resnet,california,20,2,0.8917248790972595,1,True
+Resnet,california,20,2,0.8889038151531434,1,False
+Resnet,covertype,20,2,0.80202,1,True
+Resnet,covertype,20,2,0.7938,1,False
+Resnet,credit,20,2,0.7346808510638299,1,True
+Resnet,credit,20,2,0.7353191489361701,1,False
+Resnet,electricity,20,2,0.8013746738912302,1,True
+Resnet,electricity,20,2,0.8068432671081678,1,False
+Resnet,eye_movements,20,2,0.5274129664373567,1,True
+Resnet,eye_movements,20,2,0.5292891390452367,1,False
+Resnet,house_16H,20,2,0.8668078597482056,1,True
+Resnet,house_16H,20,2,0.8631603718084481,1,False
+Resnet,kdd_ipums_la_97-small,20,2,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,2,0.8798165137614679,1,False
+Resnet,phoneme,20,2,0.8113943028485757,1,True
+Resnet,phoneme,20,2,0.8089955022488755,1,False
+Resnet,pol,20,2,0.9617563739376772,1,True
+Resnet,pol,20,2,0.9557758892036512,1,False
+Resnet,wine,20,2,0.7601489757914339,1,True
+Resnet,wine,20,2,0.7590316573556798,1,False
+FT Transformer,Higgs,20,3,0.70326,1,True
+FT Transformer,Higgs,20,3,0.714,1,False
+FT Transformer,MagicTelescope,20,3,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,3,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,3,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,3,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,3,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,3,0.7745274527452746,1,False
+FT Transformer,california,20,3,0.8917248790972595,1,True
+FT Transformer,california,20,3,0.891456206340677,1,False
+FT Transformer,covertype,20,3,0.7861,1,True
+FT Transformer,covertype,20,3,0.7965,1,False
+FT Transformer,credit,20,3,0.7351063829787234,1,True
+FT Transformer,credit,20,3,0.7347872340425532,1,False
+FT Transformer,electricity,20,3,0.801475015051174,1,True
+FT Transformer,electricity,20,3,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,3,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,3,0.5286637481759433,1,False
+FT Transformer,house_16H,20,3,0.8657489116366631,1,True
+FT Transformer,house_16H,20,3,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,3,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,3,0.8807339449541285,1,False
+FT Transformer,phoneme,20,3,0.8107946026986508,1,True
+FT Transformer,phoneme,20,3,0.8071964017991003,1,False
+FT Transformer,pol,20,3,0.940195152659742,1,True
+FT Transformer,pol,20,3,0.9817437834435,1,False
+FT Transformer,wine,20,3,0.7545623836126629,1,True
+FT Transformer,wine,20,3,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,3,0.68548,1,True
+GradientBoostingTree,Higgs,20,3,0.71082,1,False
+GradientBoostingTree,MagicTelescope,20,3,0.834638196915777,1,True
+GradientBoostingTree,MagicTelescope,20,3,0.8372479240806644,1,False
+GradientBoostingTree,MiniBooNE,20,3,0.9228100410440148,1,True
+GradientBoostingTree,MiniBooNE,20,3,0.9281389600671216,1,False
+GradientBoostingTree,bank-marketing,20,3,0.7634263426342635,1,True
+GradientBoostingTree,bank-marketing,20,3,0.7736273627362736,1,False
+GradientBoostingTree,california,20,3,0.8731864588930682,1,True
+GradientBoostingTree,california,20,3,0.896426652337453,1,False
+GradientBoostingTree,covertype,20,3,0.7871,1,True
+GradientBoostingTree,covertype,20,3,0.79586,1,False
+GradientBoostingTree,credit,20,3,0.7337234042553191,1,True
+GradientBoostingTree,credit,20,3,0.7306382978723405,1,False
+GradientBoostingTree,electricity,20,3,0.7982640979329721,1,True
+GradientBoostingTree,electricity,20,3,0.8731186032510536,1,False
+GradientBoostingTree,eye_movements,20,3,0.5363769022305608,1,True
+GradientBoostingTree,eye_movements,20,3,0.5797373358348968,1,False
+GradientBoostingTree,house_16H,20,3,0.8596305447699729,1,True
+GradientBoostingTree,house_16H,20,3,0.8646899635251205,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,3,0.8712538226299694,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,3,0.881651376146789,1,False
+GradientBoostingTree,phoneme,20,3,0.8200899550224887,1,True
+GradientBoostingTree,phoneme,20,3,0.8257871064467766,1,False
+GradientBoostingTree,pol,20,3,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,3,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,3,0.7932960893854749,1,True
+GradientBoostingTree,wine,20,3,0.7873370577281193,1,False
+RandomForest,Higgs,20,3,0.6838,1,True
+RandomForest,Higgs,20,3,0.70856,1,False
+RandomForest,MagicTelescope,20,3,0.8347568208778173,1,True
+RandomForest,MagicTelescope,20,3,0.8347568208778173,1,False
+RandomForest,MiniBooNE,20,3,0.9197487471371232,1,True
+RandomForest,MiniBooNE,20,3,0.922719336039366,1,False
+RandomForest,bank-marketing,20,3,0.7641764176417642,1,True
+RandomForest,bank-marketing,20,3,0.7676267626762677,1,False
+RandomForest,california,20,3,0.8690220311660397,1,True
+RandomForest,california,20,3,0.8979043524986566,1,False
+RandomForest,covertype,20,3,0.77904,1,True
+RandomForest,covertype,20,3,0.79546,1,False
+RandomForest,credit,20,3,0.7352127659574468,1,True
+RandomForest,credit,20,3,0.7309574468085106,1,False
+RandomForest,electricity,20,3,0.7982139273530002,1,True
+RandomForest,electricity,20,3,0.8465281958659442,1,False
+RandomForest,eye_movements,20,3,0.5355430477381696,1,True
+RandomForest,eye_movements,20,3,0.5478424015009381,1,False
+RandomForest,house_16H,20,3,0.8588069184609953,1,True
+RandomForest,house_16H,20,3,0.8643369808212732,1,False
+RandomForest,kdd_ipums_la_97-small,20,3,0.8700305810397554,1,True
+RandomForest,kdd_ipums_la_97-small,20,3,0.8834862385321101,1,False
+RandomForest,phoneme,20,3,0.8245877061469266,1,True
+RandomForest,phoneme,20,3,0.8287856071964018,1,False
+RandomForest,pol,20,3,0.8915643689014794,1,True
+RandomForest,pol,20,3,0.9795404469625434,1,False
+RandomForest,wine,20,3,0.7988826815642458,1,True
+RandomForest,wine,20,3,0.7679702048417132,1,False
+Resnet,Higgs,20,3,0.7068,1,True
+Resnet,Higgs,20,3,0.70846,1,False
+Resnet,MagicTelescope,20,3,0.8351126927639383,1,True
+Resnet,MagicTelescope,20,3,0.8361803084223013,1,False
+Resnet,MiniBooNE,20,3,0.928479103834554,1,True
+Resnet,MiniBooNE,20,3,0.9245561123835008,1,False
+Resnet,bank-marketing,20,3,0.755025502550255,1,True
+Resnet,bank-marketing,20,3,0.752025202520252,1,False
+Resnet,california,20,3,0.8907845244492208,1,True
+Resnet,california,20,3,0.8831273508866201,1,False
+Resnet,covertype,20,3,0.79918,1,True
+Resnet,covertype,20,3,0.80238,1,False
+Resnet,credit,20,3,0.7356382978723404,1,True
+Resnet,credit,20,3,0.7356382978723404,1,False
+Resnet,electricity,20,3,0.8031808147702187,1,True
+Resnet,electricity,20,3,0.8043347381095726,1,False
+Resnet,eye_movements,20,3,0.5336668751302898,1,True
+Resnet,eye_movements,20,3,0.530748384406921,1,False
+Resnet,house_16H,20,3,0.8676314860571832,1,True
+Resnet,house_16H,20,3,0.864807624426403,1,False
+Resnet,kdd_ipums_la_97-small,20,3,0.8801223241590214,1,True
+Resnet,kdd_ipums_la_97-small,20,3,0.8819571865443425,1,False
+Resnet,phoneme,20,3,0.807496251874063,1,True
+Resnet,phoneme,20,3,0.8017991004497752,1,False
+Resnet,pol,20,3,0.9576644633301856,1,True
+Resnet,pol,20,3,0.9494806421152032,1,False
+Resnet,wine,20,3,0.7571694599627561,1,True
+Resnet,wine,20,3,0.7571694599627561,1,False
+FT Transformer,Higgs,20,4,0.70326,1,True
+FT Transformer,Higgs,20,4,0.714,1,False
+FT Transformer,MagicTelescope,20,4,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,4,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,4,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,4,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,4,0.7587758775877589,1,True
+FT Transformer,bank-marketing,20,4,0.7685268526852685,1,False
+FT Transformer,california,20,4,0.8880977968833961,1,True
+FT Transformer,california,20,4,0.891456206340677,1,False
+FT Transformer,covertype,20,4,0.78424,1,True
+FT Transformer,covertype,20,4,0.7965,1,False
+FT Transformer,credit,20,4,0.7340425531914894,1,True
+FT Transformer,credit,20,4,0.7347872340425532,1,False
+FT Transformer,electricity,20,4,0.7977122215532811,1,True
+FT Transformer,electricity,20,4,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,4,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,4,0.5286637481759433,1,False
+FT Transformer,house_16H,20,4,0.8657489116366631,1,True
+FT Transformer,house_16H,20,4,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,4,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,4,0.8807339449541285,1,False
+FT Transformer,phoneme,20,4,0.8041979010494753,1,True
+FT Transformer,phoneme,20,4,0.808095952023988,1,False
+FT Transformer,pol,20,4,0.940195152659742,1,True
+FT Transformer,pol,20,4,0.9803273528485992,1,False
+FT Transformer,wine,20,4,0.7500931098696462,1,True
+FT Transformer,wine,20,4,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,4,0.69214,1,True
+GradientBoostingTree,Higgs,20,4,0.70614,1,False
+GradientBoostingTree,MagicTelescope,20,4,0.8354685646500593,1,True
+GradientBoostingTree,MagicTelescope,20,4,0.8400948991696322,1,False
+GradientBoostingTree,MiniBooNE,20,4,0.9228100410440148,1,True
+GradientBoostingTree,MiniBooNE,20,4,0.9301571464205538,1,False
+GradientBoostingTree,bank-marketing,20,4,0.7607260726072607,1,True
+GradientBoostingTree,bank-marketing,20,4,0.774977497749775,1,False
+GradientBoostingTree,california,20,4,0.8731864588930682,1,True
+GradientBoostingTree,california,20,4,0.8991133799032778,1,False
+GradientBoostingTree,covertype,20,4,0.78004,1,True
+GradientBoostingTree,covertype,20,4,0.82242,1,False
+GradientBoostingTree,credit,20,4,0.7331914893617022,1,True
+GradientBoostingTree,credit,20,4,0.7360638297872341,1,False
+GradientBoostingTree,electricity,20,4,0.7992173389524383,1,True
+GradientBoostingTree,electricity,20,4,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,4,0.5347091932457787,1,True
+GradientBoostingTree,eye_movements,20,4,0.5661872003335418,1,False
+GradientBoostingTree,house_16H,20,4,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,4,0.8651606071302506,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,4,0.8703363914373088,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,4,0.8773700305810398,1,False
+GradientBoostingTree,phoneme,20,4,0.8119940029985008,1,True
+GradientBoostingTree,phoneme,20,4,0.8185907046476762,1,False
+GradientBoostingTree,pol,20,4,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,4,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,4,0.7795158286778399,1,True
+GradientBoostingTree,wine,20,4,0.7739292364990689,1,False
+RandomForest,Higgs,20,4,0.68038,1,True
+RandomForest,Higgs,20,4,0.7064,1,False
+RandomForest,MagicTelescope,20,4,0.8329774614472124,1,True
+RandomForest,MagicTelescope,20,4,0.8400948991696322,1,False
+RandomForest,MiniBooNE,20,4,0.9185922583278532,1,True
+RandomForest,MiniBooNE,20,4,0.9194539558720152,1,False
+RandomForest,bank-marketing,20,4,0.7614761476147615,1,True
+RandomForest,bank-marketing,20,4,0.7715271527152715,1,False
+RandomForest,california,20,4,0.8674099946265449,1,True
+RandomForest,california,20,4,0.8867544331004836,1,False
+RandomForest,covertype,20,4,0.78698,1,True
+RandomForest,covertype,20,4,0.80136,1,False
+RandomForest,credit,20,4,0.732872340425532,1,True
+RandomForest,credit,20,4,0.7290425531914894,1,False
+RandomForest,electricity,20,4,0.8015753562111178,1,True
+RandomForest,electricity,20,4,0.8527493477824604,1,False
+RandomForest,eye_movements,20,4,0.5440900562851781,1,True
+RandomForest,eye_movements,20,4,0.5661872003335419,1,False
+RandomForest,house_16H,20,4,0.8578656312507354,1,True
+RandomForest,house_16H,20,4,0.8592775620661254,1,False
+RandomForest,kdd_ipums_la_97-small,20,4,0.8675840978593272,1,True
+RandomForest,kdd_ipums_la_97-small,20,4,0.8788990825688074,1,False
+RandomForest,phoneme,20,4,0.8326836581709145,1,True
+RandomForest,phoneme,20,4,0.8248875562218891,1,False
+RandomForest,pol,20,4,0.889675794774945,1,True
+RandomForest,pol,20,4,0.9806421152030218,1,False
+RandomForest,wine,20,4,0.7921787709497206,1,True
+RandomForest,wine,20,4,0.7854748603351955,1,False
+Resnet,Higgs,20,4,0.7068,1,True
+Resnet,Higgs,20,4,0.70294,1,False
+Resnet,MagicTelescope,20,4,0.8387900355871887,1,True
+Resnet,MagicTelescope,20,4,0.8333333333333334,1,False
+Resnet,MiniBooNE,20,4,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,4,0.928320370076419,1,False
+Resnet,bank-marketing,20,4,0.7536753675367537,1,True
+Resnet,bank-marketing,20,4,0.752025202520252,1,False
+Resnet,california,20,4,0.8907845244492208,1,True
+Resnet,california,20,4,0.8859484148307362,1,False
+Resnet,covertype,20,4,0.79942,1,True
+Resnet,covertype,20,4,0.80238,1,False
+Resnet,credit,20,4,0.7364893617021276,1,True
+Resnet,credit,20,4,0.7348936170212765,1,False
+Resnet,electricity,20,4,0.807244631747943,1,True
+Resnet,electricity,20,4,0.8068432671081678,1,False
+Resnet,eye_movements,20,4,0.5380446112153429,1,True
+Resnet,eye_movements,20,4,0.530748384406921,1,False
+Resnet,house_16H,20,4,0.8673961642546182,1,True
+Resnet,house_16H,20,4,0.8649252853276855,1,False
+Resnet,kdd_ipums_la_97-small,20,4,0.882262996941896,1,True
+Resnet,kdd_ipums_la_97-small,20,4,0.8819571865443425,1,False
+Resnet,phoneme,20,4,0.8,1,True
+Resnet,phoneme,20,4,0.8089955022488755,1,False
+Resnet,pol,20,4,0.9527856468366384,1,True
+Resnet,pol,20,4,0.9494806421152032,1,False
+Resnet,wine,20,4,0.7594040968342645,1,True
+Resnet,wine,20,4,0.7582867783985103,1,False
+FT Transformer,Higgs,20,5,0.70326,1,True
+FT Transformer,Higgs,20,5,0.714,1,False
+FT Transformer,MagicTelescope,20,5,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,5,0.8404507710557533,1,False
+FT Transformer,MiniBooNE,20,5,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,5,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,5,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,5,0.7710771077107711,1,False
+FT Transformer,california,20,5,0.8917248790972595,1,True
+FT Transformer,california,20,5,0.891456206340677,1,False
+FT Transformer,covertype,20,5,0.78088,1,True
+FT Transformer,covertype,20,5,0.7965,1,False
+FT Transformer,credit,20,5,0.7351063829787234,1,True
+FT Transformer,credit,20,5,0.7340425531914894,1,False
+FT Transformer,electricity,20,5,0.7987658037326911,1,True
+FT Transformer,electricity,20,5,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,5,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,5,0.5286637481759433,1,False
+FT Transformer,house_16H,20,5,0.8657489116366631,1,True
+FT Transformer,house_16H,20,5,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,5,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,5,0.8807339449541285,1,False
+FT Transformer,phoneme,20,5,0.8104947526236883,1,True
+FT Transformer,phoneme,20,5,0.808095952023988,1,False
+FT Transformer,pol,20,5,0.940195152659742,1,True
+FT Transformer,pol,20,5,0.9817437834435,1,False
+FT Transformer,wine,20,5,0.7545623836126629,1,True
+FT Transformer,wine,20,5,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,5,0.6839,1,True
+GradientBoostingTree,Higgs,20,5,0.70612,1,False
+GradientBoostingTree,MagicTelescope,20,5,0.8353499406880189,1,True
+GradientBoostingTree,MagicTelescope,20,5,0.8367734282325029,1,False
+GradientBoostingTree,MiniBooNE,20,5,0.9217442572393932,1,True
+GradientBoostingTree,MiniBooNE,20,5,0.9282976938252568,1,False
+GradientBoostingTree,bank-marketing,20,5,0.7631263126312632,1,True
+GradientBoostingTree,bank-marketing,20,5,0.7731773177317732,1,False
+GradientBoostingTree,california,20,5,0.8465878559914025,1,True
+GradientBoostingTree,california,20,5,0.900322407307899,1,False
+GradientBoostingTree,covertype,20,5,0.78514,1,True
+GradientBoostingTree,covertype,20,5,0.82242,1,False
+GradientBoostingTree,credit,20,5,0.7331914893617022,1,True
+GradientBoostingTree,credit,20,5,0.7292553191489362,1,False
+GradientBoostingTree,electricity,20,5,0.7994180212723259,1,True
+GradientBoostingTree,electricity,20,5,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,5,0.5363769022305608,1,True
+GradientBoostingTree,eye_movements,20,5,0.5695226183031061,1,False
+GradientBoostingTree,house_16H,20,5,0.8558653959289328,1,True
+GradientBoostingTree,house_16H,20,5,0.8679844687610307,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,5,0.8709480122324159,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,5,0.881651376146789,1,False
+GradientBoostingTree,phoneme,20,5,0.826086956521739,1,True
+GradientBoostingTree,phoneme,20,5,0.8191904047976012,1,False
+GradientBoostingTree,pol,20,5,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,5,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,5,0.7932960893854749,1,True
+GradientBoostingTree,wine,20,5,0.7854748603351955,1,False
+RandomForest,Higgs,20,5,0.68596,1,True
+RandomForest,Higgs,20,5,0.70844,1,False
+RandomForest,MagicTelescope,20,5,0.8367734282325029,1,True
+RandomForest,MagicTelescope,20,5,0.8316725978647687,1,False
+RandomForest,MiniBooNE,20,5,0.9166421007279076,1,True
+RandomForest,MiniBooNE,20,5,0.9194539558720152,1,False
+RandomForest,bank-marketing,20,5,0.7595259525952596,1,True
+RandomForest,bank-marketing,20,5,0.7715271527152715,1,False
+RandomForest,california,20,5,0.8723804406233208,1,True
+RandomForest,california,20,5,0.8945459430413756,1,False
+RandomForest,covertype,20,5,0.7866,1,True
+RandomForest,covertype,20,5,0.81394,1,False
+RandomForest,credit,20,5,0.7324468085106384,1,True
+RandomForest,credit,20,5,0.7327659574468085,1,False
+RandomForest,electricity,20,5,0.8031808147702187,1,True
+RandomForest,electricity,20,5,0.8603251053582179,1,False
+RandomForest,eye_movements,20,5,0.5426308109234937,1,True
+RandomForest,eye_movements,20,5,0.5478424015009381,1,False
+RandomForest,house_16H,20,5,0.8563360395340628,1,True
+RandomForest,house_16H,20,5,0.8616307800917754,1,False
+RandomForest,kdd_ipums_la_97-small,20,5,0.8715596330275229,1,True
+RandomForest,kdd_ipums_la_97-small,20,5,0.881651376146789,1,False
+RandomForest,phoneme,20,5,0.8293853073463268,1,True
+RandomForest,phoneme,20,5,0.824887556221889,1,False
+RandomForest,pol,20,5,0.8868429335851432,1,True
+RandomForest,pol,20,5,0.9800125904941768,1,False
+RandomForest,wine,20,5,0.7769087523277467,1,True
+RandomForest,wine,20,5,0.7903165735567971,1,False
+Resnet,Higgs,20,5,0.70332,1,True
+Resnet,Higgs,20,5,0.702,1,False
+Resnet,MagicTelescope,20,5,0.8322657176749703,1,True
+Resnet,MagicTelescope,20,5,0.8333333333333334,1,False
+Resnet,MiniBooNE,20,5,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,5,0.9258033061974196,1,False
+Resnet,bank-marketing,20,5,0.752025202520252,1,True
+Resnet,bank-marketing,20,5,0.752025202520252,1,False
+Resnet,california,20,5,0.8917248790972595,1,True
+Resnet,california,20,5,0.8831273508866201,1,False
+Resnet,covertype,20,5,0.79388,1,True
+Resnet,covertype,20,5,0.7938,1,False
+Resnet,credit,20,5,0.7364893617021276,1,True
+Resnet,credit,20,5,0.7353191489361701,1,False
+Resnet,electricity,20,5,0.8028296207104154,1,True
+Resnet,electricity,20,5,0.8060907084085892,1,False
+Resnet,eye_movements,20,5,0.5372107567229519,1,True
+Resnet,eye_movements,20,5,0.5326245570148009,1,False
+Resnet,house_16H,20,5,0.8655135898340981,1,True
+Resnet,house_16H,20,5,0.864807624426403,1,False
+Resnet,kdd_ipums_la_97-small,20,5,0.882262996941896,1,True
+Resnet,kdd_ipums_la_97-small,20,5,0.8798165137614679,1,False
+Resnet,phoneme,20,5,0.8041979010494753,1,True
+Resnet,phoneme,20,5,0.8029985007496252,1,False
+Resnet,pol,20,5,0.95561850802644,1,True
+Resnet,pol,20,5,0.9494806421152032,1,False
+Resnet,wine,20,5,0.7579143389199254,1,True
+Resnet,wine,20,5,0.7571694599627561,1,False
+FT Transformer,Higgs,20,6,0.70326,1,True
+FT Transformer,Higgs,20,6,0.714,1,False
+FT Transformer,MagicTelescope,20,6,0.8364175563463819,1,True
+FT Transformer,MagicTelescope,20,6,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,6,0.928773895099662,1,True
+FT Transformer,MiniBooNE,20,6,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,6,0.7587758775877589,1,True
+FT Transformer,bank-marketing,20,6,0.7685268526852685,1,False
+FT Transformer,california,20,6,0.8894411606663084,1,True
+FT Transformer,california,20,6,0.891456206340677,1,False
+FT Transformer,covertype,20,6,0.7861,1,True
+FT Transformer,covertype,20,6,0.7965,1,False
+FT Transformer,credit,20,6,0.7351063829787234,1,True
+FT Transformer,credit,20,6,0.7347872340425532,1,False
+FT Transformer,electricity,20,6,0.801475015051174,1,True
+FT Transformer,electricity,20,6,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,6,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,6,0.5286637481759433,1,False
+FT Transformer,house_16H,20,6,0.8657489116366631,1,True
+FT Transformer,house_16H,20,6,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,6,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,6,0.8807339449541285,1,False
+FT Transformer,phoneme,20,6,0.8041979010494753,1,True
+FT Transformer,phoneme,20,6,0.808095952023988,1,False
+FT Transformer,pol,20,6,0.940195152659742,1,True
+FT Transformer,pol,20,6,0.9817437834435,1,False
+FT Transformer,wine,20,6,0.7545623836126629,1,True
+FT Transformer,wine,20,6,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,6,0.69214,1,True
+GradientBoostingTree,Higgs,20,6,0.71318,1,False
+GradientBoostingTree,MagicTelescope,20,6,0.836061684460261,1,True
+GradientBoostingTree,MagicTelescope,20,6,0.8396204033214709,1,False
+GradientBoostingTree,MiniBooNE,20,6,0.9277988162996892,1,True
+GradientBoostingTree,MiniBooNE,20,6,0.9282976938252568,1,False
+GradientBoostingTree,bank-marketing,20,6,0.7641764176417642,1,True
+GradientBoostingTree,bank-marketing,20,6,0.7751275127512751,1,False
+GradientBoostingTree,california,20,6,0.8717087587318646,1,True
+GradientBoostingTree,california,20,6,0.8944116066630844,1,False
+GradientBoostingTree,covertype,20,6,0.78776,1,True
+GradientBoostingTree,covertype,20,6,0.8139,1,False
+GradientBoostingTree,credit,20,6,0.7331914893617022,1,True
+GradientBoostingTree,credit,20,6,0.7318085106382979,1,False
+GradientBoostingTree,electricity,20,6,0.7938490868954445,1,True
+GradientBoostingTree,electricity,20,6,0.8707104154124021,1,False
+GradientBoostingTree,eye_movements,20,6,0.5403377110694184,1,True
+GradientBoostingTree,eye_movements,20,6,0.586825099020221,1,False
+GradientBoostingTree,house_16H,20,6,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,6,0.8645723026238382,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,6,0.8697247706422019,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,6,0.8773700305810398,1,False
+GradientBoostingTree,phoneme,20,6,0.8275862068965516,1,True
+GradientBoostingTree,phoneme,20,6,0.8341829085457272,1,False
+GradientBoostingTree,pol,20,6,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,6,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,6,0.7973929236499069,1,True
+GradientBoostingTree,wine,20,6,0.7851024208566109,1,False
+RandomForest,Higgs,20,6,0.68714,1,True
+RandomForest,Higgs,20,6,0.70772,1,False
+RandomForest,MagicTelescope,20,6,0.8347568208778173,1,True
+RandomForest,MagicTelescope,20,6,0.8383155397390273,1,False
+RandomForest,MiniBooNE,20,6,0.8975713735005328,1,True
+RandomForest,MiniBooNE,20,6,0.9212453797138256,1,False
+RandomForest,bank-marketing,20,6,0.7634263426342635,1,True
+RandomForest,bank-marketing,20,6,0.7677767776777679,1,False
+RandomForest,california,20,6,0.8605588393336916,1,True
+RandomForest,california,20,6,0.8945459430413756,1,False
+RandomForest,covertype,20,6,0.78672,1,True
+RandomForest,covertype,20,6,0.80862,1,False
+RandomForest,credit,20,6,0.7303191489361702,1,True
+RandomForest,credit,20,6,0.7346808510638299,1,False
+RandomForest,electricity,20,6,0.7996688741721855,1,True
+RandomForest,electricity,20,6,0.8569636765001003,1,False
+RandomForest,eye_movements,20,6,0.5420054200542005,1,True
+RandomForest,eye_movements,20,6,0.565978736710444,1,False
+RandomForest,house_16H,20,6,0.8226850217672667,1,True
+RandomForest,house_16H,20,6,0.8646899635251207,1,False
+RandomForest,kdd_ipums_la_97-small,20,6,0.8709480122324159,1,True
+RandomForest,kdd_ipums_la_97-small,20,6,0.881651376146789,1,False
+RandomForest,phoneme,20,6,0.807496251874063,1,True
+RandomForest,phoneme,20,6,0.8272863568215891,1,False
+RandomForest,pol,20,6,0.8953415171545482,1,True
+RandomForest,pol,20,6,0.9789109222536986,1,False
+RandomForest,wine,20,6,0.7951582867783984,1,True
+RandomForest,wine,20,6,0.7962756052141527,1,False
+Resnet,Higgs,20,6,0.7068,1,True
+Resnet,Higgs,20,6,0.70302,1,False
+Resnet,MagicTelescope,20,6,0.8373665480427047,1,True
+Resnet,MagicTelescope,20,6,0.8395017793594306,1,False
+Resnet,MiniBooNE,20,6,0.9272092337694732,1,True
+Resnet,MiniBooNE,20,6,0.9245561123835008,1,False
+Resnet,bank-marketing,20,6,0.7523252325232525,1,True
+Resnet,bank-marketing,20,6,0.7626762676267628,1,False
+Resnet,california,20,6,0.8933369156367544,1,True
+Resnet,california,20,6,0.8859484148307362,1,False
+Resnet,covertype,20,6,0.79942,1,True
+Resnet,covertype,20,6,0.8022,1,False
+Resnet,credit,20,6,0.7309574468085106,1,True
+Resnet,credit,20,6,0.7346808510638299,1,False
+Resnet,electricity,20,6,0.8047361027493478,1,True
+Resnet,electricity,20,6,0.8068432671081678,1,False
+Resnet,eye_movements,20,6,0.5276214300604544,1,True
+Resnet,eye_movements,20,6,0.5326245570148009,1,False
+Resnet,house_16H,20,6,0.8662195552417931,1,True
+Resnet,house_16H,20,6,0.8659842334392281,1,False
+Resnet,kdd_ipums_la_97-small,20,6,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,6,0.8798165137614679,1,False
+Resnet,phoneme,20,6,0.8026986506746626,1,True
+Resnet,phoneme,20,6,0.8029985007496252,1,False
+Resnet,pol,20,6,0.9617563739376772,1,True
+Resnet,pol,20,6,0.9494806421152032,1,False
+Resnet,wine,20,6,0.7601489757914339,1,True
+Resnet,wine,20,6,0.7571694599627561,1,False
+FT Transformer,Higgs,20,7,0.70326,1,True
+FT Transformer,Higgs,20,7,0.71012,1,False
+FT Transformer,MagicTelescope,20,7,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,7,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,7,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,7,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,7,0.7587758775877589,1,True
+FT Transformer,bank-marketing,20,7,0.7685268526852685,1,False
+FT Transformer,california,20,7,0.8880977968833961,1,True
+FT Transformer,california,20,7,0.891456206340677,1,False
+FT Transformer,covertype,20,7,0.7861,1,True
+FT Transformer,covertype,20,7,0.7965,1,False
+FT Transformer,credit,20,7,0.7351063829787234,1,True
+FT Transformer,credit,20,7,0.7347872340425532,1,False
+FT Transformer,electricity,20,7,0.7987658037326911,1,True
+FT Transformer,electricity,20,7,0.8020268914308649,1,False
+FT Transformer,eye_movements,20,7,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,7,0.5286637481759433,1,False
+FT Transformer,house_16H,20,7,0.8578656312507352,1,True
+FT Transformer,house_16H,20,7,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,7,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,7,0.8807339449541285,1,False
+FT Transformer,phoneme,20,7,0.8107946026986508,1,True
+FT Transformer,phoneme,20,7,0.8071964017991003,1,False
+FT Transformer,pol,20,7,0.940195152659742,1,True
+FT Transformer,pol,20,7,0.9817437834435,1,False
+FT Transformer,wine,20,7,0.7545623836126629,1,True
+FT Transformer,wine,20,7,0.7512104283054003,1,False
+GradientBoostingTree,Higgs,20,7,0.69204,1,True
+GradientBoostingTree,Higgs,20,7,0.70858,1,False
+GradientBoostingTree,MagicTelescope,20,7,0.8302491103202847,1,True
+GradientBoostingTree,MagicTelescope,20,7,0.8355871886120996,1,False
+GradientBoostingTree,MiniBooNE,20,7,0.9283883988299054,1,True
+GradientBoostingTree,MiniBooNE,20,7,0.9275267012857434,1,False
+GradientBoostingTree,bank-marketing,20,7,0.7641764176417642,1,True
+GradientBoostingTree,bank-marketing,20,7,0.7727272727272728,1,False
+GradientBoostingTree,california,20,7,0.869693713057496,1,True
+GradientBoostingTree,california,20,7,0.8944116066630844,1,False
+GradientBoostingTree,covertype,20,7,0.78802,1,True
+GradientBoostingTree,covertype,20,7,0.82242,1,False
+GradientBoostingTree,credit,20,7,0.7324468085106384,1,True
+GradientBoostingTree,credit,20,7,0.7306382978723405,1,False
+GradientBoostingTree,electricity,20,7,0.8027794501304435,1,True
+GradientBoostingTree,electricity,20,7,0.8769315673289183,1,False
+GradientBoostingTree,eye_movements,20,7,0.5347091932457787,1,True
+GradientBoostingTree,eye_movements,20,7,0.5701480091723994,1,False
+GradientBoostingTree,house_16H,20,7,0.8593952229674079,1,True
+GradientBoostingTree,house_16H,20,7,0.8633956936110131,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,7,0.8712538226299694,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,7,0.8795107033639145,1,False
+GradientBoostingTree,phoneme,20,7,0.8155922038980508,1,True
+GradientBoostingTree,phoneme,20,7,0.8251874062968516,1,False
+GradientBoostingTree,pol,20,7,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,7,0.982530689329556,1,False
+GradientBoostingTree,wine,20,7,0.7932960893854749,1,True
+GradientBoostingTree,wine,20,7,0.7873370577281193,1,False
+RandomForest,Higgs,20,7,0.68714,1,True
+RandomForest,Higgs,20,7,0.711,1,False
+RandomForest,MagicTelescope,20,7,0.8345195729537367,1,True
+RandomForest,MagicTelescope,20,7,0.8370106761565835,1,False
+RandomForest,MiniBooNE,20,7,0.9177985895371776,1,True
+RandomForest,MiniBooNE,20,7,0.9212680559649878,1,False
+RandomForest,bank-marketing,20,7,0.7605760576057605,1,True
+RandomForest,bank-marketing,20,7,0.7733273327332734,1,False
+RandomForest,california,20,7,0.8676786673831274,1,True
+RandomForest,california,20,7,0.8949489521762494,1,False
+RandomForest,covertype,20,7,0.77716,1,True
+RandomForest,covertype,20,7,0.81014,1,False
+RandomForest,credit,20,7,0.732872340425532,1,True
+RandomForest,credit,20,7,0.7327659574468085,1,False
+RandomForest,electricity,20,7,0.7948524984948826,1,True
+RandomForest,electricity,20,7,0.8603251053582179,1,False
+RandomForest,eye_movements,20,7,0.5426308109234937,1,True
+RandomForest,eye_movements,20,7,0.5563894100479466,1,False
+RandomForest,house_16H,20,7,0.8588069184609953,1,True
+RandomForest,house_16H,20,7,0.8616307800917754,1,False
+RandomForest,kdd_ipums_la_97-small,20,7,0.8721712538226299,1,True
+RandomForest,kdd_ipums_la_97-small,20,7,0.8834862385321101,1,False
+RandomForest,phoneme,20,7,0.8245877061469266,1,True
+RandomForest,phoneme,20,7,0.8272863568215891,1,False
+RandomForest,pol,20,7,0.8723638652817124,1,True
+RandomForest,pol,20,7,0.9789109222536986,1,False
+RandomForest,wine,20,7,0.7988826815642458,1,True
+RandomForest,wine,20,7,0.7996275605214153,1,False
+Resnet,Higgs,20,7,0.7062,1,True
+Resnet,Higgs,20,7,0.70524,1,False
+Resnet,MagicTelescope,20,7,0.8373665480427047,1,True
+Resnet,MagicTelescope,20,7,0.8333333333333334,1,False
+Resnet,MiniBooNE,20,7,0.9268690900020408,1,True
+Resnet,MiniBooNE,20,7,0.9307920814530942,1,False
+Resnet,bank-marketing,20,7,0.7541254125412541,1,True
+Resnet,bank-marketing,20,7,0.7551755175517552,1,False
+Resnet,california,20,7,0.8874261149919398,1,True
+Resnet,california,20,7,0.8859484148307362,1,False
+Resnet,covertype,20,7,0.80202,1,True
+Resnet,covertype,20,7,0.80238,1,False
+Resnet,credit,20,7,0.7340425531914894,1,True
+Resnet,credit,20,7,0.7353191489361701,1,False
+Resnet,electricity,20,7,0.8012241621513144,1,True
+Resnet,electricity,20,7,0.8068432671081678,1,False
+Resnet,eye_movements,20,7,0.5265791119449655,1,True
+Resnet,eye_movements,20,7,0.5382530748384408,1,False
+Resnet,house_16H,20,7,0.8673961642546182,1,True
+Resnet,house_16H,20,7,0.8672785033533357,1,False
+Resnet,kdd_ipums_la_97-small,20,7,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,7,0.8819571865443425,1,False
+Resnet,phoneme,20,7,0.8071964017991006,1,True
+Resnet,phoneme,20,7,0.8089955022488755,1,False
+Resnet,pol,20,7,0.9617563739376772,1,True
+Resnet,pol,20,7,0.9529430280138496,1,False
+Resnet,wine,20,7,0.7579143389199255,1,True
+Resnet,wine,20,7,0.756052141527002,1,False
+FT Transformer,Higgs,20,8,0.70326,1,True
+FT Transformer,Higgs,20,8,0.714,1,False
+FT Transformer,MagicTelescope,20,8,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,8,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,8,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,8,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,8,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,8,0.7685268526852685,1,False
+FT Transformer,california,20,8,0.8880977968833961,1,True
+FT Transformer,california,20,8,0.891456206340677,1,False
+FT Transformer,covertype,20,8,0.7861,1,True
+FT Transformer,covertype,20,8,0.79492,1,False
+FT Transformer,credit,20,8,0.7351063829787234,1,True
+FT Transformer,credit,20,8,0.7347872340425532,1,False
+FT Transformer,electricity,20,8,0.7987658037326911,1,True
+FT Transformer,electricity,20,8,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,8,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,8,0.5374192203460496,1,False
+FT Transformer,house_16H,20,8,0.8638663372161431,1,True
+FT Transformer,house_16H,20,8,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,8,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,8,0.8807339449541285,1,False
+FT Transformer,phoneme,20,8,0.8107946026986508,1,True
+FT Transformer,phoneme,20,8,0.808095952023988,1,False
+FT Transformer,pol,20,8,0.9373622914699404,1,True
+FT Transformer,pol,20,8,0.9817437834435,1,False
+FT Transformer,wine,20,8,0.7500931098696462,1,True
+FT Transformer,wine,20,8,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,8,0.69214,1,True
+GradientBoostingTree,Higgs,20,8,0.70614,1,False
+GradientBoostingTree,MagicTelescope,20,8,0.838196915776987,1,True
+GradientBoostingTree,MagicTelescope,20,8,0.8384341637010676,1,False
+GradientBoostingTree,MiniBooNE,20,8,0.9228100410440148,1,True
+GradientBoostingTree,MiniBooNE,20,8,0.9275267012857434,1,False
+GradientBoostingTree,bank-marketing,20,8,0.7647764776477648,1,True
+GradientBoostingTree,bank-marketing,20,8,0.7736273627362736,1,False
+GradientBoostingTree,california,20,8,0.869693713057496,1,True
+GradientBoostingTree,california,20,8,0.8999193981730252,1,False
+GradientBoostingTree,covertype,20,8,0.7902,1,True
+GradientBoostingTree,covertype,20,8,0.8139,1,False
+GradientBoostingTree,credit,20,8,0.7309574468085107,1,True
+GradientBoostingTree,credit,20,8,0.7318085106382979,1,False
+GradientBoostingTree,electricity,20,8,0.7994180212723259,1,True
+GradientBoostingTree,electricity,20,8,0.8723158739715031,1,False
+GradientBoostingTree,eye_movements,20,8,0.5347091932457787,1,True
+GradientBoostingTree,eye_movements,20,8,0.5570148009172399,1,False
+GradientBoostingTree,house_16H,20,8,0.861983762795623,1,True
+GradientBoostingTree,house_16H,20,8,0.8641016590187082,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,8,0.8712538226299694,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,8,0.8776758409785934,1,False
+GradientBoostingTree,phoneme,20,8,0.8158920539730135,1,True
+GradientBoostingTree,phoneme,20,8,0.8215892053973015,1,False
+GradientBoostingTree,pol,20,8,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,8,0.9830028328611898,1,False
+GradientBoostingTree,wine,20,8,0.7981378026070763,1,True
+GradientBoostingTree,wine,20,8,0.7702048417132217,1,False
+RandomForest,Higgs,20,8,0.68604,1,True
+RandomForest,Higgs,20,8,0.70862,1,False
+RandomForest,MagicTelescope,20,8,0.8355871886120996,1,True
+RandomForest,MagicTelescope,20,8,0.8379596678529063,1,False
+RandomForest,MiniBooNE,20,8,0.9175264745232318,1,True
+RandomForest,MiniBooNE,20,8,0.9229234222998254,1,False
+RandomForest,bank-marketing,20,8,0.7616261626162616,1,True
+RandomForest,bank-marketing,20,8,0.765976597659766,1,False
+RandomForest,california,20,8,0.8670069854916711,1,True
+RandomForest,california,20,8,0.8979043524986566,1,False
+RandomForest,covertype,20,8,0.78938,1,True
+RandomForest,covertype,20,8,0.81394,1,False
+RandomForest,credit,20,8,0.7311702127659574,1,True
+RandomForest,credit,20,8,0.733936170212766,1,False
+RandomForest,electricity,20,8,0.7992675095324102,1,True
+RandomForest,electricity,20,8,0.8587698173790889,1,False
+RandomForest,eye_movements,20,8,0.5280383573066499,1,True
+RandomForest,eye_movements,20,8,0.5661872003335419,1,False
+RandomForest,house_16H,20,8,0.8578656312507354,1,True
+RandomForest,house_16H,20,8,0.861513119190493,1,False
+RandomForest,kdd_ipums_la_97-small,20,8,0.8730886850152905,1,True
+RandomForest,kdd_ipums_la_97-small,20,8,0.880428134556575,1,False
+RandomForest,phoneme,20,8,0.8245877061469266,1,True
+RandomForest,phoneme,20,8,0.8239880059970016,1,False
+RandomForest,pol,20,8,0.8868429335851432,1,True
+RandomForest,pol,20,8,0.9793830657853322,1,False
+RandomForest,wine,20,8,0.7988826815642458,1,True
+RandomForest,wine,20,8,0.7761638733705774,1,False
+Resnet,Higgs,20,8,0.7062,1,True
+Resnet,Higgs,20,8,0.70524,1,False
+Resnet,MagicTelescope,20,8,0.8408066429418742,1,True
+Resnet,MagicTelescope,20,8,0.8395017793594306,1,False
+Resnet,MiniBooNE,20,8,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,8,0.92328624231842,1,False
+Resnet,bank-marketing,20,8,0.7541254125412541,1,True
+Resnet,bank-marketing,20,8,0.7551755175517552,1,False
+Resnet,california,20,8,0.8874261149919398,1,True
+Resnet,california,20,8,0.8859484148307362,1,False
+Resnet,covertype,20,8,0.79942,1,True
+Resnet,covertype,20,8,0.8022,1,False
+Resnet,credit,20,8,0.7341489361702127,1,True
+Resnet,credit,20,8,0.734468085106383,1,False
+Resnet,electricity,20,8,0.8012241621513144,1,True
+Resnet,electricity,20,8,0.8011238209913707,1,False
+Resnet,eye_movements,20,8,0.5336668751302898,1,True
+Resnet,eye_movements,20,8,0.5413800291849071,1,False
+Resnet,house_16H,20,8,0.8641016590187082,1,True
+Resnet,house_16H,20,8,0.8631603718084481,1,False
+Resnet,kdd_ipums_la_97-small,20,8,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,8,0.8798165137614679,1,False
+Resnet,phoneme,20,8,0.8059970014992504,1,True
+Resnet,phoneme,20,8,0.8029985007496252,1,False
+Resnet,pol,20,8,0.95561850802644,1,True
+Resnet,pol,20,8,0.9578218445073968,1,False
+Resnet,wine,20,8,0.7594040968342645,1,True
+Resnet,wine,20,8,0.7571694599627561,1,False
+FT Transformer,Higgs,20,9,0.70326,1,True
+FT Transformer,Higgs,20,9,0.714,1,False
+FT Transformer,MagicTelescope,20,9,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,9,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,9,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,9,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,9,0.7587758775877589,1,True
+FT Transformer,bank-marketing,20,9,0.7685268526852685,1,False
+FT Transformer,california,20,9,0.8880977968833961,1,True
+FT Transformer,california,20,9,0.891456206340677,1,False
+FT Transformer,covertype,20,9,0.7861,1,True
+FT Transformer,covertype,20,9,0.7965,1,False
+FT Transformer,credit,20,9,0.7351063829787234,1,True
+FT Transformer,credit,20,9,0.7347872340425532,1,False
+FT Transformer,electricity,20,9,0.7987658037326911,1,True
+FT Transformer,electricity,20,9,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,9,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,9,0.5286637481759433,1,False
+FT Transformer,house_16H,20,9,0.8578656312507352,1,True
+FT Transformer,house_16H,20,9,0.8673961642546182,1,False
+FT Transformer,kdd_ipums_la_97-small,20,9,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,9,0.8764525993883793,1,False
+FT Transformer,phoneme,20,9,0.8107946026986508,1,True
+FT Transformer,phoneme,20,9,0.808095952023988,1,False
+FT Transformer,pol,20,9,0.940195152659742,1,True
+FT Transformer,pol,20,9,0.9817437834435,1,False
+FT Transformer,wine,20,9,0.7500931098696462,1,True
+FT Transformer,wine,20,9,0.7638733705772812,1,False
+GradientBoostingTree,Higgs,20,9,0.68548,1,True
+GradientBoostingTree,Higgs,20,9,0.70718,1,False
+GradientBoostingTree,MagicTelescope,20,9,0.8311981020166073,1,True
+GradientBoostingTree,MagicTelescope,20,9,0.8370106761565838,1,False
+GradientBoostingTree,MiniBooNE,20,9,0.9283883988299054,1,True
+GradientBoostingTree,MiniBooNE,20,9,0.9257126011927708,1,False
+GradientBoostingTree,bank-marketing,20,9,0.7602760276027603,1,True
+GradientBoostingTree,bank-marketing,20,9,0.7736273627362736,1,False
+GradientBoostingTree,california,20,9,0.8706340677055346,1,True
+GradientBoostingTree,california,20,9,0.8999193981730252,1,False
+GradientBoostingTree,covertype,20,9,0.78732,1,True
+GradientBoostingTree,covertype,20,9,0.8199,1,False
+GradientBoostingTree,credit,20,9,0.7331914893617022,1,True
+GradientBoostingTree,credit,20,9,0.7318085106382979,1,False
+GradientBoostingTree,electricity,20,9,0.7992173389524383,1,True
+GradientBoostingTree,electricity,20,9,0.8716134858518965,1,False
+GradientBoostingTree,eye_movements,20,9,0.5363769022305608,1,True
+GradientBoostingTree,eye_movements,20,9,0.583281217427559,1,False
+GradientBoostingTree,house_16H,20,9,0.858453935757148,1,True
+GradientBoostingTree,house_16H,20,9,0.8651606071302506,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,9,0.8688073394495412,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,9,0.8801223241590214,1,False
+GradientBoostingTree,phoneme,20,9,0.8194902548725638,1,True
+GradientBoostingTree,phoneme,20,9,0.8269865067466267,1,False
+GradientBoostingTree,pol,20,9,0.8978596159899276,1,True
+GradientBoostingTree,pol,20,9,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,9,0.7925512104283055,1,True
+GradientBoostingTree,wine,20,9,0.7739292364990689,1,False
+RandomForest,Higgs,20,9,0.67856,1,True
+RandomForest,Higgs,20,9,0.70844,1,False
+RandomForest,MagicTelescope,20,9,0.8328588374851721,1,True
+RandomForest,MagicTelescope,20,9,0.8359430604982206,1,False
+RandomForest,MiniBooNE,20,9,0.9175264745232318,1,True
+RandomForest,MiniBooNE,20,9,0.9242159686160684,1,False
+RandomForest,bank-marketing,20,9,0.7611761176117612,1,True
+RandomForest,bank-marketing,20,9,0.7673267326732672,1,False
+RandomForest,california,20,9,0.8734551316496507,1,True
+RandomForest,california,20,9,0.8933369156367544,1,False
+RandomForest,covertype,20,9,0.76318,1,True
+RandomForest,covertype,20,9,0.80464,1,False
+RandomForest,credit,20,9,0.7341489361702127,1,True
+RandomForest,credit,20,9,0.7248936170212765,1,False
+RandomForest,electricity,20,9,0.8001705799719044,1,True
+RandomForest,electricity,20,9,0.8603251053582179,1,False
+RandomForest,eye_movements,20,9,0.5332499478840943,1,True
+RandomForest,eye_movements,20,9,0.5661872003335419,1,False
+RandomForest,house_16H,20,9,0.8596305447699729,1,True
+RandomForest,house_16H,20,9,0.8550417696199553,1,False
+RandomForest,kdd_ipums_la_97-small,20,9,0.8721712538226299,1,True
+RandomForest,kdd_ipums_la_97-small,20,9,0.8834862385321101,1,False
+RandomForest,phoneme,20,9,0.8245877061469266,1,True
+RandomForest,phoneme,20,9,0.824887556221889,1,False
+RandomForest,pol,20,9,0.8807050676739062,1,True
+RandomForest,pol,20,9,0.9757632987094744,1,False
+RandomForest,wine,20,9,0.7891992551210427,1,True
+RandomForest,wine,20,9,0.783240223463687,1,False
+Resnet,Higgs,20,9,0.706,1,True
+Resnet,Higgs,20,9,0.70112,1,False
+Resnet,MagicTelescope,20,9,0.8351126927639383,1,True
+Resnet,MagicTelescope,20,9,0.8366548042704626,1,False
+Resnet,MiniBooNE,20,9,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,9,0.9245334361323386,1,False
+Resnet,bank-marketing,20,9,0.752025202520252,1,True
+Resnet,bank-marketing,20,9,0.7626762676267628,1,False
+Resnet,california,20,9,0.8929339065018808,1,True
+Resnet,california,20,9,0.8913218699623858,1,False
+Resnet,covertype,20,9,0.79076,1,True
+Resnet,covertype,20,9,0.8022,1,False
+Resnet,credit,20,9,0.7341489361702127,1,True
+Resnet,credit,20,9,0.7353191489361701,1,False
+Resnet,electricity,20,9,0.8012241621513144,1,True
+Resnet,electricity,20,9,0.8043347381095726,1,False
+Resnet,eye_movements,20,9,0.5336668751302898,1,True
+Resnet,eye_movements,20,9,0.5151136126745883,1,False
+Resnet,house_16H,20,9,0.8639839981174257,1,True
+Resnet,house_16H,20,9,0.8686904341687258,1,False
+Resnet,kdd_ipums_la_97-small,20,9,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,9,0.881039755351682,1,False
+Resnet,phoneme,20,9,0.807496251874063,1,True
+Resnet,phoneme,20,9,0.8098950524737631,1,False
+Resnet,pol,20,9,0.9617563739376772,1,True
+Resnet,pol,20,9,0.9529430280138496,1,False
+Resnet,wine,20,9,0.7594040968342645,1,True
+Resnet,wine,20,9,0.7582867783985103,1,False
+FT Transformer,Higgs,20,10,0.70166,1,True
+FT Transformer,Higgs,20,10,0.714,1,False
+FT Transformer,MagicTelescope,20,10,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,10,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,10,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,10,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,10,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,10,0.7685268526852685,1,False
+FT Transformer,california,20,10,0.8917248790972595,1,True
+FT Transformer,california,20,10,0.891456206340677,1,False
+FT Transformer,covertype,20,10,0.7861,1,True
+FT Transformer,covertype,20,10,0.7965,1,False
+FT Transformer,credit,20,10,0.7351063829787234,1,True
+FT Transformer,credit,20,10,0.7340425531914894,1,False
+FT Transformer,electricity,20,10,0.801475015051174,1,True
+FT Transformer,electricity,20,10,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,10,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,10,0.5286637481759433,1,False
+FT Transformer,house_16H,20,10,0.8628073891046005,1,True
+FT Transformer,house_16H,20,10,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,10,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,10,0.8807339449541285,1,False
+FT Transformer,phoneme,20,10,0.8107946026986508,1,True
+FT Transformer,phoneme,20,10,0.808095952023988,1,False
+FT Transformer,pol,20,10,0.940195152659742,1,True
+FT Transformer,pol,20,10,0.9817437834435,1,False
+FT Transformer,wine,20,10,0.7545623836126629,1,True
+FT Transformer,wine,20,10,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,10,0.68998,1,True
+GradientBoostingTree,Higgs,20,10,0.70824,1,False
+GradientBoostingTree,MagicTelescope,20,10,0.8354685646500593,1,True
+GradientBoostingTree,MagicTelescope,20,10,0.836061684460261,1,False
+GradientBoostingTree,MiniBooNE,20,10,0.9252590761695276,1,True
+GradientBoostingTree,MiniBooNE,20,10,0.9265289462346084,1,False
+GradientBoostingTree,bank-marketing,20,10,0.7610261026102609,1,True
+GradientBoostingTree,bank-marketing,20,10,0.7751275127512751,1,False
+GradientBoostingTree,california,20,10,0.8706340677055346,1,True
+GradientBoostingTree,california,20,10,0.8972326706072005,1,False
+GradientBoostingTree,covertype,20,10,0.78618,1,True
+GradientBoostingTree,covertype,20,10,0.82242,1,False
+GradientBoostingTree,credit,20,10,0.7324468085106384,1,True
+GradientBoostingTree,credit,20,10,0.735,1,False
+GradientBoostingTree,electricity,20,10,0.8036825205699378,1,True
+GradientBoostingTree,electricity,20,10,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,10,0.5401292474463206,1,True
+GradientBoostingTree,eye_movements,20,10,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,10,0.8558653959289328,1,True
+GradientBoostingTree,house_16H,20,10,0.8646899635251205,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,10,0.8663608562691132,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,10,0.8773700305810398,1,False
+GradientBoostingTree,phoneme,20,10,0.8158920539730135,1,True
+GradientBoostingTree,phoneme,20,10,0.8185907046476762,1,False
+GradientBoostingTree,pol,20,10,0.9030531948378974,1,True
+GradientBoostingTree,pol,20,10,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,10,0.7795158286778399,1,True
+GradientBoostingTree,wine,20,10,0.7847299813780262,1,False
+RandomForest,Higgs,20,10,0.6842,1,True
+RandomForest,Higgs,20,10,0.70998,1,False
+RandomForest,MagicTelescope,20,10,0.8296559905100831,1,True
+RandomForest,MagicTelescope,20,10,0.8395017793594306,1,False
+RandomForest,MiniBooNE,20,10,0.9197487471371232,1,True
+RandomForest,MiniBooNE,20,10,0.9189324020952856,1,False
+RandomForest,bank-marketing,20,10,0.761026102610261,1,True
+RandomForest,bank-marketing,20,10,0.7673267326732672,1,False
+RandomForest,california,20,10,0.8721117678667383,1,True
+RandomForest,california,20,10,0.8921278882321333,1,False
+RandomForest,covertype,20,10,0.78672,1,True
+RandomForest,covertype,20,10,0.80202,1,False
+RandomForest,credit,20,10,0.7331914893617021,1,True
+RandomForest,credit,20,10,0.733936170212766,1,False
+RandomForest,electricity,20,10,0.8031808147702187,1,True
+RandomForest,electricity,20,10,0.8527493477824604,1,False
+RandomForest,eye_movements,20,10,0.5355430477381696,1,True
+RandomForest,eye_movements,20,10,0.5486762559933291,1,False
+RandomForest,house_16H,20,10,0.8516296034827627,1,True
+RandomForest,house_16H,20,10,0.8622190845981881,1,False
+RandomForest,kdd_ipums_la_97-small,20,10,0.8657492354740061,1,True
+RandomForest,kdd_ipums_la_97-small,20,10,0.8825688073394495,1,False
+RandomForest,phoneme,20,10,0.8314842578710644,1,True
+RandomForest,phoneme,20,10,0.8218890554722638,1,False
+RandomForest,pol,20,10,0.901951526597419,1,True
+RandomForest,pol,20,10,0.9741894869373624,1,False
+RandomForest,wine,20,10,0.7891992551210427,1,True
+RandomForest,wine,20,10,0.783240223463687,1,False
+Resnet,Higgs,20,10,0.7068,1,True
+Resnet,Higgs,20,10,0.70302,1,False
+Resnet,MagicTelescope,20,10,0.8408066429418742,1,True
+Resnet,MagicTelescope,20,10,0.8396204033214709,1,False
+Resnet,MiniBooNE,20,10,0.9268690900020408,1,True
+Resnet,MiniBooNE,20,10,0.9307920814530942,1,False
+Resnet,bank-marketing,20,10,0.755025502550255,1,True
+Resnet,bank-marketing,20,10,0.752025202520252,1,False
+Resnet,california,20,10,0.8907845244492208,1,True
+Resnet,california,20,10,0.8831273508866201,1,False
+Resnet,covertype,20,10,0.80118,1,True
+Resnet,covertype,20,10,0.79922,1,False
+Resnet,credit,20,10,0.735531914893617,1,True
+Resnet,credit,20,10,0.7341489361702128,1,False
+Resnet,electricity,20,10,0.7998193859121011,1,True
+Resnet,electricity,20,10,0.7981135861930564,1,False
+Resnet,eye_movements,20,10,0.5336668751302898,1,True
+Resnet,eye_movements,20,10,0.5292891390452367,1,False
+Resnet,house_16H,20,10,0.8673961642546182,1,True
+Resnet,house_16H,20,10,0.8672785033533357,1,False
+Resnet,kdd_ipums_la_97-small,20,10,0.8801223241590214,1,True
+Resnet,kdd_ipums_la_97-small,20,10,0.8819571865443425,1,False
+Resnet,phoneme,20,10,0.8056971514242879,1,True
+Resnet,phoneme,20,10,0.8050974512743627,1,False
+Resnet,pol,20,10,0.9576644633301856,1,True
+Resnet,pol,20,10,0.9529430280138496,1,False
+Resnet,wine,20,10,0.7571694599627561,1,True
+Resnet,wine,20,10,0.756052141527002,1,False
+FT Transformer,Higgs,20,11,0.70326,1,True
+FT Transformer,Higgs,20,11,0.714,1,False
+FT Transformer,MagicTelescope,20,11,0.8364175563463819,1,True
+FT Transformer,MagicTelescope,20,11,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,11,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,11,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,11,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,11,0.7745274527452746,1,False
+FT Transformer,california,20,11,0.8880977968833961,1,True
+FT Transformer,california,20,11,0.891456206340677,1,False
+FT Transformer,covertype,20,11,0.7861,1,True
+FT Transformer,covertype,20,11,0.79492,1,False
+FT Transformer,credit,20,11,0.7351063829787234,1,True
+FT Transformer,credit,20,11,0.7347872340425532,1,False
+FT Transformer,electricity,20,11,0.801475015051174,1,True
+FT Transformer,electricity,20,11,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,11,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,11,0.5286637481759433,1,False
+FT Transformer,house_16H,20,11,0.861277797387928,1,True
+FT Transformer,house_16H,20,11,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,11,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,11,0.8807339449541285,1,False
+FT Transformer,phoneme,20,11,0.8107946026986508,1,True
+FT Transformer,phoneme,20,11,0.8071964017991003,1,False
+FT Transformer,pol,20,11,0.9373622914699404,1,True
+FT Transformer,pol,20,11,0.9803273528485992,1,False
+FT Transformer,wine,20,11,0.7500931098696462,1,True
+FT Transformer,wine,20,11,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,11,0.68482,1,True
+GradientBoostingTree,Higgs,20,11,0.70956,1,False
+GradientBoostingTree,MagicTelescope,20,11,0.836061684460261,1,True
+GradientBoostingTree,MagicTelescope,20,11,0.837485172004745,1,False
+GradientBoostingTree,MiniBooNE,20,11,0.9160071656953672,1,True
+GradientBoostingTree,MiniBooNE,20,11,0.9297262976484728,1,False
+GradientBoostingTree,bank-marketing,20,11,0.7610261026102609,1,True
+GradientBoostingTree,bank-marketing,20,11,0.7752775277527753,1,False
+GradientBoostingTree,california,20,11,0.8704997313272435,1,True
+GradientBoostingTree,california,20,11,0.900322407307899,1,False
+GradientBoostingTree,covertype,20,11,0.78776,1,True
+GradientBoostingTree,covertype,20,11,0.81328,1,False
+GradientBoostingTree,credit,20,11,0.7311702127659574,1,True
+GradientBoostingTree,credit,20,11,0.735,1,False
+GradientBoostingTree,electricity,20,11,0.7996187035922135,1,True
+GradientBoostingTree,electricity,20,11,0.8731186032510536,1,False
+GradientBoostingTree,eye_movements,20,11,0.5363769022305608,1,True
+GradientBoostingTree,eye_movements,20,11,0.5701480091723994,1,False
+GradientBoostingTree,house_16H,20,11,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,11,0.8633956936110131,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,11,0.8697247706422019,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,11,0.8813455657492355,1,False
+GradientBoostingTree,phoneme,20,11,0.8263868065967015,1,True
+GradientBoostingTree,phoneme,20,11,0.8257871064467766,1,False
+GradientBoostingTree,pol,20,11,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,11,0.9837897387472458,1,False
+GradientBoostingTree,wine,20,11,0.7847299813780261,1,True
+GradientBoostingTree,wine,20,11,0.7739292364990689,1,False
+RandomForest,Higgs,20,11,0.6835,1,True
+RandomForest,Higgs,20,11,0.70862,1,False
+RandomForest,MagicTelescope,20,11,0.8295373665480427,1,True
+RandomForest,MagicTelescope,20,11,0.8400948991696322,1,False
+RandomForest,MiniBooNE,20,11,0.9197487471371232,1,True
+RandomForest,MiniBooNE,20,11,0.9189324020952856,1,False
+RandomForest,bank-marketing,20,11,0.762976297629763,1,True
+RandomForest,bank-marketing,20,11,0.7715271527152715,1,False
+RandomForest,california,20,11,0.8718430951101558,1,True
+RandomForest,california,20,11,0.8913218699623858,1,False
+RandomForest,covertype,20,11,0.78698,1,True
+RandomForest,covertype,20,11,0.80752,1,False
+RandomForest,credit,20,11,0.7324468085106384,1,True
+RandomForest,credit,20,11,0.7279787234042554,1,False
+RandomForest,electricity,20,11,0.8006221151916516,1,True
+RandomForest,electricity,20,11,0.8480333132651013,1,False
+RandomForest,eye_movements,20,11,0.5355430477381696,1,True
+RandomForest,eye_movements,20,11,0.555972482801751,1,False
+RandomForest,house_16H,20,11,0.8578656312507354,1,True
+RandomForest,house_16H,20,11,0.8573949876456054,1,False
+RandomForest,kdd_ipums_la_97-small,20,11,0.8700305810397554,1,True
+RandomForest,kdd_ipums_la_97-small,20,11,0.881651376146789,1,False
+RandomForest,phoneme,20,11,0.829385307346327,1,True
+RandomForest,phoneme,20,11,0.826686656671664,1,False
+RandomForest,pol,20,11,0.833018570978911,1,True
+RandomForest,pol,20,11,0.9795404469625434,1,False
+RandomForest,wine,20,11,0.7891992551210427,1,True
+RandomForest,wine,20,11,0.7910614525139665,1,False
+Resnet,Higgs,20,11,0.7068,1,True
+Resnet,Higgs,20,11,0.70294,1,False
+Resnet,MagicTelescope,20,11,0.8373665480427047,1,True
+Resnet,MagicTelescope,20,11,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,11,0.9268690900020408,1,True
+Resnet,MiniBooNE,20,11,0.9284337513322296,1,False
+Resnet,bank-marketing,20,11,0.755025502550255,1,True
+Resnet,bank-marketing,20,11,0.7626762676267628,1,False
+Resnet,california,20,11,0.8874261149919398,1,True
+Resnet,california,20,11,0.8831273508866201,1,False
+Resnet,covertype,20,11,0.80202,1,True
+Resnet,covertype,20,11,0.79688,1,False
+Resnet,credit,20,11,0.7356382978723404,1,True
+Resnet,credit,20,11,0.7312765957446808,1,False
+Resnet,electricity,20,11,0.8013746738912302,1,True
+Resnet,electricity,20,11,0.7971603451735902,1,False
+Resnet,eye_movements,20,11,0.5276214300604544,1,True
+Resnet,eye_movements,20,11,0.5292891390452367,1,False
+Resnet,house_16H,20,11,0.8655135898340981,1,True
+Resnet,house_16H,20,11,0.8672785033533357,1,False
+Resnet,kdd_ipums_la_97-small,20,11,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,11,0.8779816513761468,1,False
+Resnet,phoneme,20,11,0.807496251874063,1,True
+Resnet,phoneme,20,11,0.8089955022488755,1,False
+Resnet,pol,20,11,0.95561850802644,1,True
+Resnet,pol,20,11,0.9519987409505823,1,False
+Resnet,wine,20,11,0.7571694599627561,1,True
+Resnet,wine,20,11,0.7571694599627561,1,False
+FT Transformer,Higgs,20,12,0.70326,1,True
+FT Transformer,Higgs,20,12,0.714,1,False
+FT Transformer,MagicTelescope,20,12,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,12,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,12,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,12,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,12,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,12,0.7685268526852685,1,False
+FT Transformer,california,20,12,0.8880977968833961,1,True
+FT Transformer,california,20,12,0.891456206340677,1,False
+FT Transformer,covertype,20,12,0.7861,1,True
+FT Transformer,covertype,20,12,0.7965,1,False
+FT Transformer,credit,20,12,0.7351063829787234,1,True
+FT Transformer,credit,20,12,0.7340425531914894,1,False
+FT Transformer,electricity,20,12,0.7987658037326911,1,True
+FT Transformer,electricity,20,12,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,12,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,12,0.5286637481759433,1,False
+FT Transformer,house_16H,20,12,0.8628073891046005,1,True
+FT Transformer,house_16H,20,12,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,12,0.8703363914373088,1,True
+FT Transformer,kdd_ipums_la_97-small,20,12,0.8807339449541285,1,False
+FT Transformer,phoneme,20,12,0.8107946026986508,1,True
+FT Transformer,phoneme,20,12,0.8071964017991003,1,False
+FT Transformer,pol,20,12,0.940195152659742,1,True
+FT Transformer,pol,20,12,0.9803273528485992,1,False
+FT Transformer,wine,20,12,0.7545623836126629,1,True
+FT Transformer,wine,20,12,0.7564245810055865,1,False
+GradientBoostingTree,Higgs,20,12,0.68814,1,True
+GradientBoostingTree,Higgs,20,12,0.71318,1,False
+GradientBoostingTree,MagicTelescope,20,12,0.8353499406880189,1,True
+GradientBoostingTree,MagicTelescope,20,12,0.8384341637010676,1,False
+GradientBoostingTree,MiniBooNE,20,12,0.9248962561509332,1,True
+GradientBoostingTree,MiniBooNE,20,12,0.9301571464205538,1,False
+GradientBoostingTree,bank-marketing,20,12,0.7634263426342635,1,True
+GradientBoostingTree,bank-marketing,20,12,0.7733273327332734,1,False
+GradientBoostingTree,california,20,12,0.8704997313272435,1,True
+GradientBoostingTree,california,20,12,0.8981730252552391,1,False
+GradientBoostingTree,covertype,20,12,0.78776,1,True
+GradientBoostingTree,covertype,20,12,0.8199,1,False
+GradientBoostingTree,credit,20,12,0.7311702127659574,1,True
+GradientBoostingTree,credit,20,12,0.7306382978723405,1,False
+GradientBoostingTree,electricity,20,12,0.7992173389524383,1,True
+GradientBoostingTree,electricity,20,12,0.8480834838450733,1,False
+GradientBoostingTree,eye_movements,20,12,0.5401292474463206,1,True
+GradientBoostingTree,eye_movements,20,12,0.586825099020221,1,False
+GradientBoostingTree,house_16H,20,12,0.861983762795623,1,True
+GradientBoostingTree,house_16H,20,12,0.8599835274738205,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,12,0.8697247706422019,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,12,0.882262996941896,1,False
+GradientBoostingTree,phoneme,20,12,0.8191904047976013,1,True
+GradientBoostingTree,phoneme,20,12,0.8215892053973015,1,False
+GradientBoostingTree,pol,20,12,0.8956562795089708,1,True
+GradientBoostingTree,pol,20,12,0.9822159269751336,1,False
+GradientBoostingTree,wine,20,12,0.7925512104283055,1,True
+GradientBoostingTree,wine,20,12,0.7776536312849162,1,False
+RandomForest,Higgs,20,12,0.68714,1,True
+RandomForest,Higgs,20,12,0.70844,1,False
+RandomForest,MagicTelescope,20,12,0.8329774614472124,1,True
+RandomForest,MagicTelescope,20,12,0.8370106761565835,1,False
+RandomForest,MiniBooNE,20,12,0.913966303090773,1,True
+RandomForest,MiniBooNE,20,12,0.9212453797138256,1,False
+RandomForest,bank-marketing,20,12,0.762976297629763,1,True
+RandomForest,bank-marketing,20,12,0.7665766576657665,1,False
+RandomForest,california,20,12,0.8687533584094573,1,True
+RandomForest,california,20,12,0.8966953250940355,1,False
+RandomForest,covertype,20,12,0.78058,1,True
+RandomForest,covertype,20,12,0.80866,1,False
+RandomForest,credit,20,12,0.7352127659574468,1,True
+RandomForest,credit,20,12,0.7290425531914894,1,False
+RandomForest,electricity,20,12,0.7992675095324102,1,True
+RandomForest,electricity,20,12,0.8447220549869556,1,False
+RandomForest,eye_movements,20,12,0.5426308109234937,1,True
+RandomForest,eye_movements,20,12,0.5522201375859912,1,False
+RandomForest,house_16H,20,12,0.8557477350276503,1,True
+RandomForest,house_16H,20,12,0.8616307800917754,1,False
+RandomForest,kdd_ipums_la_97-small,20,12,0.8730886850152905,1,True
+RandomForest,kdd_ipums_la_97-small,20,12,0.881651376146789,1,False
+RandomForest,phoneme,20,12,0.8293853073463268,1,True
+RandomForest,phoneme,20,12,0.8272863568215891,1,False
+RandomForest,pol,20,12,0.8939250865596474,1,True
+RandomForest,pol,20,12,0.9800125904941768,1,False
+RandomForest,wine,20,12,0.7769087523277467,1,True
+RandomForest,wine,20,12,0.7973929236499069,1,False
+Resnet,Higgs,20,12,0.70694,1,True
+Resnet,Higgs,20,12,0.70524,1,False
+Resnet,MagicTelescope,20,12,0.8386714116251482,1,True
+Resnet,MagicTelescope,20,12,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,12,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,12,0.928320370076419,1,False
+Resnet,bank-marketing,20,12,0.755025502550255,1,True
+Resnet,bank-marketing,20,12,0.7626762676267628,1,False
+Resnet,california,20,12,0.8944116066630844,1,True
+Resnet,california,20,12,0.8831273508866201,1,False
+Resnet,covertype,20,12,0.8023,1,True
+Resnet,covertype,20,12,0.79688,1,False
+Resnet,credit,20,12,0.7346808510638299,1,True
+Resnet,credit,20,12,0.7346808510638299,1,False
+Resnet,electricity,20,12,0.807244631747943,1,True
+Resnet,electricity,20,12,0.8068432671081678,1,False
+Resnet,eye_movements,20,12,0.5336668751302898,1,True
+Resnet,eye_movements,20,12,0.5222013758599124,1,False
+Resnet,house_16H,20,12,0.8641016590187082,1,True
+Resnet,house_16H,20,12,0.8659842334392281,1,False
+Resnet,kdd_ipums_la_97-small,20,12,0.8788990825688074,1,True
+Resnet,kdd_ipums_la_97-small,20,12,0.8798165137614679,1,False
+Resnet,phoneme,20,12,0.807496251874063,1,True
+Resnet,phoneme,20,12,0.8089955022488755,1,False
+Resnet,pol,20,12,0.9527856468366384,1,True
+Resnet,pol,20,12,0.9494806421152032,1,False
+Resnet,wine,20,12,0.7601489757914339,1,True
+Resnet,wine,20,12,0.7582867783985103,1,False
+FT Transformer,Higgs,20,13,0.70326,1,True
+FT Transformer,Higgs,20,13,0.714,1,False
+FT Transformer,MagicTelescope,20,13,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,13,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,13,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,13,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,13,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,13,0.7685268526852685,1,False
+FT Transformer,california,20,13,0.8894411606663084,1,True
+FT Transformer,california,20,13,0.891456206340677,1,False
+FT Transformer,covertype,20,13,0.78424,1,True
+FT Transformer,covertype,20,13,0.79348,1,False
+FT Transformer,credit,20,13,0.7351063829787234,1,True
+FT Transformer,credit,20,13,0.7347872340425532,1,False
+FT Transformer,electricity,20,13,0.8002207505518764,1,True
+FT Transformer,electricity,20,13,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,13,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,13,0.5286637481759433,1,False
+FT Transformer,house_16H,20,13,0.8657489116366631,1,True
+FT Transformer,house_16H,20,13,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,13,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,13,0.8807339449541285,1,False
+FT Transformer,phoneme,20,13,0.8107946026986508,1,True
+FT Transformer,phoneme,20,13,0.8071964017991003,1,False
+FT Transformer,pol,20,13,0.9373622914699404,1,True
+FT Transformer,pol,20,13,0.9817437834435,1,False
+FT Transformer,wine,20,13,0.7500931098696462,1,True
+FT Transformer,wine,20,13,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,13,0.6839,1,True
+GradientBoostingTree,Higgs,20,13,0.7069,1,False
+GradientBoostingTree,MagicTelescope,20,13,0.836061684460261,1,True
+GradientBoostingTree,MagicTelescope,20,13,0.8319098457888492,1,False
+GradientBoostingTree,MiniBooNE,20,13,0.919544660876664,1,True
+GradientBoostingTree,MiniBooNE,20,13,0.9265289462346084,1,False
+GradientBoostingTree,bank-marketing,20,13,0.7637263726372637,1,True
+GradientBoostingTree,bank-marketing,20,13,0.7758775877587759,1,False
+GradientBoostingTree,california,20,13,0.8731864588930682,1,True
+GradientBoostingTree,california,20,13,0.900322407307899,1,False
+GradientBoostingTree,covertype,20,13,0.78514,1,True
+GradientBoostingTree,covertype,20,13,0.80514,1,False
+GradientBoostingTree,credit,20,13,0.7341489361702127,1,True
+GradientBoostingTree,credit,20,13,0.735,1,False
+GradientBoostingTree,electricity,20,13,0.8027794501304435,1,True
+GradientBoostingTree,electricity,20,13,0.8769315673289183,1,False
+GradientBoostingTree,eye_movements,20,13,0.5301229935376277,1,True
+GradientBoostingTree,eye_movements,20,13,0.5695226183031061,1,False
+GradientBoostingTree,house_16H,20,13,0.8506883162725026,1,True
+GradientBoostingTree,house_16H,20,13,0.8651606071302506,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,13,0.8703363914373088,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,13,0.881651376146789,1,False
+GradientBoostingTree,phoneme,20,13,0.8251874062968515,1,True
+GradientBoostingTree,phoneme,20,13,0.8326836581709145,1,False
+GradientBoostingTree,pol,20,13,0.9030531948378974,1,True
+GradientBoostingTree,pol,20,13,0.982373308152345,1,False
+GradientBoostingTree,wine,20,13,0.7839851024208565,1,True
+GradientBoostingTree,wine,20,13,0.7854748603351955,1,False
+RandomForest,Higgs,20,13,0.6842,1,True
+RandomForest,Higgs,20,13,0.70998,1,False
+RandomForest,MagicTelescope,20,13,0.8205219454329774,1,True
+RandomForest,MagicTelescope,20,13,0.8364175563463819,1,False
+RandomForest,MiniBooNE,20,13,0.919839452141772,1,True
+RandomForest,MiniBooNE,20,13,0.9164380144674482,1,False
+RandomForest,bank-marketing,20,13,0.7619261926192619,1,True
+RandomForest,bank-marketing,20,13,0.7685268526852685,1,False
+RandomForest,california,20,13,0.8718430951101558,1,True
+RandomForest,california,20,13,0.8937399247716281,1,False
+RandomForest,covertype,20,13,0.78698,1,True
+RandomForest,covertype,20,13,0.80862,1,False
+RandomForest,credit,20,13,0.7303191489361702,1,True
+RandomForest,credit,20,13,0.7197872340425532,1,False
+RandomForest,electricity,20,13,0.794651816174995,1,True
+RandomForest,electricity,20,13,0.8368452739313667,1,False
+RandomForest,eye_movements,20,13,0.5313737752762143,1,True
+RandomForest,eye_movements,20,13,0.5580571190327288,1,False
+RandomForest,house_16H,20,13,0.8566890222379103,1,True
+RandomForest,house_16H,20,13,0.8625720673020355,1,False
+RandomForest,kdd_ipums_la_97-small,20,13,0.8700305810397554,1,True
+RandomForest,kdd_ipums_la_97-small,20,13,0.881651376146789,1,False
+RandomForest,phoneme,20,13,0.8293853073463268,1,True
+RandomForest,phoneme,20,13,0.8254872563718141,1,False
+RandomForest,pol,20,13,0.8964431853950267,1,True
+RandomForest,pol,20,13,0.9795404469625434,1,False
+RandomForest,wine,20,13,0.7832402234636872,1,True
+RandomForest,wine,20,13,0.7854748603351955,1,False
+Resnet,Higgs,20,13,0.7062,1,True
+Resnet,Higgs,20,13,0.70294,1,False
+Resnet,MagicTelescope,20,13,0.8408066429418742,1,True
+Resnet,MagicTelescope,20,13,0.8333333333333334,1,False
+Resnet,MiniBooNE,20,13,0.924465407378852,1,True
+Resnet,MiniBooNE,20,13,0.9307920814530942,1,False
+Resnet,bank-marketing,20,13,0.755025502550255,1,True
+Resnet,bank-marketing,20,13,0.752025202520252,1,False
+Resnet,california,20,13,0.8929339065018808,1,True
+Resnet,california,20,13,0.8831273508866201,1,False
+Resnet,covertype,20,13,0.79942,1,True
+Resnet,covertype,20,13,0.80238,1,False
+Resnet,credit,20,13,0.7341489361702127,1,True
+Resnet,credit,20,13,0.7353191489361701,1,False
+Resnet,electricity,20,13,0.8027794501304435,1,True
+Resnet,electricity,20,13,0.8068432671081678,1,False
+Resnet,eye_movements,20,13,0.538044611215343,1,True
+Resnet,eye_movements,20,13,0.5326245570148009,1,False
+Resnet,house_16H,20,13,0.8662195552417931,1,True
+Resnet,house_16H,20,13,0.8659842334392281,1,False
+Resnet,kdd_ipums_la_97-small,20,13,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,13,0.8807339449541285,1,False
+Resnet,phoneme,20,13,0.8059970014992504,1,True
+Resnet,phoneme,20,13,0.8020989505247377,1,False
+Resnet,pol,20,13,0.9617563739376772,1,True
+Resnet,pol,20,13,0.9494806421152032,1,False
+Resnet,wine,20,13,0.7594040968342645,1,True
+Resnet,wine,20,13,0.7582867783985103,1,False
+FT Transformer,Higgs,20,14,0.70326,1,True
+FT Transformer,Higgs,20,14,0.714,1,False
+FT Transformer,MagicTelescope,20,14,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,14,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,14,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,14,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,14,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,14,0.7685268526852685,1,False
+FT Transformer,california,20,14,0.8880977968833961,1,True
+FT Transformer,california,20,14,0.891456206340677,1,False
+FT Transformer,covertype,20,14,0.7861,1,True
+FT Transformer,covertype,20,14,0.7965,1,False
+FT Transformer,credit,20,14,0.7351063829787234,1,True
+FT Transformer,credit,20,14,0.7347872340425532,1,False
+FT Transformer,electricity,20,14,0.801475015051174,1,True
+FT Transformer,electricity,20,14,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,14,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,14,0.5286637481759433,1,False
+FT Transformer,house_16H,20,14,0.8578656312507352,1,True
+FT Transformer,house_16H,20,14,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,14,0.8703363914373088,1,True
+FT Transformer,kdd_ipums_la_97-small,20,14,0.879204892966361,1,False
+FT Transformer,phoneme,20,14,0.8107946026986508,1,True
+FT Transformer,phoneme,20,14,0.8071964017991003,1,False
+FT Transformer,pol,20,14,0.9373622914699404,1,True
+FT Transformer,pol,20,14,0.9803273528485992,1,False
+FT Transformer,wine,20,14,0.7500931098696462,1,True
+FT Transformer,wine,20,14,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,14,0.69214,1,True
+GradientBoostingTree,Higgs,20,14,0.71318,1,False
+GradientBoostingTree,MagicTelescope,20,14,0.8354685646500593,1,True
+GradientBoostingTree,MagicTelescope,20,14,0.8386714116251482,1,False
+GradientBoostingTree,MiniBooNE,20,14,0.9252590761695276,1,True
+GradientBoostingTree,MiniBooNE,20,14,0.9281389600671216,1,False
+GradientBoostingTree,bank-marketing,20,14,0.7634263426342635,1,True
+GradientBoostingTree,bank-marketing,20,14,0.7724272427242723,1,False
+GradientBoostingTree,california,20,14,0.8731864588930682,1,True
+GradientBoostingTree,california,20,14,0.8991133799032778,1,False
+GradientBoostingTree,covertype,20,14,0.78776,1,True
+GradientBoostingTree,covertype,20,14,0.82242,1,False
+GradientBoostingTree,credit,20,14,0.7311702127659574,1,True
+GradientBoostingTree,credit,20,14,0.7360638297872341,1,False
+GradientBoostingTree,electricity,20,14,0.8027794501304435,1,True
+GradientBoostingTree,electricity,20,14,0.8791390728476821,1,False
+GradientBoostingTree,eye_movements,20,14,0.5169897852824682,1,True
+GradientBoostingTree,eye_movements,20,14,0.5695226183031061,1,False
+GradientBoostingTree,house_16H,20,14,0.8559830568302154,1,True
+GradientBoostingTree,house_16H,20,14,0.8599835274738205,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,14,0.874006116207951,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,14,0.8801223241590214,1,False
+GradientBoostingTree,phoneme,20,14,0.8275862068965516,1,True
+GradientBoostingTree,phoneme,20,14,0.8251874062968516,1,False
+GradientBoostingTree,pol,20,14,0.8956562795089708,1,True
+GradientBoostingTree,pol,20,14,0.982530689329556,1,False
+GradientBoostingTree,wine,20,14,0.7672253258845437,1,True
+GradientBoostingTree,wine,20,14,0.7862197392923649,1,False
+RandomForest,Higgs,20,14,0.68734,1,True
+RandomForest,Higgs,20,14,0.70786,1,False
+RandomForest,MagicTelescope,20,14,0.8352313167259786,1,True
+RandomForest,MagicTelescope,20,14,0.8347568208778173,1,False
+RandomForest,MiniBooNE,20,14,0.9179119707929884,1,True
+RandomForest,MiniBooNE,20,14,0.9194539558720152,1,False
+RandomForest,bank-marketing,20,14,0.7619261926192619,1,True
+RandomForest,bank-marketing,20,14,0.7715271527152715,1,False
+RandomForest,california,20,14,0.8671413218699624,1,True
+RandomForest,california,20,14,0.8956206340677055,1,False
+RandomForest,covertype,20,14,0.7806,1,True
+RandomForest,covertype,20,14,0.80862,1,False
+RandomForest,credit,20,14,0.7229787234042553,1,True
+RandomForest,credit,20,14,0.7338297872340425,1,False
+RandomForest,electricity,20,14,0.8025787678105559,1,True
+RandomForest,electricity,20,14,0.8459763194862533,1,False
+RandomForest,eye_movements,20,14,0.5453408380237649,1,True
+RandomForest,eye_movements,20,14,0.5445069835313738,1,False
+RandomForest,house_16H,20,14,0.8578656312507354,1,True
+RandomForest,house_16H,20,14,0.8584539357571478,1,False
+RandomForest,kdd_ipums_la_97-small,20,14,0.872782874617737,1,True
+RandomForest,kdd_ipums_la_97-small,20,14,0.881651376146789,1,False
+RandomForest,phoneme,20,14,0.8215892053973013,1,True
+RandomForest,phoneme,20,14,0.8251874062968515,1,False
+RandomForest,pol,20,14,0.901951526597419,1,True
+RandomForest,pol,20,14,0.9765502045955304,1,False
+RandomForest,wine,20,14,0.7884543761638735,1,True
+RandomForest,wine,20,14,0.783240223463687,1,False
+Resnet,Higgs,20,14,0.69376,1,True
+Resnet,Higgs,20,14,0.70494,1,False
+Resnet,MagicTelescope,20,14,0.8408066429418742,1,True
+Resnet,MagicTelescope,20,14,0.8396204033214709,1,False
+Resnet,MiniBooNE,20,14,0.9268690900020408,1,True
+Resnet,MiniBooNE,20,14,0.9245561123835008,1,False
+Resnet,bank-marketing,20,14,0.755025502550255,1,True
+Resnet,bank-marketing,20,14,0.751875187518752,1,False
+Resnet,california,20,14,0.8907845244492208,1,True
+Resnet,california,20,14,0.8913218699623858,1,False
+Resnet,covertype,20,14,0.8023,1,True
+Resnet,covertype,20,14,0.80006,1,False
+Resnet,credit,20,14,0.735531914893617,1,True
+Resnet,credit,20,14,0.7353191489361701,1,False
+Resnet,electricity,20,14,0.7999698976520169,1,True
+Resnet,electricity,20,14,0.8018763796909493,1,False
+Resnet,eye_movements,20,14,0.5380446112153429,1,True
+Resnet,eye_movements,20,14,0.5292891390452367,1,False
+Resnet,house_16H,20,14,0.8662195552417931,1,True
+Resnet,house_16H,20,14,0.8686904341687258,1,False
+Resnet,kdd_ipums_la_97-small,20,14,0.880428134556575,1,True
+Resnet,kdd_ipums_la_97-small,20,14,0.8798165137614679,1,False
+Resnet,phoneme,20,14,0.8071964017991006,1,True
+Resnet,phoneme,20,14,0.8098950524737631,1,False
+Resnet,pol,20,14,0.9617563739376772,1,True
+Resnet,pol,20,14,0.9567201762669184,1,False
+Resnet,wine,20,14,0.7601489757914339,1,True
+Resnet,wine,20,14,0.7590316573556797,1,False
+FT Transformer,Higgs,20,15,0.70326,1,True
+FT Transformer,Higgs,20,15,0.714,1,False
+FT Transformer,MagicTelescope,20,15,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,15,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,15,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,15,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,15,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,15,0.7685268526852685,1,False
+FT Transformer,california,20,15,0.8880977968833961,1,True
+FT Transformer,california,20,15,0.891456206340677,1,False
+FT Transformer,covertype,20,15,0.7861,1,True
+FT Transformer,covertype,20,15,0.7965,1,False
+FT Transformer,credit,20,15,0.7351063829787234,1,True
+FT Transformer,credit,20,15,0.7337234042553191,1,False
+FT Transformer,electricity,20,15,0.801475015051174,1,True
+FT Transformer,electricity,20,15,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,15,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,15,0.5286637481759433,1,False
+FT Transformer,house_16H,20,15,0.8638663372161431,1,True
+FT Transformer,house_16H,20,15,0.8678668078597482,1,False
+FT Transformer,kdd_ipums_la_97-small,20,15,0.8703363914373088,1,True
+FT Transformer,kdd_ipums_la_97-small,20,15,0.8807339449541285,1,False
+FT Transformer,phoneme,20,15,0.8107946026986508,1,True
+FT Transformer,phoneme,20,15,0.8071964017991003,1,False
+FT Transformer,pol,20,15,0.940195152659742,1,True
+FT Transformer,pol,20,15,0.9817437834435,1,False
+FT Transformer,wine,20,15,0.7500931098696462,1,True
+FT Transformer,wine,20,15,0.7512104283054003,1,False
+GradientBoostingTree,Higgs,20,15,0.68814,1,True
+GradientBoostingTree,Higgs,20,15,0.70956,1,False
+GradientBoostingTree,MagicTelescope,20,15,0.838196915776987,1,True
+GradientBoostingTree,MagicTelescope,20,15,0.8384341637010676,1,False
+GradientBoostingTree,MiniBooNE,20,15,0.9283883988299054,1,True
+GradientBoostingTree,MiniBooNE,20,15,0.9275267012857434,1,False
+GradientBoostingTree,bank-marketing,20,15,0.7637263726372637,1,True
+GradientBoostingTree,bank-marketing,20,15,0.7736273627362736,1,False
+GradientBoostingTree,california,20,15,0.8725147770016121,1,True
+GradientBoostingTree,california,20,15,0.8991133799032778,1,False
+GradientBoostingTree,covertype,20,15,0.77252,1,True
+GradientBoostingTree,covertype,20,15,0.8199,1,False
+GradientBoostingTree,credit,20,15,0.7331914893617022,1,True
+GradientBoostingTree,credit,20,15,0.7351063829787234,1,False
+GradientBoostingTree,electricity,20,15,0.8020770620108368,1,True
+GradientBoostingTree,electricity,20,15,0.8731186032510536,1,False
+GradientBoostingTree,eye_movements,20,15,0.5399207838232228,1,True
+GradientBoostingTree,eye_movements,20,15,0.586825099020221,1,False
+GradientBoostingTree,house_16H,20,15,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,15,0.8679844687610307,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,15,0.8669724770642202,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,15,0.882262996941896,1,False
+GradientBoostingTree,phoneme,20,15,0.8014992503748125,1,True
+GradientBoostingTree,phoneme,20,15,0.8269865067466267,1,False
+GradientBoostingTree,pol,20,15,0.8956562795089708,1,True
+GradientBoostingTree,pol,20,15,0.982530689329556,1,False
+GradientBoostingTree,wine,20,15,0.7772811918063315,1,True
+GradientBoostingTree,wine,20,15,0.7757914338919925,1,False
+RandomForest,Higgs,20,15,0.6835,1,True
+RandomForest,Higgs,20,15,0.70508,1,False
+RandomForest,MagicTelescope,20,15,0.8296559905100831,1,True
+RandomForest,MagicTelescope,20,15,0.8373665480427047,1,False
+RandomForest,MiniBooNE,20,15,0.9197487471371232,1,True
+RandomForest,MiniBooNE,20,15,0.9222431347649608,1,False
+RandomForest,bank-marketing,20,15,0.7614761476147615,1,True
+RandomForest,bank-marketing,20,15,0.7694269426942695,1,False
+RandomForest,california,20,15,0.8690220311660397,1,True
+RandomForest,california,20,15,0.8945459430413756,1,False
+RandomForest,covertype,20,15,0.78698,1,True
+RandomForest,covertype,20,15,0.80752,1,False
+RandomForest,credit,20,15,0.7325531914893617,1,True
+RandomForest,credit,20,15,0.7290425531914894,1,False
+RandomForest,electricity,20,15,0.8006221151916516,1,True
+RandomForest,electricity,20,15,0.8565121412803532,1,False
+RandomForest,eye_movements,20,15,0.5357515113612675,1,True
+RandomForest,eye_movements,20,15,0.5445069835313737,1,False
+RandomForest,house_16H,20,15,0.8459818802212024,1,True
+RandomForest,house_16H,20,15,0.8584539357571478,1,False
+RandomForest,kdd_ipums_la_97-small,20,15,0.8706422018348624,1,True
+RandomForest,kdd_ipums_la_97-small,20,15,0.8834862385321101,1,False
+RandomForest,phoneme,20,15,0.8254872563718141,1,True
+RandomForest,phoneme,20,15,0.8224887556221889,1,False
+RandomForest,pol,20,15,0.8862134088762984,1,True
+RandomForest,pol,20,15,0.9765502045955304,1,False
+RandomForest,wine,20,15,0.794413407821229,1,True
+RandomForest,wine,20,15,0.8003724394785847,1,False
+Resnet,Higgs,20,15,0.70662,1,True
+Resnet,Higgs,20,15,0.70846,1,False
+Resnet,MagicTelescope,20,15,0.8402135231316725,1,True
+Resnet,MagicTelescope,20,15,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,15,0.9255538674346356,1,True
+Resnet,MiniBooNE,20,15,0.9258033061974196,1,False
+Resnet,bank-marketing,20,15,0.7541254125412541,1,True
+Resnet,bank-marketing,20,15,0.7626762676267628,1,False
+Resnet,california,20,15,0.8874261149919398,1,True
+Resnet,california,20,15,0.8898441698011822,1,False
+Resnet,covertype,20,15,0.79942,1,True
+Resnet,covertype,20,15,0.80238,1,False
+Resnet,credit,20,15,0.7346808510638299,1,True
+Resnet,credit,20,15,0.7346808510638299,1,False
+Resnet,electricity,20,15,0.8047361027493478,1,True
+Resnet,electricity,20,15,0.8018763796909493,1,False
+Resnet,eye_movements,20,15,0.5276214300604544,1,True
+Resnet,eye_movements,20,15,0.5292891390452367,1,False
+Resnet,house_16H,20,15,0.8673961642546182,1,True
+Resnet,house_16H,20,15,0.8649252853276855,1,False
+Resnet,kdd_ipums_la_97-small,20,15,0.8801223241590214,1,True
+Resnet,kdd_ipums_la_97-small,20,15,0.8798165137614679,1,False
+Resnet,phoneme,20,15,0.8119940029985008,1,True
+Resnet,phoneme,20,15,0.8020989505247377,1,False
+Resnet,pol,20,15,0.9527856468366384,1,True
+Resnet,pol,20,15,0.960182562165565,1,False
+Resnet,wine,20,15,0.7571694599627561,1,True
+Resnet,wine,20,15,0.7582867783985103,1,False
+FT Transformer,Higgs,20,16,0.69978,1,True
+FT Transformer,Higgs,20,16,0.71012,1,False
+FT Transformer,MagicTelescope,20,16,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,16,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,16,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,16,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,16,0.7587758775877589,1,True
+FT Transformer,bank-marketing,20,16,0.7685268526852685,1,False
+FT Transformer,california,20,16,0.8875604513702311,1,True
+FT Transformer,california,20,16,0.891456206340677,1,False
+FT Transformer,covertype,20,16,0.7861,1,True
+FT Transformer,covertype,20,16,0.79492,1,False
+FT Transformer,credit,20,16,0.7351063829787234,1,True
+FT Transformer,credit,20,16,0.7348936170212765,1,False
+FT Transformer,electricity,20,16,0.7987658037326911,1,True
+FT Transformer,electricity,20,16,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,16,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,16,0.5286637481759433,1,False
+FT Transformer,house_16H,20,16,0.8657489116366631,1,True
+FT Transformer,house_16H,20,16,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,16,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,16,0.879204892966361,1,False
+FT Transformer,phoneme,20,16,0.8104947526236883,1,True
+FT Transformer,phoneme,20,16,0.8071964017991003,1,False
+FT Transformer,pol,20,16,0.940195152659742,1,True
+FT Transformer,pol,20,16,0.9803273528485992,1,False
+FT Transformer,wine,20,16,0.7500931098696462,1,True
+FT Transformer,wine,20,16,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,16,0.68302,1,True
+GradientBoostingTree,Higgs,20,16,0.71318,1,False
+GradientBoostingTree,MagicTelescope,20,16,0.834638196915777,1,True
+GradientBoostingTree,MagicTelescope,20,16,0.8319098457888492,1,False
+GradientBoostingTree,MiniBooNE,20,16,0.9248962561509332,1,True
+GradientBoostingTree,MiniBooNE,20,16,0.9301571464205538,1,False
+GradientBoostingTree,bank-marketing,20,16,0.7637263726372637,1,True
+GradientBoostingTree,bank-marketing,20,16,0.7751275127512751,1,False
+GradientBoostingTree,california,20,16,0.8725147770016121,1,True
+GradientBoostingTree,california,20,16,0.8966953250940355,1,False
+GradientBoostingTree,covertype,20,16,0.7902,1,True
+GradientBoostingTree,covertype,20,16,0.81948,1,False
+GradientBoostingTree,credit,20,16,0.7309574468085107,1,True
+GradientBoostingTree,credit,20,16,0.7360638297872341,1,False
+GradientBoostingTree,electricity,20,16,0.7966586393738712,1,True
+GradientBoostingTree,electricity,20,16,0.8726670680313064,1,False
+GradientBoostingTree,eye_movements,20,16,0.5363769022305608,1,True
+GradientBoostingTree,eye_movements,20,16,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,16,0.8558653959289328,1,True
+GradientBoostingTree,house_16H,20,16,0.8633956936110131,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,16,0.8685015290519877,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,16,0.8801223241590214,1,False
+GradientBoostingTree,phoneme,20,16,0.8158920539730135,1,True
+GradientBoostingTree,phoneme,20,16,0.8311844077961019,1,False
+GradientBoostingTree,pol,20,16,0.9025810513062638,1,True
+GradientBoostingTree,pol,20,16,0.9837897387472458,1,False
+GradientBoostingTree,wine,20,16,0.7932960893854749,1,True
+GradientBoostingTree,wine,20,16,0.7862197392923649,1,False
+RandomForest,Higgs,20,16,0.67894,1,True
+RandomForest,Higgs,20,16,0.7064,1,False
+RandomForest,MagicTelescope,20,16,0.8287069988137604,1,True
+RandomForest,MagicTelescope,20,16,0.8383155397390273,1,False
+RandomForest,MiniBooNE,20,16,0.9166421007279076,1,True
+RandomForest,MiniBooNE,20,16,0.9194539558720152,1,False
+RandomForest,bank-marketing,20,16,0.7616261626162616,1,True
+RandomForest,bank-marketing,20,16,0.7689768976897691,1,False
+RandomForest,california,20,16,0.8726491133799033,1,True
+RandomForest,california,20,16,0.8860827512090274,1,False
+RandomForest,covertype,20,16,0.78058,1,True
+RandomForest,covertype,20,16,0.81394,1,False
+RandomForest,credit,20,16,0.7318085106382979,1,True
+RandomForest,credit,20,16,0.7307446808510638,1,False
+RandomForest,electricity,20,16,0.8006221151916516,1,True
+RandomForest,electricity,20,16,0.8365442504515352,1,False
+RandomForest,eye_movements,20,16,0.5390869293308317,1,True
+RandomForest,eye_movements,20,16,0.5413800291849072,1,False
+RandomForest,house_16H,20,16,0.8596305447699729,1,True
+RandomForest,house_16H,20,16,0.8633956936110131,1,False
+RandomForest,kdd_ipums_la_97-small,20,16,0.8721712538226299,1,True
+RandomForest,kdd_ipums_la_97-small,20,16,0.8678899082568807,1,False
+RandomForest,phoneme,20,16,0.8245877061469266,1,True
+RandomForest,phoneme,20,16,0.8287856071964018,1,False
+RandomForest,pol,20,16,0.8972300912810828,1,True
+RandomForest,pol,20,16,0.9741894869373624,1,False
+RandomForest,wine,20,16,0.7798882681564245,1,True
+RandomForest,wine,20,16,0.7996275605214153,1,False
+Resnet,Higgs,20,16,0.7068,1,True
+Resnet,Higgs,20,16,0.70464,1,False
+Resnet,MagicTelescope,20,16,0.8322657176749703,1,True
+Resnet,MagicTelescope,20,16,0.8383155397390273,1,False
+Resnet,MiniBooNE,20,16,0.9272092337694732,1,True
+Resnet,MiniBooNE,20,16,0.9245561123835008,1,False
+Resnet,bank-marketing,20,16,0.7523252325232525,1,True
+Resnet,bank-marketing,20,16,0.7626762676267628,1,False
+Resnet,california,20,16,0.8907845244492208,1,True
+Resnet,california,20,16,0.8831273508866201,1,False
+Resnet,covertype,20,16,0.79926,1,True
+Resnet,covertype,20,16,0.79688,1,False
+Resnet,credit,20,16,0.7346808510638299,1,True
+Resnet,credit,20,16,0.7353191489361701,1,False
+Resnet,electricity,20,16,0.7999698976520169,1,True
+Resnet,electricity,20,16,0.8024282560706402,1,False
+Resnet,eye_movements,20,16,0.5336668751302898,1,True
+Resnet,eye_movements,20,16,0.5242860120908902,1,False
+Resnet,house_16H,20,16,0.8639839981174257,1,True
+Resnet,house_16H,20,16,0.8649252853276855,1,False
+Resnet,kdd_ipums_la_97-small,20,16,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,16,0.8819571865443425,1,False
+Resnet,phoneme,20,16,0.8071964017991006,1,True
+Resnet,phoneme,20,16,0.7964017991004498,1,False
+Resnet,pol,20,16,0.95561850802644,1,True
+Resnet,pol,20,16,0.9519987409505823,1,False
+Resnet,wine,20,16,0.7601489757914339,1,True
+Resnet,wine,20,16,0.7582867783985103,1,False
+FT Transformer,Higgs,20,17,0.69978,1,True
+FT Transformer,Higgs,20,17,0.714,1,False
+FT Transformer,MagicTelescope,20,17,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,17,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,17,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,17,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,17,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,17,0.7685268526852685,1,False
+FT Transformer,california,20,17,0.8875604513702311,1,True
+FT Transformer,california,20,17,0.891456206340677,1,False
+FT Transformer,covertype,20,17,0.78424,1,True
+FT Transformer,covertype,20,17,0.79492,1,False
+FT Transformer,credit,20,17,0.7351063829787234,1,True
+FT Transformer,credit,20,17,0.7347872340425532,1,False
+FT Transformer,electricity,20,17,0.7987658037326911,1,True
+FT Transformer,electricity,20,17,0.8020268914308649,1,False
+FT Transformer,eye_movements,20,17,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,17,0.5374192203460496,1,False
+FT Transformer,house_16H,20,17,0.8657489116366631,1,True
+FT Transformer,house_16H,20,17,0.8672785033533357,1,False
+FT Transformer,kdd_ipums_la_97-small,20,17,0.8703363914373088,1,True
+FT Transformer,kdd_ipums_la_97-small,20,17,0.8807339449541285,1,False
+FT Transformer,phoneme,20,17,0.8107946026986508,1,True
+FT Transformer,phoneme,20,17,0.8071964017991003,1,False
+FT Transformer,pol,20,17,0.940195152659742,1,True
+FT Transformer,pol,20,17,0.9817437834435,1,False
+FT Transformer,wine,20,17,0.7500931098696462,1,True
+FT Transformer,wine,20,17,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,17,0.69214,1,True
+GradientBoostingTree,Higgs,20,17,0.70956,1,False
+GradientBoostingTree,MagicTelescope,20,17,0.838196915776987,1,True
+GradientBoostingTree,MagicTelescope,20,17,0.8384341637010676,1,False
+GradientBoostingTree,MiniBooNE,20,17,0.9248962561509332,1,True
+GradientBoostingTree,MiniBooNE,20,17,0.9274813487834191,1,False
+GradientBoostingTree,bank-marketing,20,17,0.7634263426342635,1,True
+GradientBoostingTree,bank-marketing,20,17,0.7764776477647765,1,False
+GradientBoostingTree,california,20,17,0.8706340677055346,1,True
+GradientBoostingTree,california,20,17,0.8944116066630844,1,False
+GradientBoostingTree,covertype,20,17,0.78482,1,True
+GradientBoostingTree,covertype,20,17,0.81948,1,False
+GradientBoostingTree,credit,20,17,0.7257446808510638,1,True
+GradientBoostingTree,credit,20,17,0.7347872340425532,1,False
+GradientBoostingTree,electricity,20,17,0.7996187035922135,1,True
+GradientBoostingTree,electricity,20,17,0.8769315673289183,1,False
+GradientBoostingTree,eye_movements,20,17,0.544298519908276,1,True
+GradientBoostingTree,eye_movements,20,17,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,17,0.8506883162725026,1,True
+GradientBoostingTree,house_16H,20,17,0.8645723026238382,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,17,0.874006116207951,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,17,0.8801223241590214,1,False
+GradientBoostingTree,phoneme,20,17,0.8158920539730135,1,True
+GradientBoostingTree,phoneme,20,17,0.8185907046476762,1,False
+GradientBoostingTree,pol,20,17,0.8978596159899276,1,True
+GradientBoostingTree,pol,20,17,0.9806421152030216,1,False
+GradientBoostingTree,wine,20,17,0.7795158286778399,1,True
+GradientBoostingTree,wine,20,17,0.7757914338919925,1,False
+RandomForest,Higgs,20,17,0.68686,1,True
+RandomForest,Higgs,20,17,0.711,1,False
+RandomForest,MagicTelescope,20,17,0.8295373665480428,1,True
+RandomForest,MagicTelescope,20,17,0.8373665480427047,1,False
+RandomForest,MiniBooNE,20,17,0.9185922583278532,1,True
+RandomForest,MiniBooNE,20,17,0.9212453797138256,1,False
+RandomForest,bank-marketing,20,17,0.7572757275727572,1,True
+RandomForest,bank-marketing,20,17,0.7680768076807681,1,False
+RandomForest,california,20,17,0.8690220311660397,1,True
+RandomForest,california,20,17,0.8949489521762494,1,False
+RandomForest,covertype,20,17,0.7866,1,True
+RandomForest,covertype,20,17,0.79716,1,False
+RandomForest,credit,20,17,0.7303191489361702,1,True
+RandomForest,credit,20,17,0.7340425531914894,1,False
+RandomForest,electricity,20,17,0.7992675095324102,1,True
+RandomForest,electricity,20,17,0.8456752960064219,1,False
+RandomForest,eye_movements,20,17,0.5420054200542005,1,True
+RandomForest,eye_movements,20,17,0.555972482801751,1,False
+RandomForest,house_16H,20,17,0.8566890222379103,1,True
+RandomForest,house_16H,20,17,0.8606894928815154,1,False
+RandomForest,kdd_ipums_la_97-small,20,17,0.8700305810397554,1,True
+RandomForest,kdd_ipums_la_97-small,20,17,0.8813455657492355,1,False
+RandomForest,phoneme,20,17,0.8326836581709145,1,True
+RandomForest,phoneme,20,17,0.8125937031484259,1,False
+RandomForest,pol,20,17,0.8977022348127163,1,True
+RandomForest,pol,20,17,0.9757632987094744,1,False
+RandomForest,wine,20,17,0.7798882681564245,1,True
+RandomForest,wine,20,17,0.7988826815642458,1,False
+Resnet,Higgs,20,17,0.70662,1,True
+Resnet,Higgs,20,17,0.70464,1,False
+Resnet,MagicTelescope,20,17,0.8322657176749703,1,True
+Resnet,MagicTelescope,20,17,0.8359430604982206,1,False
+Resnet,MiniBooNE,20,17,0.92643824122996,1,True
+Resnet,MiniBooNE,20,17,0.9265516224857706,1,False
+Resnet,bank-marketing,20,17,0.752025202520252,1,True
+Resnet,bank-marketing,20,17,0.752025202520252,1,False
+Resnet,california,20,17,0.8907845244492208,1,True
+Resnet,california,20,17,0.8882321332616873,1,False
+Resnet,covertype,20,17,0.79706,1,True
+Resnet,covertype,20,17,0.80238,1,False
+Resnet,credit,20,17,0.7364893617021276,1,True
+Resnet,credit,20,17,0.7346808510638299,1,False
+Resnet,electricity,20,17,0.8031808147702187,1,True
+Resnet,electricity,20,17,0.8018763796909493,1,False
+Resnet,eye_movements,20,17,0.538044611215343,1,True
+Resnet,eye_movements,20,17,0.530748384406921,1,False
+Resnet,house_16H,20,17,0.8673961642546182,1,True
+Resnet,house_16H,20,17,0.8659842334392281,1,False
+Resnet,kdd_ipums_la_97-small,20,17,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,17,0.8801223241590215,1,False
+Resnet,phoneme,20,17,0.8056971514242879,1,True
+Resnet,phoneme,20,17,0.8,1,False
+Resnet,pol,20,17,0.9576644633301856,1,True
+Resnet,pol,20,17,0.9567201762669184,1,False
+Resnet,wine,20,17,0.7541899441340782,1,True
+Resnet,wine,20,17,0.7571694599627561,1,False
+FT Transformer,Higgs,20,18,0.70166,1,True
+FT Transformer,Higgs,20,18,0.71012,1,False
+FT Transformer,MagicTelescope,20,18,0.8364175563463819,1,True
+FT Transformer,MagicTelescope,20,18,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,18,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,18,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,18,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,18,0.7685268526852685,1,False
+FT Transformer,california,20,18,0.8880977968833961,1,True
+FT Transformer,california,20,18,0.891456206340677,1,False
+FT Transformer,covertype,20,18,0.78326,1,True
+FT Transformer,covertype,20,18,0.7965,1,False
+FT Transformer,credit,20,18,0.7351063829787234,1,True
+FT Transformer,credit,20,18,0.7347872340425532,1,False
+FT Transformer,electricity,20,18,0.7987658037326911,1,True
+FT Transformer,electricity,20,18,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,18,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,18,0.5286637481759433,1,False
+FT Transformer,house_16H,20,18,0.8657489116366631,1,True
+FT Transformer,house_16H,20,18,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,18,0.8703363914373088,1,True
+FT Transformer,kdd_ipums_la_97-small,20,18,0.8807339449541285,1,False
+FT Transformer,phoneme,20,18,0.8107946026986508,1,True
+FT Transformer,phoneme,20,18,0.8071964017991003,1,False
+FT Transformer,pol,20,18,0.9373622914699404,1,True
+FT Transformer,pol,20,18,0.9817437834435,1,False
+FT Transformer,wine,20,18,0.7500931098696462,1,True
+FT Transformer,wine,20,18,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,18,0.68482,1,True
+GradientBoostingTree,Higgs,20,18,0.70956,1,False
+GradientBoostingTree,MagicTelescope,20,18,0.8354685646500593,1,True
+GradientBoostingTree,MagicTelescope,20,18,0.8355871886120996,1,False
+GradientBoostingTree,MiniBooNE,20,18,0.9252590761695276,1,True
+GradientBoostingTree,MiniBooNE,20,18,0.9291593913694188,1,False
+GradientBoostingTree,bank-marketing,20,18,0.7614761476147615,1,True
+GradientBoostingTree,bank-marketing,20,18,0.7736273627362736,1,False
+GradientBoostingTree,california,20,18,0.8738581407845244,1,True
+GradientBoostingTree,california,20,18,0.8981730252552391,1,False
+GradientBoostingTree,covertype,20,18,0.78618,1,True
+GradientBoostingTree,covertype,20,18,0.8139,1,False
+GradientBoostingTree,credit,20,18,0.7319148936170212,1,True
+GradientBoostingTree,credit,20,18,0.7354255319148937,1,False
+GradientBoostingTree,electricity,20,18,0.7994180212723259,1,True
+GradientBoostingTree,electricity,20,18,0.8751755970299017,1,False
+GradientBoostingTree,eye_movements,20,18,0.5403377110694184,1,True
+GradientBoostingTree,eye_movements,20,18,0.5695226183031061,1,False
+GradientBoostingTree,house_16H,20,18,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,18,0.8633956936110131,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,18,0.8712538226299694,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,18,0.882262996941896,1,False
+GradientBoostingTree,phoneme,20,18,0.8155922038980508,1,True
+GradientBoostingTree,phoneme,20,18,0.8269865067466267,1,False
+GradientBoostingTree,pol,20,18,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,18,0.9822159269751336,1,False
+GradientBoostingTree,wine,20,18,0.7988826815642459,1,True
+GradientBoostingTree,wine,20,18,0.7739292364990689,1,False
+RandomForest,Higgs,20,18,0.68596,1,True
+RandomForest,Higgs,20,18,0.70692,1,False
+RandomForest,MagicTelescope,20,18,0.8320284697508896,1,True
+RandomForest,MagicTelescope,20,18,0.8383155397390273,1,False
+RandomForest,MiniBooNE,20,18,0.913966303090773,1,True
+RandomForest,MiniBooNE,20,18,0.9212453797138256,1,False
+RandomForest,bank-marketing,20,18,0.7572757275727572,1,True
+RandomForest,bank-marketing,20,18,0.767026702670267,1,False
+RandomForest,california,20,18,0.8676786673831274,1,True
+RandomForest,california,20,18,0.8952176249328319,1,False
+RandomForest,covertype,20,18,0.78938,1,True
+RandomForest,covertype,20,18,0.80596,1,False
+RandomForest,credit,20,18,0.732872340425532,1,True
+RandomForest,credit,20,18,0.7325531914893617,1,False
+RandomForest,electricity,20,18,0.8031808147702187,1,True
+RandomForest,electricity,20,18,0.8465281958659442,1,False
+RandomForest,eye_movements,20,18,0.5384615384615384,1,True
+RandomForest,eye_movements,20,18,0.5586825099020221,1,False
+RandomForest,house_16H,20,18,0.8551594305212378,1,True
+RandomForest,house_16H,20,18,0.8625720673020355,1,False
+RandomForest,kdd_ipums_la_97-small,20,18,0.8700305810397553,1,True
+RandomForest,kdd_ipums_la_97-small,20,18,0.879204892966361,1,False
+RandomForest,phoneme,20,18,0.8245877061469266,1,True
+RandomForest,phoneme,20,18,0.824887556221889,1,False
+RandomForest,pol,20,18,0.8977022348127163,1,True
+RandomForest,pol,20,18,0.9774944916587976,1,False
+RandomForest,wine,20,18,0.7914338919925512,1,True
+RandomForest,wine,20,18,0.7973929236499069,1,False
+Resnet,Higgs,20,18,0.70662,1,True
+Resnet,Higgs,20,18,0.70524,1,False
+Resnet,MagicTelescope,20,18,0.8322657176749703,1,True
+Resnet,MagicTelescope,20,18,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,18,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,18,0.9307920814530942,1,False
+Resnet,bank-marketing,20,18,0.7536753675367537,1,True
+Resnet,bank-marketing,20,18,0.752025202520252,1,False
+Resnet,california,20,18,0.891993551853842,1,True
+Resnet,california,20,18,0.8831273508866201,1,False
+Resnet,covertype,20,18,0.80118,1,True
+Resnet,covertype,20,18,0.80006,1,False
+Resnet,credit,20,18,0.7346808510638299,1,True
+Resnet,credit,20,18,0.7346808510638299,1,False
+Resnet,electricity,20,18,0.8012241621513144,1,True
+Resnet,electricity,20,18,0.8060907084085892,1,False
+Resnet,eye_movements,20,18,0.5336668751302898,1,True
+Resnet,eye_movements,20,18,0.5215759849906191,1,False
+Resnet,house_16H,20,18,0.8673961642546182,1,True
+Resnet,house_16H,20,18,0.8631603718084481,1,False
+Resnet,kdd_ipums_la_97-small,20,18,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,18,0.8819571865443425,1,False
+Resnet,phoneme,20,18,0.807496251874063,1,True
+Resnet,phoneme,20,18,0.8017991004497752,1,False
+Resnet,pol,20,18,0.9576644633301856,1,True
+Resnet,pol,20,18,0.9494806421152032,1,False
+Resnet,wine,20,18,0.7579143389199254,1,True
+Resnet,wine,20,18,0.7567970204841714,1,False
+FT Transformer,Higgs,20,19,0.70326,1,True
+FT Transformer,Higgs,20,19,0.714,1,False
+FT Transformer,MagicTelescope,20,19,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,19,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,19,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,19,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,19,0.7587758775877589,1,True
+FT Transformer,bank-marketing,20,19,0.7685268526852685,1,False
+FT Transformer,california,20,19,0.8880977968833961,1,True
+FT Transformer,california,20,19,0.891456206340677,1,False
+FT Transformer,covertype,20,19,0.7861,1,True
+FT Transformer,covertype,20,19,0.7965,1,False
+FT Transformer,credit,20,19,0.7351063829787234,1,True
+FT Transformer,credit,20,19,0.7347872340425532,1,False
+FT Transformer,electricity,20,19,0.801475015051174,1,True
+FT Transformer,electricity,20,19,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,19,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,19,0.5286637481759433,1,False
+FT Transformer,house_16H,20,19,0.8638663372161431,1,True
+FT Transformer,house_16H,20,19,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,19,0.8703363914373088,1,True
+FT Transformer,kdd_ipums_la_97-small,20,19,0.8807339449541285,1,False
+FT Transformer,phoneme,20,19,0.8107946026986508,1,True
+FT Transformer,phoneme,20,19,0.8071964017991003,1,False
+FT Transformer,pol,20,19,0.940195152659742,1,True
+FT Transformer,pol,20,19,0.9817437834435,1,False
+FT Transformer,wine,20,19,0.7545623836126629,1,True
+FT Transformer,wine,20,19,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,19,0.68108,1,True
+GradientBoostingTree,Higgs,20,19,0.70956,1,False
+GradientBoostingTree,MagicTelescope,20,19,0.8353499406880189,1,True
+GradientBoostingTree,MagicTelescope,20,19,0.8319098457888492,1,False
+GradientBoostingTree,MiniBooNE,20,19,0.9248962561509332,1,True
+GradientBoostingTree,MiniBooNE,20,19,0.9301571464205538,1,False
+GradientBoostingTree,bank-marketing,20,19,0.7610261026102609,1,True
+GradientBoostingTree,bank-marketing,20,19,0.7764776477647765,1,False
+GradientBoostingTree,california,20,19,0.8725147770016121,1,True
+GradientBoostingTree,california,20,19,0.8999193981730252,1,False
+GradientBoostingTree,covertype,20,19,0.78732,1,True
+GradientBoostingTree,covertype,20,19,0.82242,1,False
+GradientBoostingTree,credit,20,19,0.7341489361702127,1,True
+GradientBoostingTree,credit,20,19,0.7318085106382979,1,False
+GradientBoostingTree,electricity,20,19,0.7973108569135059,1,True
+GradientBoostingTree,electricity,20,19,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,19,0.5403377110694184,1,True
+GradientBoostingTree,eye_movements,20,19,0.583281217427559,1,False
+GradientBoostingTree,house_16H,20,19,0.861983762795623,1,True
+GradientBoostingTree,house_16H,20,19,0.8646899635251205,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,19,0.874006116207951,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,19,0.882262996941896,1,False
+GradientBoostingTree,phoneme,20,19,0.8161919040479759,1,True
+GradientBoostingTree,phoneme,20,19,0.8257871064467766,1,False
+GradientBoostingTree,pol,20,19,0.9030531948378974,1,True
+GradientBoostingTree,pol,20,19,0.9806421152030216,1,False
+GradientBoostingTree,wine,20,19,0.7973929236499069,1,True
+GradientBoostingTree,wine,20,19,0.7854748603351955,1,False
+RandomForest,Higgs,20,19,0.68686,1,True
+RandomForest,Higgs,20,19,0.70808,1,False
+RandomForest,MagicTelescope,20,19,0.8367734282325029,1,True
+RandomForest,MagicTelescope,20,19,0.8364175563463819,1,False
+RandomForest,MiniBooNE,20,19,0.9189550783464476,1,True
+RandomForest,MiniBooNE,20,19,0.9222431347649608,1,False
+RandomForest,bank-marketing,20,19,0.762976297629763,1,True
+RandomForest,bank-marketing,20,19,0.767926792679268,1,False
+RandomForest,california,20,19,0.8718430951101558,1,True
+RandomForest,california,20,19,0.8979043524986566,1,False
+RandomForest,covertype,20,19,0.78576,1,True
+RandomForest,covertype,20,19,0.7925,1,False
+RandomForest,credit,20,19,0.7341489361702127,1,True
+RandomForest,credit,20,19,0.7346808510638299,1,False
+RandomForest,electricity,20,19,0.8006221151916516,1,True
+RandomForest,electricity,20,19,0.8603251053582179,1,False
+RandomForest,eye_movements,20,19,0.5390869293308317,1,True
+RandomForest,eye_movements,20,19,0.5522201375859912,1,False
+RandomForest,house_16H,20,19,0.8563360395340628,1,True
+RandomForest,house_16H,20,19,0.8643369808212732,1,False
+RandomForest,kdd_ipums_la_97-small,20,19,0.8700305810397554,1,True
+RandomForest,kdd_ipums_la_97-small,20,19,0.880428134556575,1,False
+RandomForest,phoneme,20,19,0.8293853073463268,1,True
+RandomForest,phoneme,20,19,0.8254872563718141,1,False
+RandomForest,pol,20,19,0.8915643689014794,1,True
+RandomForest,pol,20,19,0.9765502045955304,1,False
+RandomForest,wine,20,19,0.7731843575418995,1,True
+RandomForest,wine,20,19,0.7787709497206704,1,False
+Resnet,Higgs,20,19,0.70694,1,True
+Resnet,Higgs,20,19,0.70404,1,False
+Resnet,MagicTelescope,20,19,0.8322657176749703,1,True
+Resnet,MagicTelescope,20,19,0.8395017793594306,1,False
+Resnet,MiniBooNE,20,19,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,19,0.9234676523277172,1,False
+Resnet,bank-marketing,20,19,0.752025202520252,1,True
+Resnet,bank-marketing,20,19,0.7515751575157515,1,False
+Resnet,california,20,19,0.8944116066630844,1,True
+Resnet,california,20,19,0.8889038151531434,1,False
+Resnet,covertype,20,19,0.79918,1,True
+Resnet,covertype,20,19,0.80006,1,False
+Resnet,credit,20,19,0.7346808510638299,1,True
+Resnet,credit,20,19,0.7356382978723404,1,False
+Resnet,electricity,20,19,0.7999698976520169,1,True
+Resnet,electricity,20,19,0.8043347381095726,1,False
+Resnet,eye_movements,20,19,0.5274129664373567,1,True
+Resnet,eye_movements,20,19,0.5326245570148009,1,False
+Resnet,house_16H,20,19,0.8673961642546182,1,True
+Resnet,house_16H,20,19,0.8659842334392281,1,False
+Resnet,kdd_ipums_la_97-small,20,19,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,19,0.8807339449541285,1,False
+Resnet,phoneme,20,19,0.807496251874063,1,True
+Resnet,phoneme,20,19,0.8050974512743627,1,False
+Resnet,pol,20,19,0.9617563739376772,1,True
+Resnet,pol,20,19,0.960182562165565,1,False
+Resnet,wine,20,19,0.7579143389199254,1,True
+Resnet,wine,20,19,0.7571694599627561,1,False
+FT Transformer,Higgs,20,20,0.69978,1,True
+FT Transformer,Higgs,20,20,0.71078,1,False
+FT Transformer,MagicTelescope,20,20,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,20,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,20,0.9248735798997708,1,True
+FT Transformer,MiniBooNE,20,20,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,20,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,20,0.7685268526852685,1,False
+FT Transformer,california,20,20,0.8875604513702311,1,True
+FT Transformer,california,20,20,0.891456206340677,1,False
+FT Transformer,covertype,20,20,0.7861,1,True
+FT Transformer,covertype,20,20,0.7965,1,False
+FT Transformer,credit,20,20,0.7351063829787234,1,True
+FT Transformer,credit,20,20,0.7340425531914894,1,False
+FT Transformer,electricity,20,20,0.7987658037326911,1,True
+FT Transformer,electricity,20,20,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,20,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,20,0.5374192203460496,1,False
+FT Transformer,house_16H,20,20,0.8657489116366631,1,True
+FT Transformer,house_16H,20,20,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,20,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,20,0.8807339449541285,1,False
+FT Transformer,phoneme,20,20,0.8107946026986508,1,True
+FT Transformer,phoneme,20,20,0.8071964017991003,1,False
+FT Transformer,pol,20,20,0.940195152659742,1,True
+FT Transformer,pol,20,20,0.9803273528485992,1,False
+FT Transformer,wine,20,20,0.7500931098696462,1,True
+FT Transformer,wine,20,20,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,20,0.69214,1,True
+GradientBoostingTree,Higgs,20,20,0.709,1,False
+GradientBoostingTree,MagicTelescope,20,20,0.8354685646500593,1,True
+GradientBoostingTree,MagicTelescope,20,20,0.837485172004745,1,False
+GradientBoostingTree,MiniBooNE,20,20,0.9160071656953672,1,True
+GradientBoostingTree,MiniBooNE,20,20,0.9285924850903648,1,False
+GradientBoostingTree,bank-marketing,20,20,0.7637263726372637,1,True
+GradientBoostingTree,bank-marketing,20,20,0.7758775877587759,1,False
+GradientBoostingTree,california,20,20,0.8706340677055346,1,True
+GradientBoostingTree,california,20,20,0.900322407307899,1,False
+GradientBoostingTree,covertype,20,20,0.7902,1,True
+GradientBoostingTree,covertype,20,20,0.81948,1,False
+GradientBoostingTree,credit,20,20,0.7324468085106384,1,True
+GradientBoostingTree,credit,20,20,0.7331914893617021,1,False
+GradientBoostingTree,electricity,20,20,0.7989163154726069,1,True
+GradientBoostingTree,electricity,20,20,0.8716134858518965,1,False
+GradientBoostingTree,eye_movements,20,20,0.5169897852824682,1,True
+GradientBoostingTree,eye_movements,20,20,0.5905774442359809,1,False
+GradientBoostingTree,house_16H,20,20,0.858453935757148,1,True
+GradientBoostingTree,house_16H,20,20,0.8623367454994706,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,20,0.8697247706422019,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,20,0.882262996941896,1,False
+GradientBoostingTree,phoneme,20,20,0.8158920539730135,1,True
+GradientBoostingTree,phoneme,20,20,0.824887556221889,1,False
+GradientBoostingTree,pol,20,20,0.9025810513062638,1,True
+GradientBoostingTree,pol,20,20,0.982530689329556,1,False
+GradientBoostingTree,wine,20,20,0.7932960893854749,1,True
+GradientBoostingTree,wine,20,20,0.7739292364990689,1,False
+RandomForest,Higgs,20,20,0.68596,1,True
+RandomForest,Higgs,20,20,0.70998,1,False
+RandomForest,MagicTelescope,20,20,0.8212336892052194,1,True
+RandomForest,MagicTelescope,20,20,0.8347568208778173,1,False
+RandomForest,MiniBooNE,20,20,0.9105875416676116,1,True
+RandomForest,MiniBooNE,20,20,0.9229234222998254,1,False
+RandomForest,bank-marketing,20,20,0.7572757275727572,1,True
+RandomForest,bank-marketing,20,20,0.7689768976897691,1,False
+RandomForest,california,20,20,0.8683503492745835,1,True
+RandomForest,california,20,20,0.8979043524986566,1,False
+RandomForest,covertype,20,20,0.78938,1,True
+RandomForest,covertype,20,20,0.80596,1,False
+RandomForest,credit,20,20,0.7311702127659574,1,True
+RandomForest,credit,20,20,0.7342553191489362,1,False
+RandomForest,electricity,20,20,0.8015753562111178,1,True
+RandomForest,electricity,20,20,0.8527493477824604,1,False
+RandomForest,eye_movements,20,20,0.5426308109234937,1,True
+RandomForest,eye_movements,20,20,0.555972482801751,1,False
+RandomForest,house_16H,20,20,0.8598658665725379,1,True
+RandomForest,house_16H,20,20,0.8616307800917754,1,False
+RandomForest,kdd_ipums_la_97-small,20,20,0.8721712538226299,1,True
+RandomForest,kdd_ipums_la_97-small,20,20,0.8788990825688074,1,False
+RandomForest,phoneme,20,20,0.830584707646177,1,True
+RandomForest,phoneme,20,20,0.824887556221889,1,False
+RandomForest,pol,20,20,0.901951526597419,1,True
+RandomForest,pol,20,20,0.9795404469625434,1,False
+RandomForest,wine,20,20,0.7798882681564245,1,True
+RandomForest,wine,20,20,0.7780260707635009,1,False
+Resnet,Higgs,20,20,0.70662,1,True
+Resnet,Higgs,20,20,0.70524,1,False
+Resnet,MagicTelescope,20,20,0.8353499406880189,1,True
+Resnet,MagicTelescope,20,20,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,20,0.9272092337694732,1,True
+Resnet,MiniBooNE,20,20,0.9307920814530942,1,False
+Resnet,bank-marketing,20,20,0.7541254125412541,1,True
+Resnet,bank-marketing,20,20,0.752025202520252,1,False
+Resnet,california,20,20,0.8907845244492208,1,True
+Resnet,california,20,20,0.8859484148307362,1,False
+Resnet,covertype,20,20,0.80202,1,True
+Resnet,covertype,20,20,0.80006,1,False
+Resnet,credit,20,20,0.7340425531914894,1,True
+Resnet,credit,20,20,0.7348936170212765,1,False
+Resnet,electricity,20,20,0.8013746738912302,1,True
+Resnet,electricity,20,20,0.8023780854906682,1,False
+Resnet,eye_movements,20,20,0.5276214300604544,1,True
+Resnet,eye_movements,20,20,0.5278298936835523,1,False
+Resnet,house_16H,20,20,0.8641016590187082,1,True
+Resnet,house_16H,20,20,0.8625720673020355,1,False
+Resnet,kdd_ipums_la_97-small,20,20,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,20,0.8798165137614679,1,False
+Resnet,phoneme,20,20,0.8071964017991006,1,True
+Resnet,phoneme,20,20,0.7964017991004498,1,False
+Resnet,pol,20,20,0.9617563739376772,1,True
+Resnet,pol,20,20,0.9494806421152032,1,False
+Resnet,wine,20,20,0.7579143389199255,1,True
+Resnet,wine,20,20,0.7582867783985103,1,False
+FT Transformer,Higgs,20,21,0.70326,1,True
+FT Transformer,Higgs,20,21,0.714,1,False
+FT Transformer,MagicTelescope,20,21,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,21,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,21,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,21,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,21,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,21,0.7745274527452746,1,False
+FT Transformer,california,20,21,0.8880977968833961,1,True
+FT Transformer,california,20,21,0.891456206340677,1,False
+FT Transformer,covertype,20,21,0.78088,1,True
+FT Transformer,covertype,20,21,0.7965,1,False
+FT Transformer,credit,20,21,0.7351063829787234,1,True
+FT Transformer,credit,20,21,0.7347872340425532,1,False
+FT Transformer,electricity,20,21,0.8002207505518764,1,True
+FT Transformer,electricity,20,21,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,21,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,21,0.5286637481759433,1,False
+FT Transformer,house_16H,20,21,0.8698670431815508,1,True
+FT Transformer,house_16H,20,21,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,21,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,21,0.8807339449541285,1,False
+FT Transformer,phoneme,20,21,0.8107946026986508,1,True
+FT Transformer,phoneme,20,21,0.8071964017991003,1,False
+FT Transformer,pol,20,21,0.940195152659742,1,True
+FT Transformer,pol,20,21,0.9817437834435,1,False
+FT Transformer,wine,20,21,0.7500931098696462,1,True
+FT Transformer,wine,20,21,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,21,0.68114,1,True
+GradientBoostingTree,Higgs,20,21,0.71318,1,False
+GradientBoostingTree,MagicTelescope,20,21,0.8354685646500593,1,True
+GradientBoostingTree,MagicTelescope,20,21,0.8367734282325029,1,False
+GradientBoostingTree,MiniBooNE,20,21,0.9248962561509332,1,True
+GradientBoostingTree,MiniBooNE,20,21,0.9274813487834191,1,False
+GradientBoostingTree,bank-marketing,20,21,0.7641764176417642,1,True
+GradientBoostingTree,bank-marketing,20,21,0.7764776477647765,1,False
+GradientBoostingTree,california,20,21,0.8706340677055346,1,True
+GradientBoostingTree,california,20,21,0.8966953250940355,1,False
+GradientBoostingTree,covertype,20,21,0.77898,1,True
+GradientBoostingTree,covertype,20,21,0.81948,1,False
+GradientBoostingTree,credit,20,21,0.7319148936170212,1,True
+GradientBoostingTree,credit,20,21,0.7318085106382979,1,False
+GradientBoostingTree,electricity,20,21,0.7982640979329721,1,True
+GradientBoostingTree,electricity,20,21,0.8657936985751555,1,False
+GradientBoostingTree,eye_movements,20,21,0.5403377110694184,1,True
+GradientBoostingTree,eye_movements,20,21,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,21,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,21,0.8651606071302506,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,21,0.8703363914373088,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,21,0.8795107033639145,1,False
+GradientBoostingTree,phoneme,20,21,0.8155922038980508,1,True
+GradientBoostingTree,phoneme,20,21,0.824887556221889,1,False
+GradientBoostingTree,pol,20,21,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,21,0.9837897387472458,1,False
+GradientBoostingTree,wine,20,21,0.7973929236499069,1,True
+GradientBoostingTree,wine,20,21,0.7750465549348231,1,False
+RandomForest,Higgs,20,21,0.68604,1,True
+RandomForest,Higgs,20,21,0.7069,1,False
+RandomForest,MagicTelescope,20,21,0.8287069988137604,1,True
+RandomForest,MagicTelescope,20,21,0.838552787663108,1,False
+RandomForest,MiniBooNE,20,21,0.9179119707929884,1,True
+RandomForest,MiniBooNE,20,21,0.9242159686160684,1,False
+RandomForest,bank-marketing,20,21,0.7572757275727572,1,True
+RandomForest,bank-marketing,20,21,0.7689768976897691,1,False
+RandomForest,california,20,21,0.8687533584094573,1,True
+RandomForest,california,20,21,0.8872917786136486,1,False
+RandomForest,covertype,20,21,0.78938,1,True
+RandomForest,covertype,20,21,0.78758,1,False
+RandomForest,credit,20,21,0.7331914893617021,1,True
+RandomForest,credit,20,21,0.7338297872340425,1,False
+RandomForest,electricity,20,21,0.8003210917118202,1,True
+RandomForest,electricity,20,21,0.8569636765001003,1,False
+RandomForest,eye_movements,20,21,0.5405461746925162,1,True
+RandomForest,eye_movements,20,21,0.551594746716698,1,False
+RandomForest,house_16H,20,21,0.8598658665725379,1,True
+RandomForest,house_16H,20,21,0.8618661018943405,1,False
+RandomForest,kdd_ipums_la_97-small,20,21,0.8697247706422019,1,True
+RandomForest,kdd_ipums_la_97-small,20,21,0.881651376146789,1,False
+RandomForest,phoneme,20,21,0.8326836581709145,1,True
+RandomForest,phoneme,20,21,0.8254872563718141,1,False
+RandomForest,pol,20,21,0.8693736229146994,1,True
+RandomForest,pol,20,21,0.9741894869373624,1,False
+RandomForest,wine,20,21,0.7914338919925512,1,True
+RandomForest,wine,20,21,0.7973929236499069,1,False
+Resnet,Higgs,20,21,0.70658,1,True
+Resnet,Higgs,20,21,0.70524,1,False
+Resnet,MagicTelescope,20,21,0.8373665480427047,1,True
+Resnet,MagicTelescope,20,21,0.8383155397390273,1,False
+Resnet,MiniBooNE,20,21,0.9255538674346356,1,True
+Resnet,MiniBooNE,20,21,0.9258033061974196,1,False
+Resnet,bank-marketing,20,21,0.7536753675367537,1,True
+Resnet,bank-marketing,20,21,0.7551755175517552,1,False
+Resnet,california,20,21,0.8874261149919398,1,True
+Resnet,california,20,21,0.8889038151531434,1,False
+Resnet,covertype,20,21,0.79512,1,True
+Resnet,covertype,20,21,0.80006,1,False
+Resnet,credit,20,21,0.7340425531914894,1,True
+Resnet,credit,20,21,0.7346808510638299,1,False
+Resnet,electricity,20,21,0.8013746738912302,1,True
+Resnet,electricity,20,21,0.8018763796909493,1,False
+Resnet,eye_movements,20,21,0.5269960391911611,1,True
+Resnet,eye_movements,20,21,0.5326245570148009,1,False
+Resnet,house_16H,20,21,0.8673961642546182,1,True
+Resnet,house_16H,20,21,0.8672785033533357,1,False
+Resnet,kdd_ipums_la_97-small,20,21,0.8767584097859328,1,True
+Resnet,kdd_ipums_la_97-small,20,21,0.8798165137614679,1,False
+Resnet,phoneme,20,21,0.8059970014992504,1,True
+Resnet,phoneme,20,21,0.8029985007496252,1,False
+Resnet,pol,20,21,0.9617563739376772,1,True
+Resnet,pol,20,21,0.9494806421152032,1,False
+Resnet,wine,20,21,0.7594040968342645,1,True
+Resnet,wine,20,21,0.7571694599627561,1,False
+FT Transformer,Higgs,20,22,0.70326,1,True
+FT Transformer,Higgs,20,22,0.714,1,False
+FT Transformer,MagicTelescope,20,22,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,22,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,22,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,22,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,22,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,22,0.7685268526852685,1,False
+FT Transformer,california,20,22,0.8880977968833961,1,True
+FT Transformer,california,20,22,0.891456206340677,1,False
+FT Transformer,covertype,20,22,0.7861,1,True
+FT Transformer,covertype,20,22,0.7965,1,False
+FT Transformer,credit,20,22,0.7340425531914894,1,True
+FT Transformer,credit,20,22,0.7340425531914894,1,False
+FT Transformer,electricity,20,22,0.7987658037326911,1,True
+FT Transformer,electricity,20,22,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,22,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,22,0.5286637481759433,1,False
+FT Transformer,house_16H,20,22,0.8657489116366631,1,True
+FT Transformer,house_16H,20,22,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,22,0.8694189602446483,1,True
+FT Transformer,kdd_ipums_la_97-small,20,22,0.8807339449541285,1,False
+FT Transformer,phoneme,20,22,0.8107946026986508,1,True
+FT Transformer,phoneme,20,22,0.808095952023988,1,False
+FT Transformer,pol,20,22,0.940195152659742,1,True
+FT Transformer,pol,20,22,0.9817437834435,1,False
+FT Transformer,wine,20,22,0.7545623836126629,1,True
+FT Transformer,wine,20,22,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,22,0.68548,1,True
+GradientBoostingTree,Higgs,20,22,0.7071,1,False
+GradientBoostingTree,MagicTelescope,20,22,0.836061684460261,1,True
+GradientBoostingTree,MagicTelescope,20,22,0.8410438908659549,1,False
+GradientBoostingTree,MiniBooNE,20,22,0.9283883988299054,1,True
+GradientBoostingTree,MiniBooNE,20,22,0.9245787886346628,1,False
+GradientBoostingTree,bank-marketing,20,22,0.7610261026102609,1,True
+GradientBoostingTree,bank-marketing,20,22,0.7731773177317732,1,False
+GradientBoostingTree,california,20,22,0.8725147770016121,1,True
+GradientBoostingTree,california,20,22,0.8936055883933369,1,False
+GradientBoostingTree,covertype,20,22,0.7902,1,True
+GradientBoostingTree,covertype,20,22,0.8199,1,False
+GradientBoostingTree,credit,20,22,0.7353191489361702,1,True
+GradientBoostingTree,credit,20,22,0.7351063829787234,1,False
+GradientBoostingTree,electricity,20,22,0.7995183624322697,1,True
+GradientBoostingTree,electricity,20,22,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,22,0.5403377110694184,1,True
+GradientBoostingTree,eye_movements,20,22,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,22,0.8558653959289328,1,True
+GradientBoostingTree,house_16H,20,22,0.8646899635251205,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,22,0.8697247706422019,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,22,0.8813455657492355,1,False
+GradientBoostingTree,phoneme,20,22,0.8113943028485757,1,True
+GradientBoostingTree,phoneme,20,22,0.8206896551724139,1,False
+GradientBoostingTree,pol,20,22,0.9066729619137552,1,True
+GradientBoostingTree,pol,20,22,0.9825306893295562,1,False
+GradientBoostingTree,wine,20,22,0.7839851024208565,1,True
+GradientBoostingTree,wine,20,22,0.7739292364990689,1,False
+RandomForest,Higgs,20,22,0.68686,1,True
+RandomForest,Higgs,20,22,0.70916,1,False
+RandomForest,MagicTelescope,20,22,0.8347568208778173,1,True
+RandomForest,MagicTelescope,20,22,0.8359430604982206,1,False
+RandomForest,MiniBooNE,20,22,0.9189550783464476,1,True
+RandomForest,MiniBooNE,20,22,0.9233542710719064,1,False
+RandomForest,bank-marketing,20,22,0.7611761176117612,1,True
+RandomForest,bank-marketing,20,22,0.7715271527152715,1,False
+RandomForest,california,20,22,0.8577377753895755,1,True
+RandomForest,california,20,22,0.8966953250940355,1,False
+RandomForest,covertype,20,22,0.7619,1,True
+RandomForest,covertype,20,22,0.80866,1,False
+RandomForest,credit,20,22,0.7267021276595744,1,True
+RandomForest,credit,20,22,0.733936170212766,1,False
+RandomForest,electricity,20,22,0.8028296207104154,1,True
+RandomForest,electricity,20,22,0.8481336544250452,1,False
+RandomForest,eye_movements,20,22,0.5332499478840943,1,True
+RandomForest,eye_movements,20,22,0.5478424015009381,1,False
+RandomForest,house_16H,20,22,0.8575126485468879,1,True
+RandomForest,house_16H,20,22,0.8616307800917754,1,False
+RandomForest,kdd_ipums_la_97-small,20,22,0.8703363914373089,1,True
+RandomForest,kdd_ipums_la_97-small,20,22,0.8825688073394495,1,False
+RandomForest,phoneme,20,22,0.830584707646177,1,True
+RandomForest,phoneme,20,22,0.8272863568215891,1,False
+RandomForest,pol,20,22,0.889675794774945,1,True
+RandomForest,pol,20,22,0.9793830657853322,1,False
+RandomForest,wine,20,22,0.7921787709497206,1,True
+RandomForest,wine,20,22,0.7996275605214153,1,False
+Resnet,Higgs,20,22,0.706,1,True
+Resnet,Higgs,20,22,0.70524,1,False
+Resnet,MagicTelescope,20,22,0.8373665480427047,1,True
+Resnet,MagicTelescope,20,22,0.8395017793594306,1,False
+Resnet,MiniBooNE,20,22,0.9272092337694732,1,True
+Resnet,MiniBooNE,20,22,0.9307920814530942,1,False
+Resnet,bank-marketing,20,22,0.7515751575157515,1,True
+Resnet,bank-marketing,20,22,0.7515751575157515,1,False
+Resnet,california,20,22,0.8907845244492208,1,True
+Resnet,california,20,22,0.8831273508866201,1,False
+Resnet,covertype,20,22,0.8023,1,True
+Resnet,covertype,20,22,0.7999,1,False
+Resnet,credit,20,22,0.735531914893617,1,True
+Resnet,credit,20,22,0.7338297872340426,1,False
+Resnet,electricity,20,22,0.8013746738912302,1,True
+Resnet,electricity,20,22,0.8015251856311459,1,False
+Resnet,eye_movements,20,22,0.5380446112153429,1,True
+Resnet,eye_movements,20,22,0.5292891390452367,1,False
+Resnet,house_16H,20,22,0.8676314860571832,1,True
+Resnet,house_16H,20,22,0.864807624426403,1,False
+Resnet,kdd_ipums_la_97-small,20,22,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,22,0.8819571865443425,1,False
+Resnet,phoneme,20,22,0.8056971514242879,1,True
+Resnet,phoneme,20,22,0.7979010494752623,1,False
+Resnet,pol,20,22,0.9527856468366384,1,True
+Resnet,pol,20,22,0.960182562165565,1,False
+Resnet,wine,20,22,0.7579143389199254,1,True
+Resnet,wine,20,22,0.7590316573556798,1,False
+FT Transformer,Higgs,20,23,0.70326,1,True
+FT Transformer,Higgs,20,23,0.71012,1,False
+FT Transformer,MagicTelescope,20,23,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,23,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,23,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,23,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,23,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,23,0.7745274527452746,1,False
+FT Transformer,california,20,23,0.8917248790972595,1,True
+FT Transformer,california,20,23,0.891456206340677,1,False
+FT Transformer,covertype,20,23,0.78424,1,True
+FT Transformer,covertype,20,23,0.79492,1,False
+FT Transformer,credit,20,23,0.7351063829787234,1,True
+FT Transformer,credit,20,23,0.7340425531914894,1,False
+FT Transformer,electricity,20,23,0.801475015051174,1,True
+FT Transformer,electricity,20,23,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,23,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,23,0.5286637481759433,1,False
+FT Transformer,house_16H,20,23,0.8657489116366631,1,True
+FT Transformer,house_16H,20,23,0.8672785033533357,1,False
+FT Transformer,kdd_ipums_la_97-small,20,23,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,23,0.8807339449541285,1,False
+FT Transformer,phoneme,20,23,0.8041979010494753,1,True
+FT Transformer,phoneme,20,23,0.808095952023988,1,False
+FT Transformer,pol,20,23,0.9373622914699404,1,True
+FT Transformer,pol,20,23,0.9817437834435,1,False
+FT Transformer,wine,20,23,0.7500931098696462,1,True
+FT Transformer,wine,20,23,0.7638733705772812,1,False
+GradientBoostingTree,Higgs,20,23,0.68548,1,True
+GradientBoostingTree,Higgs,20,23,0.70672,1,False
+GradientBoostingTree,MagicTelescope,20,23,0.8361803084223013,1,True
+GradientBoostingTree,MagicTelescope,20,23,0.8386714116251482,1,False
+GradientBoostingTree,MiniBooNE,20,23,0.9283883988299054,1,True
+GradientBoostingTree,MiniBooNE,20,23,0.9275267012857434,1,False
+GradientBoostingTree,bank-marketing,20,23,0.7598259825982598,1,True
+GradientBoostingTree,bank-marketing,20,23,0.7755775577557756,1,False
+GradientBoostingTree,california,20,23,0.8605588393336916,1,True
+GradientBoostingTree,california,20,23,0.8944116066630844,1,False
+GradientBoostingTree,covertype,20,23,0.7902,1,True
+GradientBoostingTree,covertype,20,23,0.82242,1,False
+GradientBoostingTree,credit,20,23,0.7258510638297873,1,True
+GradientBoostingTree,credit,20,23,0.7360638297872341,1,False
+GradientBoostingTree,electricity,20,23,0.7994180212723259,1,True
+GradientBoostingTree,electricity,20,23,0.8741220148504917,1,False
+GradientBoostingTree,eye_movements,20,23,0.5432562017927871,1,True
+GradientBoostingTree,eye_movements,20,23,0.5701480091723994,1,False
+GradientBoostingTree,house_16H,20,23,0.8541004824096952,1,True
+GradientBoostingTree,house_16H,20,23,0.8645723026238382,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,23,0.8703363914373088,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,23,0.8801223241590214,1,False
+GradientBoostingTree,phoneme,20,23,0.8263868065967015,1,True
+GradientBoostingTree,phoneme,20,23,0.8233883058470765,1,False
+GradientBoostingTree,pol,20,23,0.8947119924457035,1,True
+GradientBoostingTree,pol,20,23,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,23,0.7839851024208565,1,True
+GradientBoostingTree,wine,20,23,0.7750465549348231,1,False
+RandomForest,Higgs,20,23,0.68604,1,True
+RandomForest,Higgs,20,23,0.7105,1,False
+RandomForest,MagicTelescope,20,23,0.8352313167259786,1,True
+RandomForest,MagicTelescope,20,23,0.8249110320284698,1,False
+RandomForest,MiniBooNE,20,23,0.919839452141772,1,True
+RandomForest,MiniBooNE,20,23,0.9222431347649608,1,False
+RandomForest,bank-marketing,20,23,0.7595259525952596,1,True
+RandomForest,bank-marketing,20,23,0.767926792679268,1,False
+RandomForest,california,20,23,0.8690220311660397,1,True
+RandomForest,california,20,23,0.8950832885545406,1,False
+RandomForest,covertype,20,23,0.78672,1,True
+RandomForest,covertype,20,23,0.81014,1,False
+RandomForest,credit,20,23,0.7352127659574468,1,True
+RandomForest,credit,20,23,0.7290425531914894,1,False
+RandomForest,electricity,20,23,0.8018763796909493,1,True
+RandomForest,electricity,20,23,0.8480333132651013,1,False
+RandomForest,eye_movements,20,23,0.5355430477381696,1,True
+RandomForest,eye_movements,20,23,0.5528455284552846,1,False
+RandomForest,house_16H,20,23,0.8578656312507354,1,True
+RandomForest,house_16H,20,23,0.8639839981174257,1,False
+RandomForest,kdd_ipums_la_97-small,20,23,0.8706422018348624,1,True
+RandomForest,kdd_ipums_la_97-small,20,23,0.881651376146789,1,False
+RandomForest,phoneme,20,23,0.8290854572713643,1,True
+RandomForest,phoneme,20,23,0.826686656671664,1,False
+RandomForest,pol,20,23,0.8953415171545482,1,True
+RandomForest,pol,20,23,0.9765502045955304,1,False
+RandomForest,wine,20,23,0.7981378026070763,1,True
+RandomForest,wine,20,23,0.7988826815642458,1,False
+Resnet,Higgs,20,23,0.7068,1,True
+Resnet,Higgs,20,23,0.70846,1,False
+Resnet,MagicTelescope,20,23,0.8351126927639383,1,True
+Resnet,MagicTelescope,20,23,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,23,0.9255538674346356,1,True
+Resnet,MiniBooNE,20,23,0.9307920814530942,1,False
+Resnet,bank-marketing,20,23,0.7523252325232525,1,True
+Resnet,bank-marketing,20,23,0.755025502550255,1,False
+Resnet,california,20,23,0.891993551853842,1,True
+Resnet,california,20,23,0.8859484148307362,1,False
+Resnet,covertype,20,23,0.79942,1,True
+Resnet,covertype,20,23,0.7999,1,False
+Resnet,credit,20,23,0.7341489361702127,1,True
+Resnet,credit,20,23,0.7341489361702127,1,False
+Resnet,electricity,20,23,0.807244631747943,1,True
+Resnet,electricity,20,23,0.8023780854906682,1,False
+Resnet,eye_movements,20,23,0.5276214300604544,1,True
+Resnet,eye_movements,20,23,0.5345007296226808,1,False
+Resnet,house_16H,20,23,0.8673961642546182,1,True
+Resnet,house_16H,20,23,0.8686904341687258,1,False
+Resnet,kdd_ipums_la_97-small,20,23,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,23,0.8819571865443425,1,False
+Resnet,phoneme,20,23,0.8041979010494753,1,True
+Resnet,phoneme,20,23,0.7997001499250375,1,False
+Resnet,pol,20,23,0.9576644633301856,1,True
+Resnet,pol,20,23,0.9519987409505823,1,False
+Resnet,wine,20,23,0.7571694599627561,1,True
+Resnet,wine,20,23,0.7582867783985103,1,False
+FT Transformer,Higgs,20,24,0.70326,1,True
+FT Transformer,Higgs,20,24,0.714,1,False
+FT Transformer,MagicTelescope,20,24,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,24,0.8396204033214709,1,False
+FT Transformer,MiniBooNE,20,24,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,24,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,24,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,24,0.7685268526852685,1,False
+FT Transformer,california,20,24,0.8917248790972595,1,True
+FT Transformer,california,20,24,0.891456206340677,1,False
+FT Transformer,covertype,20,24,0.78326,1,True
+FT Transformer,covertype,20,24,0.79492,1,False
+FT Transformer,credit,20,24,0.7340425531914894,1,True
+FT Transformer,credit,20,24,0.7347872340425532,1,False
+FT Transformer,electricity,20,24,0.7987658037326911,1,True
+FT Transformer,electricity,20,24,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,24,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,24,0.5286637481759433,1,False
+FT Transformer,house_16H,20,24,0.8657489116366631,1,True
+FT Transformer,house_16H,20,24,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,24,0.8648318042813455,1,True
+FT Transformer,kdd_ipums_la_97-small,20,24,0.8743119266055045,1,False
+FT Transformer,phoneme,20,24,0.8041979010494753,1,True
+FT Transformer,phoneme,20,24,0.8071964017991003,1,False
+FT Transformer,pol,20,24,0.9394082467736858,1,True
+FT Transformer,pol,20,24,0.9803273528485992,1,False
+FT Transformer,wine,20,24,0.7545623836126629,1,True
+FT Transformer,wine,20,24,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,24,0.69204,1,True
+GradientBoostingTree,Higgs,20,24,0.71318,1,False
+GradientBoostingTree,MagicTelescope,20,24,0.8353499406880189,1,True
+GradientBoostingTree,MagicTelescope,20,24,0.8400948991696322,1,False
+GradientBoostingTree,MiniBooNE,20,24,0.9277988162996892,1,True
+GradientBoostingTree,MiniBooNE,20,24,0.9297262976484728,1,False
+GradientBoostingTree,bank-marketing,20,24,0.7641764176417642,1,True
+GradientBoostingTree,bank-marketing,20,24,0.7736273627362736,1,False
+GradientBoostingTree,california,20,24,0.8721117678667383,1,True
+GradientBoostingTree,california,20,24,0.8991133799032778,1,False
+GradientBoostingTree,covertype,20,24,0.78514,1,True
+GradientBoostingTree,covertype,20,24,0.8199,1,False
+GradientBoostingTree,credit,20,24,0.7311702127659574,1,True
+GradientBoostingTree,credit,20,24,0.735,1,False
+GradientBoostingTree,electricity,20,24,0.7982640979329721,1,True
+GradientBoostingTree,electricity,20,24,0.8699076861328517,1,False
+GradientBoostingTree,eye_movements,20,24,0.5169897852824682,1,True
+GradientBoostingTree,eye_movements,20,24,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,24,0.8558653959289328,1,True
+GradientBoostingTree,house_16H,20,24,0.8657489116366631,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,24,0.8703363914373088,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,24,0.882262996941896,1,False
+GradientBoostingTree,phoneme,20,24,0.8275862068965516,1,True
+GradientBoostingTree,phoneme,20,24,0.8257871064467766,1,False
+GradientBoostingTree,pol,20,24,0.9030531948378974,1,True
+GradientBoostingTree,pol,20,24,0.9798552093169656,1,False
+GradientBoostingTree,wine,20,24,0.7973929236499069,1,True
+GradientBoostingTree,wine,20,24,0.788826815642458,1,False
+RandomForest,Higgs,20,24,0.67894,1,True
+RandomForest,Higgs,20,24,0.70998,1,False
+RandomForest,MagicTelescope,20,24,0.8355871886120997,1,True
+RandomForest,MagicTelescope,20,24,0.8379596678529063,1,False
+RandomForest,MiniBooNE,20,24,0.9189550783464476,1,True
+RandomForest,MiniBooNE,20,24,0.917413093267421,1,False
+RandomForest,bank-marketing,20,24,0.7541254125412541,1,True
+RandomForest,bank-marketing,20,24,0.7706270627062706,1,False
+RandomForest,california,20,24,0.8687533584094573,1,True
+RandomForest,california,20,24,0.8956206340677055,1,False
+RandomForest,covertype,20,24,0.78576,1,True
+RandomForest,covertype,20,24,0.80822,1,False
+RandomForest,credit,20,24,0.7341489361702127,1,True
+RandomForest,credit,20,24,0.7335106382978723,1,False
+RandomForest,electricity,20,24,0.8012743327312863,1,True
+RandomForest,electricity,20,24,0.8569636765001003,1,False
+RandomForest,eye_movements,20,24,0.5440900562851781,1,True
+RandomForest,eye_movements,20,24,0.5522201375859912,1,False
+RandomForest,house_16H,20,24,0.8596305447699729,1,True
+RandomForest,house_16H,20,24,0.8616307800917754,1,False
+RandomForest,kdd_ipums_la_97-small,20,24,0.8724770642201835,1,True
+RandomForest,kdd_ipums_la_97-small,20,24,0.8825688073394495,1,False
+RandomForest,phoneme,20,24,0.8191904047976013,1,True
+RandomForest,phoneme,20,24,0.8125937031484259,1,False
+RandomForest,pol,20,24,0.8977022348127163,1,True
+RandomForest,pol,20,24,0.9767075857727416,1,False
+RandomForest,wine,20,24,0.7891992551210427,1,True
+RandomForest,wine,20,24,0.7854748603351955,1,False
+Resnet,Higgs,20,24,0.70378,1,True
+Resnet,Higgs,20,24,0.70524,1,False
+Resnet,MagicTelescope,20,24,0.8387900355871887,1,True
+Resnet,MagicTelescope,20,24,0.8333333333333334,1,False
+Resnet,MiniBooNE,20,24,0.92643824122996,1,True
+Resnet,MiniBooNE,20,24,0.9307920814530942,1,False
+Resnet,bank-marketing,20,24,0.752025202520252,1,True
+Resnet,bank-marketing,20,24,0.755025502550255,1,False
+Resnet,california,20,24,0.8874261149919398,1,True
+Resnet,california,20,24,0.8859484148307362,1,False
+Resnet,covertype,20,24,0.80202,1,True
+Resnet,covertype,20,24,0.80174,1,False
+Resnet,credit,20,24,0.7364893617021276,1,True
+Resnet,credit,20,24,0.734468085106383,1,False
+Resnet,electricity,20,24,0.8013746738912302,1,True
+Resnet,electricity,20,24,0.8018763796909493,1,False
+Resnet,eye_movements,20,24,0.538044611215343,1,True
+Resnet,eye_movements,20,24,0.5326245570148009,1,False
+Resnet,house_16H,20,24,0.8676314860571832,1,True
+Resnet,house_16H,20,24,0.864807624426403,1,False
+Resnet,kdd_ipums_la_97-small,20,24,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,24,0.881039755351682,1,False
+Resnet,phoneme,20,24,0.791904047976012,1,True
+Resnet,phoneme,20,24,0.8089955022488755,1,False
+Resnet,pol,20,24,0.9559332703808624,1,True
+Resnet,pol,20,24,0.960182562165565,1,False
+Resnet,wine,20,24,0.7601489757914339,1,True
+Resnet,wine,20,24,0.7590316573556798,1,False
+FT Transformer,Higgs,20,25,0.70326,1,True
+FT Transformer,Higgs,20,25,0.71078,1,False
+FT Transformer,MagicTelescope,20,25,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,25,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,25,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,25,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,25,0.7679267926792678,1,True
+FT Transformer,bank-marketing,20,25,0.7685268526852685,1,False
+FT Transformer,california,20,25,0.8880977968833961,1,True
+FT Transformer,california,20,25,0.891456206340677,1,False
+FT Transformer,covertype,20,25,0.7861,1,True
+FT Transformer,covertype,20,25,0.79492,1,False
+FT Transformer,credit,20,25,0.7351063829787234,1,True
+FT Transformer,credit,20,25,0.7340425531914894,1,False
+FT Transformer,electricity,20,25,0.7987658037326911,1,True
+FT Transformer,electricity,20,25,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,25,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,25,0.5286637481759433,1,False
+FT Transformer,house_16H,20,25,0.8657489116366631,1,True
+FT Transformer,house_16H,20,25,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,25,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,25,0.8807339449541285,1,False
+FT Transformer,phoneme,20,25,0.8107946026986508,1,True
+FT Transformer,phoneme,20,25,0.8071964017991003,1,False
+FT Transformer,pol,20,25,0.940195152659742,1,True
+FT Transformer,pol,20,25,0.9760780610638968,1,False
+FT Transformer,wine,20,25,0.7500931098696462,1,True
+FT Transformer,wine,20,25,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,25,0.69214,1,True
+GradientBoostingTree,Higgs,20,25,0.70614,1,False
+GradientBoostingTree,MagicTelescope,20,25,0.836061684460261,1,True
+GradientBoostingTree,MagicTelescope,20,25,0.8400948991696322,1,False
+GradientBoostingTree,MiniBooNE,20,25,0.9184335245697182,1,True
+GradientBoostingTree,MiniBooNE,20,25,0.9297262976484728,1,False
+GradientBoostingTree,bank-marketing,20,25,0.7641764176417642,1,True
+GradientBoostingTree,bank-marketing,20,25,0.7764776477647765,1,False
+GradientBoostingTree,california,20,25,0.8731864588930682,1,True
+GradientBoostingTree,california,20,25,0.900322407307899,1,False
+GradientBoostingTree,covertype,20,25,0.78776,1,True
+GradientBoostingTree,covertype,20,25,0.8189,1,False
+GradientBoostingTree,credit,20,25,0.7341489361702127,1,True
+GradientBoostingTree,credit,20,25,0.7336170212765958,1,False
+GradientBoostingTree,electricity,20,25,0.7970098334336745,1,True
+GradientBoostingTree,electricity,20,25,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,25,0.5401292474463206,1,True
+GradientBoostingTree,eye_movements,20,25,0.5797373358348968,1,False
+GradientBoostingTree,house_16H,20,25,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,25,0.8651606071302506,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,25,0.8712538226299694,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,25,0.8795107033639145,1,False
+GradientBoostingTree,phoneme,20,25,0.8263868065967015,1,True
+GradientBoostingTree,phoneme,20,25,0.8185907046476762,1,False
+GradientBoostingTree,pol,20,25,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,25,0.9815864022662888,1,False
+GradientBoostingTree,wine,20,25,0.7988826815642459,1,True
+GradientBoostingTree,wine,20,25,0.7776536312849162,1,False
+RandomForest,Higgs,20,25,0.68604,1,True
+RandomForest,Higgs,20,25,0.70844,1,False
+RandomForest,MagicTelescope,20,25,0.8342823250296559,1,True
+RandomForest,MagicTelescope,20,25,0.8383155397390273,1,False
+RandomForest,MiniBooNE,20,25,0.9149187056395836,1,True
+RandomForest,MiniBooNE,20,25,0.9212453797138256,1,False
+RandomForest,bank-marketing,20,25,0.762976297629763,1,True
+RandomForest,bank-marketing,20,25,0.7694269426942695,1,False
+RandomForest,california,20,25,0.8734551316496507,1,True
+RandomForest,california,20,25,0.8921278882321333,1,False
+RandomForest,covertype,20,25,0.78672,1,True
+RandomForest,covertype,20,25,0.79394,1,False
+RandomForest,credit,20,25,0.7332978723404255,1,True
+RandomForest,credit,20,25,0.7290425531914894,1,False
+RandomForest,electricity,20,25,0.8015753562111178,1,True
+RandomForest,electricity,20,25,0.8603251053582179,1,False
+RandomForest,eye_movements,20,25,0.5424223473003961,1,True
+RandomForest,eye_movements,20,25,0.5624348551177819,1,False
+RandomForest,house_16H,20,25,0.8563360395340628,1,True
+RandomForest,house_16H,20,25,0.8577479703494529,1,False
+RandomForest,kdd_ipums_la_97-small,20,25,0.8703363914373089,1,True
+RandomForest,kdd_ipums_la_97-small,20,25,0.8837920489296636,1,False
+RandomForest,phoneme,20,25,0.8314842578710644,1,True
+RandomForest,phoneme,20,25,0.8272863568215891,1,False
+RandomForest,pol,20,25,0.8901479383065786,1,True
+RandomForest,pol,20,25,0.9781240163676423,1,False
+RandomForest,wine,20,25,0.7832402234636872,1,True
+RandomForest,wine,20,25,0.7854748603351955,1,False
+Resnet,Higgs,20,25,0.70378,1,True
+Resnet,Higgs,20,25,0.70302,1,False
+Resnet,MagicTelescope,20,25,0.8351126927639383,1,True
+Resnet,MagicTelescope,20,25,0.8383155397390274,1,False
+Resnet,MiniBooNE,20,25,0.928479103834554,1,True
+Resnet,MiniBooNE,20,25,0.9284337513322296,1,False
+Resnet,bank-marketing,20,25,0.752025202520252,1,True
+Resnet,bank-marketing,20,25,0.752025202520252,1,False
+Resnet,california,20,25,0.8917248790972595,1,True
+Resnet,california,20,25,0.8831273508866201,1,False
+Resnet,covertype,20,25,0.79942,1,True
+Resnet,covertype,20,25,0.80238,1,False
+Resnet,credit,20,25,0.7364893617021276,1,True
+Resnet,credit,20,25,0.7348936170212765,1,False
+Resnet,electricity,20,25,0.8028296207104154,1,True
+Resnet,electricity,20,25,0.8043347381095726,1,False
+Resnet,eye_movements,20,25,0.538044611215343,1,True
+Resnet,eye_movements,20,25,0.5222013758599124,1,False
+Resnet,house_16H,20,25,0.8668078597482056,1,True
+Resnet,house_16H,20,25,0.8686904341687258,1,False
+Resnet,kdd_ipums_la_97-small,20,25,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,25,0.8801223241590215,1,False
+Resnet,phoneme,20,25,0.8008995502248876,1,True
+Resnet,phoneme,20,25,0.7967016491754124,1,False
+Resnet,pol,20,25,0.9576644633301856,1,True
+Resnet,pol,20,25,0.9494806421152032,1,False
+Resnet,wine,20,25,0.7571694599627561,1,True
+Resnet,wine,20,25,0.7571694599627561,1,False
+FT Transformer,Higgs,20,26,0.70326,1,True
+FT Transformer,Higgs,20,26,0.714,1,False
+FT Transformer,MagicTelescope,20,26,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,26,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,26,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,26,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,26,0.7679267926792678,1,True
+FT Transformer,bank-marketing,20,26,0.7745274527452746,1,False
+FT Transformer,california,20,26,0.8880977968833961,1,True
+FT Transformer,california,20,26,0.891456206340677,1,False
+FT Transformer,covertype,20,26,0.78424,1,True
+FT Transformer,covertype,20,26,0.79492,1,False
+FT Transformer,credit,20,26,0.7351063829787234,1,True
+FT Transformer,credit,20,26,0.7340425531914894,1,False
+FT Transformer,electricity,20,26,0.8002207505518764,1,True
+FT Transformer,electricity,20,26,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,26,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,26,0.5374192203460496,1,False
+FT Transformer,house_16H,20,26,0.8657489116366631,1,True
+FT Transformer,house_16H,20,26,0.8672785033533357,1,False
+FT Transformer,kdd_ipums_la_97-small,20,26,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,26,0.8764525993883793,1,False
+FT Transformer,phoneme,20,26,0.8107946026986508,1,True
+FT Transformer,phoneme,20,26,0.8071964017991003,1,False
+FT Transformer,pol,20,26,0.9394082467736858,1,True
+FT Transformer,pol,20,26,0.9817437834435,1,False
+FT Transformer,wine,20,26,0.7500931098696462,1,True
+FT Transformer,wine,20,26,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,26,0.69214,1,True
+GradientBoostingTree,Higgs,20,26,0.70466,1,False
+GradientBoostingTree,MagicTelescope,20,26,0.8353499406880189,1,True
+GradientBoostingTree,MagicTelescope,20,26,0.837485172004745,1,False
+GradientBoostingTree,MiniBooNE,20,26,0.9198167758906096,1,True
+GradientBoostingTree,MiniBooNE,20,26,0.9301571464205538,1,False
+GradientBoostingTree,bank-marketing,20,26,0.7634263426342635,1,True
+GradientBoostingTree,bank-marketing,20,26,0.7751275127512751,1,False
+GradientBoostingTree,california,20,26,0.8715744223535733,1,True
+GradientBoostingTree,california,20,26,0.8999193981730252,1,False
+GradientBoostingTree,covertype,20,26,0.78514,1,True
+GradientBoostingTree,covertype,20,26,0.81402,1,False
+GradientBoostingTree,credit,20,26,0.7257446808510638,1,True
+GradientBoostingTree,credit,20,26,0.735,1,False
+GradientBoostingTree,electricity,20,26,0.8027794501304435,1,True
+GradientBoostingTree,electricity,20,26,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,26,0.5301229935376277,1,True
+GradientBoostingTree,eye_movements,20,26,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,26,0.861983762795623,1,True
+GradientBoostingTree,house_16H,20,26,0.8663372161430756,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,26,0.8712538226299694,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,26,0.8795107033639145,1,False
+GradientBoostingTree,phoneme,20,26,0.826086956521739,1,True
+GradientBoostingTree,phoneme,20,26,0.8233883058470765,1,False
+GradientBoostingTree,pol,20,26,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,26,0.9822159269751336,1,False
+GradientBoostingTree,wine,20,26,0.7672253258845437,1,True
+GradientBoostingTree,wine,20,26,0.7862197392923649,1,False
+RandomForest,Higgs,20,26,0.68038,1,True
+RandomForest,Higgs,20,26,0.70196,1,False
+RandomForest,MagicTelescope,20,26,0.8367734282325029,1,True
+RandomForest,MagicTelescope,20,26,0.8315539739027283,1,False
+RandomForest,MiniBooNE,20,26,0.9185922583278532,1,True
+RandomForest,MiniBooNE,20,26,0.9229234222998254,1,False
+RandomForest,bank-marketing,20,26,0.7595259525952596,1,True
+RandomForest,bank-marketing,20,26,0.7685268526852685,1,False
+RandomForest,california,20,26,0.8687533584094573,1,True
+RandomForest,california,20,26,0.8889038151531434,1,False
+RandomForest,covertype,20,26,0.77998,1,True
+RandomForest,covertype,20,26,0.81014,1,False
+RandomForest,credit,20,26,0.7324468085106384,1,True
+RandomForest,credit,20,26,0.7340425531914894,1,False
+RandomForest,electricity,20,26,0.798314268512944,1,True
+RandomForest,electricity,20,26,0.8621312462372065,1,False
+RandomForest,eye_movements,20,26,0.539712320200125,1,True
+RandomForest,eye_movements,20,26,0.5522201375859912,1,False
+RandomForest,house_16H,20,26,0.8542181433109777,1,True
+RandomForest,house_16H,20,26,0.8643369808212732,1,False
+RandomForest,kdd_ipums_la_97-small,20,26,0.8681957186544343,1,True
+RandomForest,kdd_ipums_la_97-small,20,26,0.8776758409785933,1,False
+RandomForest,phoneme,20,26,0.8293853073463268,1,True
+RandomForest,phoneme,20,26,0.824887556221889,1,False
+RandomForest,pol,20,26,0.8947119924457035,1,True
+RandomForest,pol,20,26,0.9800125904941768,1,False
+RandomForest,wine,20,26,0.7880819366852887,1,True
+RandomForest,wine,20,26,0.7854748603351955,1,False
+Resnet,Higgs,20,26,0.7068,1,True
+Resnet,Higgs,20,26,0.70302,1,False
+Resnet,MagicTelescope,20,26,0.837485172004745,1,True
+Resnet,MagicTelescope,20,26,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,26,0.9268690900020408,1,True
+Resnet,MiniBooNE,20,26,0.9284337513322296,1,False
+Resnet,bank-marketing,20,26,0.752025202520252,1,True
+Resnet,bank-marketing,20,26,0.752025202520252,1,False
+Resnet,california,20,26,0.8929339065018808,1,True
+Resnet,california,20,26,0.8913218699623858,1,False
+Resnet,covertype,20,26,0.79942,1,True
+Resnet,covertype,20,26,0.80238,1,False
+Resnet,credit,20,26,0.7346808510638299,1,True
+Resnet,credit,20,26,0.7353191489361701,1,False
+Resnet,electricity,20,26,0.807244631747943,1,True
+Resnet,electricity,20,26,0.8011238209913707,1,False
+Resnet,eye_movements,20,26,0.5274129664373567,1,True
+Resnet,eye_movements,20,26,0.5345007296226808,1,False
+Resnet,house_16H,20,26,0.8673961642546182,1,True
+Resnet,house_16H,20,26,0.864807624426403,1,False
+Resnet,kdd_ipums_la_97-small,20,26,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,26,0.8801223241590215,1,False
+Resnet,phoneme,20,26,0.8059970014992504,1,True
+Resnet,phoneme,20,26,0.8029985007496252,1,False
+Resnet,pol,20,26,0.95561850802644,1,True
+Resnet,pol,20,26,0.960182562165565,1,False
+Resnet,wine,20,26,0.7582867783985103,1,True
+Resnet,wine,20,26,0.756052141527002,1,False
+FT Transformer,Higgs,20,27,0.70326,1,True
+FT Transformer,Higgs,20,27,0.714,1,False
+FT Transformer,MagicTelescope,20,27,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,27,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,27,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,27,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,27,0.7650765076507651,1,True
+FT Transformer,bank-marketing,20,27,0.7710771077107711,1,False
+FT Transformer,california,20,27,0.8917248790972595,1,True
+FT Transformer,california,20,27,0.891456206340677,1,False
+FT Transformer,covertype,20,27,0.78424,1,True
+FT Transformer,covertype,20,27,0.7965,1,False
+FT Transformer,credit,20,27,0.7351063829787234,1,True
+FT Transformer,credit,20,27,0.7347872340425532,1,False
+FT Transformer,electricity,20,27,0.8002207505518764,1,True
+FT Transformer,electricity,20,27,0.8020268914308649,1,False
+FT Transformer,eye_movements,20,27,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,27,0.5374192203460496,1,False
+FT Transformer,house_16H,20,27,0.8657489116366631,1,True
+FT Transformer,house_16H,20,27,0.8672785033533357,1,False
+FT Transformer,kdd_ipums_la_97-small,20,27,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,27,0.8807339449541285,1,False
+FT Transformer,phoneme,20,27,0.8107946026986508,1,True
+FT Transformer,phoneme,20,27,0.8071964017991003,1,False
+FT Transformer,pol,20,27,0.940195152659742,1,True
+FT Transformer,pol,20,27,0.9817437834435,1,False
+FT Transformer,wine,20,27,0.7545623836126629,1,True
+FT Transformer,wine,20,27,0.7582867783985103,1,False
+GradientBoostingTree,Higgs,20,27,0.68406,1,True
+GradientBoostingTree,Higgs,20,27,0.70672,1,False
+GradientBoostingTree,MagicTelescope,20,27,0.8354685646500593,1,True
+GradientBoostingTree,MagicTelescope,20,27,0.837485172004745,1,False
+GradientBoostingTree,MiniBooNE,20,27,0.9283883988299054,1,True
+GradientBoostingTree,MiniBooNE,20,27,0.9282976938252568,1,False
+GradientBoostingTree,bank-marketing,20,27,0.7610261026102609,1,True
+GradientBoostingTree,bank-marketing,20,27,0.7758775877587759,1,False
+GradientBoostingTree,california,20,27,0.8731864588930682,1,True
+GradientBoostingTree,california,20,27,0.8981730252552391,1,False
+GradientBoostingTree,covertype,20,27,0.7902,1,True
+GradientBoostingTree,covertype,20,27,0.81328,1,False
+GradientBoostingTree,credit,20,27,0.7341489361702127,1,True
+GradientBoostingTree,credit,20,27,0.7306382978723405,1,False
+GradientBoostingTree,electricity,20,27,0.8027794501304435,1,True
+GradientBoostingTree,electricity,20,27,0.8731186032510536,1,False
+GradientBoostingTree,eye_movements,20,27,0.5411715655618095,1,True
+GradientBoostingTree,eye_movements,20,27,0.586825099020221,1,False
+GradientBoostingTree,house_16H,20,27,0.8593952229674079,1,True
+GradientBoostingTree,house_16H,20,27,0.8645723026238382,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,27,0.8663608562691132,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,27,0.8773700305810398,1,False
+GradientBoostingTree,phoneme,20,27,0.8134932533733134,1,True
+GradientBoostingTree,phoneme,20,27,0.8326836581709145,1,False
+GradientBoostingTree,pol,20,27,0.9025810513062638,1,True
+GradientBoostingTree,pol,20,27,0.982530689329556,1,False
+GradientBoostingTree,wine,20,27,0.7795158286778399,1,True
+GradientBoostingTree,wine,20,27,0.788826815642458,1,False
+RandomForest,Higgs,20,27,0.68686,1,True
+RandomForest,Higgs,20,27,0.70916,1,False
+RandomForest,MagicTelescope,20,27,0.8296559905100831,1,True
+RandomForest,MagicTelescope,20,27,0.8330960854092527,1,False
+RandomForest,MiniBooNE,20,27,0.9205877684301232,1,True
+RandomForest,MiniBooNE,20,27,0.9229234222998254,1,False
+RandomForest,bank-marketing,20,27,0.762976297629763,1,True
+RandomForest,bank-marketing,20,27,0.7689768976897691,1,False
+RandomForest,california,20,27,0.8734551316496507,1,True
+RandomForest,california,20,27,0.8872917786136486,1,False
+RandomForest,covertype,20,27,0.77586,1,True
+RandomForest,covertype,20,27,0.80866,1,False
+RandomForest,credit,20,27,0.7341489361702127,1,True
+RandomForest,credit,20,27,0.7290425531914894,1,False
+RandomForest,electricity,20,27,0.8031808147702187,1,True
+RandomForest,electricity,20,27,0.8559100943206903,1,False
+RandomForest,eye_movements,20,27,0.5292891390452367,1,True
+RandomForest,eye_movements,20,27,0.5590994371482175,1,False
+RandomForest,house_16H,20,27,0.8578656312507354,1,True
+RandomForest,house_16H,20,27,0.8592775620661254,1,False
+RandomForest,kdd_ipums_la_97-small,20,27,0.872782874617737,1,True
+RandomForest,kdd_ipums_la_97-small,20,27,0.8813455657492355,1,False
+RandomForest,phoneme,20,27,0.7955022488755623,1,True
+RandomForest,phoneme,20,27,0.7859070464767616,1,False
+RandomForest,pol,20,27,0.8604028958136607,1,True
+RandomForest,pol,20,27,0.9756059175322632,1,False
+RandomForest,wine,20,27,0.7798882681564245,1,True
+RandomForest,wine,20,27,0.7854748603351955,1,False
+Resnet,Higgs,20,27,0.7068,1,True
+Resnet,Higgs,20,27,0.70846,1,False
+Resnet,MagicTelescope,20,27,0.8322657176749703,1,True
+Resnet,MagicTelescope,20,27,0.8383155397390274,1,False
+Resnet,MiniBooNE,20,27,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,27,0.9269371187555272,1,False
+Resnet,bank-marketing,20,27,0.7515751575157515,1,True
+Resnet,bank-marketing,20,27,0.7496249624962497,1,False
+Resnet,california,20,27,0.8929339065018808,1,True
+Resnet,california,20,27,0.8889038151531434,1,False
+Resnet,covertype,20,27,0.79918,1,True
+Resnet,covertype,20,27,0.79688,1,False
+Resnet,credit,20,27,0.7364893617021276,1,True
+Resnet,credit,20,27,0.734468085106383,1,False
+Resnet,electricity,20,27,0.8013746738912302,1,True
+Resnet,electricity,20,27,0.7981135861930564,1,False
+Resnet,eye_movements,20,27,0.5336668751302898,1,True
+Resnet,eye_movements,20,27,0.5292891390452367,1,False
+Resnet,house_16H,20,27,0.865042946228968,1,True
+Resnet,house_16H,20,27,0.8686904341687258,1,False
+Resnet,kdd_ipums_la_97-small,20,27,0.880428134556575,1,True
+Resnet,kdd_ipums_la_97-small,20,27,0.8807339449541285,1,False
+Resnet,phoneme,20,27,0.807496251874063,1,True
+Resnet,phoneme,20,27,0.8017991004497752,1,False
+Resnet,pol,20,27,0.9617563739376772,1,True
+Resnet,pol,20,27,0.9494806421152032,1,False
+Resnet,wine,20,27,0.7493482309124768,1,True
+Resnet,wine,20,27,0.7590316573556797,1,False
+FT Transformer,Higgs,20,28,0.70326,1,True
+FT Transformer,Higgs,20,28,0.71012,1,False
+FT Transformer,MagicTelescope,20,28,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,28,0.8384341637010676,1,False
+FT Transformer,MiniBooNE,20,28,0.9305199664391482,1,True
+FT Transformer,MiniBooNE,20,28,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,28,0.7587758775877589,1,True
+FT Transformer,bank-marketing,20,28,0.7685268526852685,1,False
+FT Transformer,california,20,28,0.8880977968833961,1,True
+FT Transformer,california,20,28,0.891456206340677,1,False
+FT Transformer,covertype,20,28,0.7861,1,True
+FT Transformer,covertype,20,28,0.7965,1,False
+FT Transformer,credit,20,28,0.7340425531914894,1,True
+FT Transformer,credit,20,28,0.7347872340425532,1,False
+FT Transformer,electricity,20,28,0.7987658037326911,1,True
+FT Transformer,electricity,20,28,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,28,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,28,0.5286637481759433,1,False
+FT Transformer,house_16H,20,28,0.8698670431815508,1,True
+FT Transformer,house_16H,20,28,0.8684551123661608,1,False
+FT Transformer,kdd_ipums_la_97-small,20,28,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,28,0.8807339449541285,1,False
+FT Transformer,phoneme,20,28,0.8107946026986508,1,True
+FT Transformer,phoneme,20,28,0.8071964017991003,1,False
+FT Transformer,pol,20,28,0.940195152659742,1,True
+FT Transformer,pol,20,28,0.9760780610638968,1,False
+FT Transformer,wine,20,28,0.7500931098696462,1,True
+FT Transformer,wine,20,28,0.7638733705772812,1,False
+GradientBoostingTree,Higgs,20,28,0.68752,1,True
+GradientBoostingTree,Higgs,20,28,0.70614,1,False
+GradientBoostingTree,MagicTelescope,20,28,0.8311981020166073,1,True
+GradientBoostingTree,MagicTelescope,20,28,0.8410438908659549,1,False
+GradientBoostingTree,MiniBooNE,20,28,0.9252590761695276,1,True
+GradientBoostingTree,MiniBooNE,20,28,0.9301571464205538,1,False
+GradientBoostingTree,bank-marketing,20,28,0.7619261926192621,1,True
+GradientBoostingTree,bank-marketing,20,28,0.7758775877587759,1,False
+GradientBoostingTree,california,20,28,0.8706340677055346,1,True
+GradientBoostingTree,california,20,28,0.8991133799032778,1,False
+GradientBoostingTree,covertype,20,28,0.78618,1,True
+GradientBoostingTree,covertype,20,28,0.82242,1,False
+GradientBoostingTree,credit,20,28,0.7341489361702127,1,True
+GradientBoostingTree,credit,20,28,0.7306382978723405,1,False
+GradientBoostingTree,electricity,20,28,0.7996187035922135,1,True
+GradientBoostingTree,electricity,20,28,0.8791390728476821,1,False
+GradientBoostingTree,eye_movements,20,28,0.5347091932457787,1,True
+GradientBoostingTree,eye_movements,20,28,0.5730664998957682,1,False
+GradientBoostingTree,house_16H,20,28,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,28,0.8646899635251205,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,28,0.8669724770642202,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,28,0.8795107033639145,1,False
+GradientBoostingTree,phoneme,20,28,0.8155922038980508,1,True
+GradientBoostingTree,phoneme,20,28,0.8122938530734632,1,False
+GradientBoostingTree,pol,20,28,0.9066729619137552,1,True
+GradientBoostingTree,pol,20,28,0.9822159269751336,1,False
+GradientBoostingTree,wine,20,28,0.7988826815642459,1,True
+GradientBoostingTree,wine,20,28,0.7873370577281193,1,False
+RandomForest,Higgs,20,28,0.6842,1,True
+RandomForest,Higgs,20,28,0.70786,1,False
+RandomForest,MagicTelescope,20,28,0.8345195729537367,1,True
+RandomForest,MagicTelescope,20,28,0.8385527876631079,1,False
+RandomForest,MiniBooNE,20,28,0.915530964420962,1,True
+RandomForest,MiniBooNE,20,28,0.9223791922719335,1,False
+RandomForest,bank-marketing,20,28,0.7598259825982598,1,True
+RandomForest,bank-marketing,20,28,0.7704770477047704,1,False
+RandomForest,california,20,28,0.8687533584094573,1,True
+RandomForest,california,20,28,0.8945459430413756,1,False
+RandomForest,covertype,20,28,0.78938,1,True
+RandomForest,covertype,20,28,0.79322,1,False
+RandomForest,credit,20,28,0.7267021276595744,1,True
+RandomForest,credit,20,28,0.7285106382978723,1,False
+RandomForest,electricity,20,28,0.8006221151916516,1,True
+RandomForest,electricity,20,28,0.8481336544250452,1,False
+RandomForest,eye_movements,20,28,0.5280383573066499,1,True
+RandomForest,eye_movements,20,28,0.5486762559933291,1,False
+RandomForest,house_16H,20,28,0.8596305447699729,1,True
+RandomForest,house_16H,20,28,0.8592775620661254,1,False
+RandomForest,kdd_ipums_la_97-small,20,28,0.8697247706422019,1,True
+RandomForest,kdd_ipums_la_97-small,20,28,0.881039755351682,1,False
+RandomForest,phoneme,20,28,0.830584707646177,1,True
+RandomForest,phoneme,20,28,0.8251874062968515,1,False
+RandomForest,pol,20,28,0.8915643689014794,1,True
+RandomForest,pol,20,28,0.9800125904941768,1,False
+RandomForest,wine,20,28,0.7798882681564245,1,True
+RandomForest,wine,20,28,0.7716945996275606,1,False
+Resnet,Higgs,20,28,0.70662,1,True
+Resnet,Higgs,20,28,0.70302,1,False
+Resnet,MagicTelescope,20,28,0.8386714116251482,1,True
+Resnet,MagicTelescope,20,28,0.8364175563463819,1,False
+Resnet,MiniBooNE,20,28,0.9268690900020408,1,True
+Resnet,MiniBooNE,20,28,0.928320370076419,1,False
+Resnet,bank-marketing,20,28,0.7523252325232525,1,True
+Resnet,bank-marketing,20,28,0.7626762676267628,1,False
+Resnet,california,20,28,0.8907845244492208,1,True
+Resnet,california,20,28,0.8902471789360559,1,False
+Resnet,covertype,20,28,0.79918,1,True
+Resnet,covertype,20,28,0.79518,1,False
+Resnet,credit,20,28,0.7346808510638299,1,True
+Resnet,credit,20,28,0.7353191489361701,1,False
+Resnet,electricity,20,28,0.807244631747943,1,True
+Resnet,electricity,20,28,0.8015251856311459,1,False
+Resnet,eye_movements,20,28,0.5380446112153429,1,True
+Resnet,eye_movements,20,28,0.5345007296226808,1,False
+Resnet,house_16H,20,28,0.8673961642546182,1,True
+Resnet,house_16H,20,28,0.8649252853276855,1,False
+Resnet,kdd_ipums_la_97-small,20,28,0.8801223241590214,1,True
+Resnet,kdd_ipums_la_97-small,20,28,0.8798165137614679,1,False
+Resnet,phoneme,20,28,0.8104947526236881,1,True
+Resnet,phoneme,20,28,0.8017991004497752,1,False
+Resnet,pol,20,28,0.9617563739376772,1,True
+Resnet,pol,20,28,0.960182562165565,1,False
+Resnet,wine,20,28,0.7478584729981378,1,True
+Resnet,wine,20,28,0.7590316573556797,1,False
+FT Transformer,Higgs,20,29,0.70326,1,True
+FT Transformer,Higgs,20,29,0.714,1,False
+FT Transformer,MagicTelescope,20,29,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,29,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,29,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,29,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,29,0.7679267926792678,1,True
+FT Transformer,bank-marketing,20,29,0.7685268526852685,1,False
+FT Transformer,california,20,29,0.8917248790972595,1,True
+FT Transformer,california,20,29,0.891456206340677,1,False
+FT Transformer,covertype,20,29,0.7861,1,True
+FT Transformer,covertype,20,29,0.7965,1,False
+FT Transformer,credit,20,29,0.7340425531914894,1,True
+FT Transformer,credit,20,29,0.7337234042553191,1,False
+FT Transformer,electricity,20,29,0.8002207505518764,1,True
+FT Transformer,electricity,20,29,0.8059903672486454,1,False
+FT Transformer,eye_movements,20,29,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,29,0.5286637481759433,1,False
+FT Transformer,house_16H,20,29,0.8578656312507352,1,True
+FT Transformer,house_16H,20,29,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,29,0.8694189602446483,1,True
+FT Transformer,kdd_ipums_la_97-small,20,29,0.8764525993883793,1,False
+FT Transformer,phoneme,20,29,0.8041979010494753,1,True
+FT Transformer,phoneme,20,29,0.808095952023988,1,False
+FT Transformer,pol,20,29,0.940195152659742,1,True
+FT Transformer,pol,20,29,0.9817437834435,1,False
+FT Transformer,wine,20,29,0.7545623836126629,1,True
+FT Transformer,wine,20,29,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,29,0.68548,1,True
+GradientBoostingTree,Higgs,20,29,0.70904,1,False
+GradientBoostingTree,MagicTelescope,20,29,0.8340450771055753,1,True
+GradientBoostingTree,MagicTelescope,20,29,0.8384341637010676,1,False
+GradientBoostingTree,MiniBooNE,20,29,0.9113585342071248,1,True
+GradientBoostingTree,MiniBooNE,20,29,0.9285924850903648,1,False
+GradientBoostingTree,bank-marketing,20,29,0.7634263426342635,1,True
+GradientBoostingTree,bank-marketing,20,29,0.7764776477647765,1,False
+GradientBoostingTree,california,20,29,0.8706340677055346,1,True
+GradientBoostingTree,california,20,29,0.8991133799032778,1,False
+GradientBoostingTree,covertype,20,29,0.78732,1,True
+GradientBoostingTree,covertype,20,29,0.8189,1,False
+GradientBoostingTree,credit,20,29,0.7337234042553191,1,True
+GradientBoostingTree,credit,20,29,0.735,1,False
+GradientBoostingTree,electricity,20,29,0.7982640979329721,1,True
+GradientBoostingTree,electricity,20,29,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,29,0.5301229935376277,1,True
+GradientBoostingTree,eye_movements,20,29,0.5884928080050031,1,False
+GradientBoostingTree,house_16H,20,29,0.860336510177668,1,True
+GradientBoostingTree,house_16H,20,29,0.8651606071302506,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,29,0.8697247706422019,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,29,0.8801223241590214,1,False
+GradientBoostingTree,phoneme,20,29,0.8194902548725638,1,True
+GradientBoostingTree,phoneme,20,29,0.8161919040479759,1,False
+GradientBoostingTree,pol,20,29,0.9082467736858671,1,True
+GradientBoostingTree,pol,20,29,0.982373308152345,1,False
+GradientBoostingTree,wine,20,29,0.7973929236499069,1,True
+GradientBoostingTree,wine,20,29,0.788826815642458,1,False
+RandomForest,Higgs,20,29,0.6842,1,True
+RandomForest,Higgs,20,29,0.70818,1,False
+RandomForest,MagicTelescope,20,29,0.8323843416370108,1,True
+RandomForest,MagicTelescope,20,29,0.8395017793594306,1,False
+RandomForest,MiniBooNE,20,29,0.9166421007279076,1,True
+RandomForest,MiniBooNE,20,29,0.9242159686160684,1,False
+RandomForest,bank-marketing,20,29,0.7641764176417642,1,True
+RandomForest,bank-marketing,20,29,0.7665766576657665,1,False
+RandomForest,california,20,29,0.8674099946265449,1,True
+RandomForest,california,20,29,0.8895754970445997,1,False
+RandomForest,covertype,20,29,0.78618,1,True
+RandomForest,covertype,20,29,0.80464,1,False
+RandomForest,credit,20,29,0.7341489361702127,1,True
+RandomForest,credit,20,29,0.7340425531914894,1,False
+RandomForest,electricity,20,29,0.8006221151916516,1,True
+RandomForest,electricity,20,29,0.8527493477824604,1,False
+RandomForest,eye_movements,20,29,0.5357515113612675,1,True
+RandomForest,eye_movements,20,29,0.5586825099020221,1,False
+RandomForest,house_16H,20,29,0.8596305447699729,1,True
+RandomForest,house_16H,20,29,0.8622190845981881,1,False
+RandomForest,kdd_ipums_la_97-small,20,29,0.8694189602446483,1,True
+RandomForest,kdd_ipums_la_97-small,20,29,0.879204892966361,1,False
+RandomForest,phoneme,20,29,0.8326836581709145,1,True
+RandomForest,phoneme,20,29,0.8248875562218891,1,False
+RandomForest,pol,20,29,0.7039660056657224,1,True
+RandomForest,pol,20,29,0.9734025810513064,1,False
+RandomForest,wine,20,29,0.7914338919925512,1,True
+RandomForest,wine,20,29,0.783240223463687,1,False
+Resnet,Higgs,20,29,0.7062,1,True
+Resnet,Higgs,20,29,0.70846,1,False
+Resnet,MagicTelescope,20,29,0.840332147093713,1,True
+Resnet,MagicTelescope,20,29,0.8333333333333334,1,False
+Resnet,MiniBooNE,20,29,0.9283883988299054,1,True
+Resnet,MiniBooNE,20,29,0.9307920814530942,1,False
+Resnet,bank-marketing,20,29,0.755025502550255,1,True
+Resnet,bank-marketing,20,29,0.752025202520252,1,False
+Resnet,california,20,29,0.8922622246104245,1,True
+Resnet,california,20,29,0.8902471789360559,1,False
+Resnet,covertype,20,29,0.8023,1,True
+Resnet,covertype,20,29,0.80238,1,False
+Resnet,credit,20,29,0.7340425531914894,1,True
+Resnet,credit,20,29,0.7346808510638299,1,False
+Resnet,electricity,20,29,0.8012241621513144,1,True
+Resnet,electricity,20,29,0.8068432671081678,1,False
+Resnet,eye_movements,20,29,0.5336668751302898,1,True
+Resnet,eye_movements,20,29,0.5242860120908902,1,False
+Resnet,house_16H,20,29,0.8673961642546182,1,True
+Resnet,house_16H,20,29,0.8672785033533357,1,False
+Resnet,kdd_ipums_la_97-small,20,29,0.879816513761468,1,True
+Resnet,kdd_ipums_la_97-small,20,29,0.8798165137614679,1,False
+Resnet,phoneme,20,29,0.8041979010494753,1,True
+Resnet,phoneme,20,29,0.8050974512743627,1,False
+Resnet,pol,20,29,0.9617563739376772,1,True
+Resnet,pol,20,29,0.9529430280138496,1,False
+Resnet,wine,20,29,0.7579143389199254,1,True
+Resnet,wine,20,29,0.7571694599627561,1,False
+FT Transformer,Higgs,20,30,0.70326,1,True
+FT Transformer,Higgs,20,30,0.714,1,False
+FT Transformer,MagicTelescope,20,30,0.8366548042704626,1,True
+FT Transformer,MagicTelescope,20,30,0.8422301304863581,1,False
+FT Transformer,MiniBooNE,20,30,0.9270505000113382,1,True
+FT Transformer,MiniBooNE,20,30,0.9301344701693915,1,False
+FT Transformer,bank-marketing,20,30,0.7679267926792678,1,True
+FT Transformer,bank-marketing,20,30,0.7685268526852685,1,False
+FT Transformer,california,20,30,0.8880977968833961,1,True
+FT Transformer,california,20,30,0.891456206340677,1,False
+FT Transformer,covertype,20,30,0.7861,1,True
+FT Transformer,covertype,20,30,0.79492,1,False
+FT Transformer,credit,20,30,0.7351063829787234,1,True
+FT Transformer,credit,20,30,0.7347872340425532,1,False
+FT Transformer,electricity,20,30,0.801475015051174,1,True
+FT Transformer,electricity,20,30,0.8020268914308649,1,False
+FT Transformer,eye_movements,20,30,0.5424223473003961,1,True
+FT Transformer,eye_movements,20,30,0.5286637481759433,1,False
+FT Transformer,house_16H,20,30,0.8578656312507352,1,True
+FT Transformer,house_16H,20,30,0.8675138251559007,1,False
+FT Transformer,kdd_ipums_la_97-small,20,30,0.8737003058103975,1,True
+FT Transformer,kdd_ipums_la_97-small,20,30,0.8776758409785933,1,False
+FT Transformer,phoneme,20,30,0.8107946026986508,1,True
+FT Transformer,phoneme,20,30,0.8182908545727136,1,False
+FT Transformer,pol,20,30,0.940195152659742,1,True
+FT Transformer,pol,20,30,0.9803273528485992,1,False
+FT Transformer,wine,20,30,0.7500931098696462,1,True
+FT Transformer,wine,20,30,0.7594040968342645,1,False
+GradientBoostingTree,Higgs,20,30,0.68814,1,True
+GradientBoostingTree,Higgs,20,30,0.71318,1,False
+GradientBoostingTree,MagicTelescope,20,30,0.838196915776987,1,True
+GradientBoostingTree,MagicTelescope,20,30,0.837485172004745,1,False
+GradientBoostingTree,MiniBooNE,20,30,0.9252590761695276,1,True
+GradientBoostingTree,MiniBooNE,20,30,0.9301571464205538,1,False
+GradientBoostingTree,bank-marketing,20,30,0.7598259825982598,1,True
+GradientBoostingTree,bank-marketing,20,30,0.7725772577257727,1,False
+GradientBoostingTree,california,20,30,0.8738581407845244,1,True
+GradientBoostingTree,california,20,30,0.8966953250940355,1,False
+GradientBoostingTree,covertype,20,30,0.78802,1,True
+GradientBoostingTree,covertype,20,30,0.8139,1,False
+GradientBoostingTree,credit,20,30,0.7296808510638297,1,True
+GradientBoostingTree,credit,20,30,0.7352127659574468,1,False
+GradientBoostingTree,electricity,20,30,0.7970098334336745,1,True
+GradientBoostingTree,electricity,20,30,0.884958860124423,1,False
+GradientBoostingTree,eye_movements,20,30,0.5432562017927871,1,True
+GradientBoostingTree,eye_movements,20,30,0.5797373358348968,1,False
+GradientBoostingTree,house_16H,20,30,0.8558653959289328,1,True
+GradientBoostingTree,house_16H,20,30,0.8651606071302506,1,False
+GradientBoostingTree,kdd_ipums_la_97-small,20,30,0.874006116207951,1,True
+GradientBoostingTree,kdd_ipums_la_97-small,20,30,0.8782874617737003,1,False
+GradientBoostingTree,phoneme,20,30,0.8158920539730135,1,True
+GradientBoostingTree,phoneme,20,30,0.8326836581709145,1,False
+GradientBoostingTree,pol,20,30,0.8906200818382121,1,True
+GradientBoostingTree,pol,20,30,0.9837897387472458,1,False
+GradientBoostingTree,wine,20,30,0.7988826815642459,1,True
+GradientBoostingTree,wine,20,30,0.7862197392923649,1,False
+RandomForest,Higgs,20,30,0.6842,1,True
+RandomForest,Higgs,20,30,0.70916,1,False
+RandomForest,MagicTelescope,20,30,0.8355871886120996,1,True
+RandomForest,MagicTelescope,20,30,0.8364175563463819,1,False
+RandomForest,MiniBooNE,20,30,0.9165967482255832,1,True
+RandomForest,MiniBooNE,20,30,0.9198167758906096,1,False
+RandomForest,bank-marketing,20,30,0.7611761176117612,1,True
+RandomForest,bank-marketing,20,30,0.7733273327332734,1,False
+RandomForest,california,20,30,0.8734551316496507,1,True
+RandomForest,california,20,30,0.8979043524986566,1,False
+RandomForest,covertype,20,30,0.7806,1,True
+RandomForest,covertype,20,30,0.80862,1,False
+RandomForest,credit,20,30,0.7293617021276596,1,True
+RandomForest,credit,20,30,0.7340425531914894,1,False
+RandomForest,electricity,20,30,0.8005719446116797,1,True
+RandomForest,electricity,20,30,0.858167770419426,1,False
+RandomForest,eye_movements,20,30,0.5332499478840943,1,True
+RandomForest,eye_movements,20,30,0.5480508651240359,1,False
+RandomForest,house_16H,20,30,0.8598658665725379,1,True
+RandomForest,house_16H,20,30,0.8630427109071656,1,False
+RandomForest,kdd_ipums_la_97-small,20,30,0.8703363914373089,1,True
+RandomForest,kdd_ipums_la_97-small,20,30,0.8813455657492355,1,False
+RandomForest,phoneme,20,30,0.8326836581709145,1,True
+RandomForest,phoneme,20,30,0.8272863568215891,1,False
+RandomForest,pol,20,30,0.8783443500157381,1,True
+RandomForest,pol,20,30,0.9800125904941768,1,False
+RandomForest,wine,20,30,0.7832402234636872,1,True
+RandomForest,wine,20,30,0.7910614525139665,1,False
+Resnet,Higgs,20,30,0.70662,1,True
+Resnet,Higgs,20,30,0.70524,1,False
+Resnet,MagicTelescope,20,30,0.8373665480427047,1,True
+Resnet,MagicTelescope,20,30,0.8383155397390273,1,False
+Resnet,MiniBooNE,20,30,0.928479103834554,1,True
+Resnet,MiniBooNE,20,30,0.928320370076419,1,False
+Resnet,bank-marketing,20,30,0.752025202520252,1,True
+Resnet,bank-marketing,20,30,0.7518751875187518,1,False
+Resnet,california,20,30,0.8874261149919398,1,True
+Resnet,california,20,30,0.8859484148307362,1,False
+Resnet,covertype,20,30,0.8023,1,True
+Resnet,covertype,20,30,0.80006,1,False
+Resnet,credit,20,30,0.7346808510638299,1,True
+Resnet,credit,20,30,0.7341489361702127,1,False
+Resnet,electricity,20,30,0.8013746738912302,1,True
+Resnet,electricity,20,30,0.8060907084085892,1,False
+Resnet,eye_movements,20,30,0.5336668751302898,1,True
+Resnet,eye_movements,20,30,0.5382530748384408,1,False
+Resnet,house_16H,20,30,0.8639839981174257,1,True
+Resnet,house_16H,20,30,0.8649252853276855,1,False
+Resnet,kdd_ipums_la_97-small,20,30,0.8813455657492355,1,True
+Resnet,kdd_ipums_la_97-small,20,30,0.8807339449541285,1,False
+Resnet,phoneme,20,30,0.8056971514242879,1,True
+Resnet,phoneme,20,30,0.7979010494752623,1,False
+Resnet,pol,20,30,0.9531004091910606,1,True
+Resnet,pol,20,30,0.960182562165565,1,False
+Resnet,wine,20,30,0.7478584729981378,1,True
+Resnet,wine,20,30,0.7571694599627561,1,False

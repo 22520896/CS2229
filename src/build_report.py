@@ -1,5 +1,6 @@
 """Build the Vietnamese submission PDF from the notebook exports."""
 
+import csv
 import json
 from pathlib import Path
 
@@ -107,8 +108,8 @@ def build():
     p("Paper gốc của Léo Grinsztajn, Edouard Oyallon và Gaël Varoquaux, NeurIPS 2022.")
     contents.append(Spacer(1, 22))
     p("Phạm vi", "sub")
-    p("Năm notebook Python chạy lại các hình trong thân bài từ các điểm của tác giả. "
-      "Phần đối chứng dùng các kết quả V2 đã tự train và kiểm chứng độc lập.")
+    p("Các notebook Python chạy lại từng hình từ các điểm của tác giả, gồm năm hình trong thân bài "
+      "và các hình phụ lục có dữ liệu. Phần đối chứng dùng kết quả V2 đã tự train và kiểm chứng độc lập.")
     p("Nguồn điểm của từng biểu đồ được ghi dưới hình. Slide HTML trình bày câu hỏi và kết quả chính.")
     contents.append(PageBreak())
 
@@ -181,6 +182,66 @@ def build():
                         ("CSV benchmark trên Figshare", "https://ndownloader.figshare.com/files/40081681"),
                         ("CSV ablation lịch sử", LFS)):
         p(f'<link href="{link}" color="#16776d">{label}</link>')
+
+    contents.append(PageBreak())
+    p("Phụ lục · So theo thời gian tìm kiếm", "head")
+    figure("figure_06.png", "Figure 6 · Đặc trưng số · 15 bộ dữ liệu phân loại và 19 bộ hồi quy.")
+    figure("figure_07.png", "Figure 7 · Có đặc trưng phân loại · 7 bộ dữ liệu phân loại và 13 bộ hồi quy.")
+    p("Thời gian cộng dồn từ từng lượt trong CSV lịch sử của tác giả. Mô hình được chọn qua validation. "
+      "Vùng tô là min–max qua 15 hoán vị. Phép đo phụ thuộc vào phần cứng và môi trường chạy của tác giả.")
+    p("Đối chiếu với R trên 624 hàng. Sai số điểm nhỏ hơn 10⁻¹². "
+      "Sai số thời gian lớn nhất khoảng 2,9 × 10⁻¹¹ giây; kiểm tra dùng tolerance tương đối và tuyệt đối 10⁻¹².",
+      "small")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Tăng dữ liệu train lên 50K", "head")
+    figure("figure_08.png", "Figure 8 · Đặc trưng số · Phân loại · 4 bộ dữ liệu.")
+    figure("figure_09.png", "Figure 9 · Đặc trưng số · Hồi quy · 3 bộ dữ liệu.")
+    p("Cùng nhóm bộ dữ liệu trong hai ô. Điểm chuẩn hóa được tính theo script tác giả cho từng kích thước. "
+      "Sự thay đổi thứ hạng giữa các mô hình có thể khác theo nhóm bài toán.")
+    contents.append(PageBreak())
+    p("Phụ lục · 10K và 50K khi có biến phân loại", "head")
+    figure("figure_10.png", "Figure 10 · Phân loại · 2 bộ dữ liệu.")
+    figure("figure_11.png", "Figure 11 · Hồi quy · 5 bộ dữ liệu.")
+    p("Các đường cong đọc lại từ CSV lịch sử có cả nhánh 10K và 50K. "
+      "Figure 12–17 trong bộ notebook cho phép tra điểm thô theo từng bộ dữ liệu.")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Hồi quy A.4 và danh mục", "head")
+    p("Bốn hồi quy kiểm tra mức thay đổi của điểm chuẩn hóa. Mỗi mô hình kiểm soát khác biệt giữa các bộ dữ liệu. "
+      "Nhóm tham chiếu là FT-Transformer. Hệ số tương tác cho biết độ dốc khác nhóm tham chiếu bao nhiêu.")
+    with (ROOT / "evidence/a4_coefficients.csv").open(encoding="utf-8", newline="") as handle:
+        coefficient = {(r["analysis"], r["term"]): float(r["estimate"]) for r in csv.DictReader(handle)}
+    examples = (
+        ("smoothing", "Làm trơn mục tiêu", "lengthscale", "GradientBoostingTree", "GBT"),
+        ("remove", "Loại đặc trưng ít thông tin", "prop_removed", "Resnet", "ResNet"),
+        ("add", "Thêm đặc trưng không thông tin", "prop_added", "Resnet", "ResNet"),
+        ("rotation", "Xoay không gian đặc trưng", "rotationTRUE", "GradientBoostingTree", "GBT"),
+    )
+    table(["Thao tác", "Hệ số của FT-Transformer", "Ví dụ hệ số tương tác"], [
+        (name, f"{coefficient[analysis, term]:+.4f}",
+         f"{label} · {coefficient[analysis, f'model_name{model}:{term}']:+.4f}")
+        for analysis, name, term, model, label in examples
+    ], (166, 153, 162))
+    p("Notebook A.4 lưu 34 hệ số đã đối chiếu với R, cùng số quan sát, sai số chuẩn, thống kê t, "
+      "p-value và cột hệ số công bố để so trực tiếp. Hệ số chạy lại dùng seed 0; bảng gốc làm tròn.", "small")
+    p("Danh mục công bố", "sub")
+    table(["Nguồn", "Đã lập danh mục", "Nội dung"], [
+        ("Phụ lục A.1", "57/57 thiết lập", "OpenML task, dataset ID, số mẫu và đặc trưng."),
+        ("Phụ lục A.3", "8/8 bảng, 70 tham số", "Phân phối tìm kiếm và giá trị mặc định được in."),
+    ], (107, 147, 227))
+    p("Các thiết lập A.1 có thể dùng chung bộ dữ liệu giữa các bài toán hoặc xử lý khác nhau. Paper nêu 45 bộ dữ liệu.", "small")
+    p("Notebook Figure 18 và 20–24 tách các biến đổi theo từng bộ dữ liệu. Figure 21 ghi hai phương án 15 và "
+      "30 hoán vị do script và chú thích mô tả khác nhau.", "small")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Đổi phương pháp tìm siêu tham số", "head")
+    figure("figure_33.png", "Figure 33 · Phân loại trên dữ liệu chỉ có đặc trưng số.", width=358)
+    figure("figure_34.png", "Figure 34 · Hồi quy trên dữ liệu chỉ có đặc trưng số.", width=358)
+    p("Random search tổng hợp qua 15 hoán vị. Bayesian search giữ thứ tự công bố. Hai đường đều lấy "
+      "điểm test của cấu hình tốt nhất theo validation tại mỗi ngân sách. Số liệu lấy từ CSV tác giả.", "small")
+    p("Bộ nộp có 25/40 figure với notebook riêng. Các hình 19, 25–32 và 35–40 cần thêm "
+      "đầu vào hoặc đặc tả thí nghiệm để tái lập. Phần tự train V2 được báo cáo riêng.", "small")
     target = ROOT / "report" / "bao-cao.pdf"
     SimpleDocTemplate(str(target), pagesize=A4, topMargin=64, bottomMargin=65,
                       leftMargin=57, rightMargin=57,
