@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mô hình cây trên dữ liệu bảng · CS2229</title>
+  <link rel="stylesheet" href="slides.css">
+  <script src="slides.js" defer></script>
+</head>
+<body>
+  <main id="deck" aria-label="Bài trình bày CS2229">
+    <section class="slide cover" aria-label="Tiêu đề">
+      <p class="small">CS2229 · Tái lập thực nghiệm NeurIPS 2022</p>
+      <h1>Vì sao mô hình cây<br>vẫn mạnh trên<br>dữ liệu bảng?</h1>
+      <p>Paper của Léo Grinsztajn, Edouard Oyallon và Gaël Varoquaux</p>
+      <div class="cover-tag">Benchmark · Đặc trưng · Độ trơn · Phép xoay</div>
+    </section>
+    <section class="slide" aria-label="Thiết kế benchmark" hidden>
+      <h2>So sánh ở cùng ngân sách tìm kiếm</h2>
+      <div class="pipeline">
+        <div><strong>45</strong><span>bộ dữ liệu trong benchmark paper</span></div>
+        <div><strong>≈10.000</strong><span>dòng train tối đa ở nhóm medium</span></div>
+        <div><strong>Validation</strong><span>chọn cấu hình, sau đó đọc điểm test</span></div>
+      </div>
+      <p class="takeaway">Bốn nhóm theo loại đặc trưng và bài toán phân loại hoặc hồi quy.</p>
+    </section>
+    <section class="slide chart" aria-label="Figure 1" hidden>
+      <h2>Cây vẫn dẫn ở nhiều nhóm dữ liệu</h2>
+      <img src="../figures/figure_01.png" alt="Bốn đường cong benchmark, điểm test chuẩn hóa theo số lượt random search">
+      <p class="source">Figure 1 · Điểm tác giả · Đường chấm là cấu hình mặc định</p>
+    </section>
+    <section class="slide chart" aria-label="Figure 3" hidden>
+      <h2>Nhóm quan trọng giữ được phần lớn điểm</h2>
+      <img src="../figures/figure_03.png" alt="So sánh điểm GBT khi giữ nhóm quan trọng và khi chỉ dùng nhóm đặc trưng đã loại">
+      <p class="source">Figure 3 · Điểm tác giả · Xếp hạng đặc trưng bằng Random Forest</p>
+    </section>
+    <section class="slide chart" aria-label="Figure 4" hidden>
+      <h2>Đặc trưng nhiễu tác động khác nhau</h2>
+      <img src="../figures/figure_04.png" alt="Hai biểu đồ đối chiếu loại đặc trưng ít quan trọng và thêm nhiễu Gaussian">
+      <p class="source">Figure 4 · Điểm tác giả · 4b dùng dải phân vị 20–80% theo script</p>
+    </section>
+    <section class="slide chart" aria-label="Figure 2" hidden>
+      <h2>Làm trơn thay đổi khoảng cách giữa các mô hình</h2>
+      <img src="../figures/figure_02.png" alt="Phân bố điểm của bốn mô hình khi làm trơn nhãn train ở bốn mức">
+      <p class="source">Figure 2 · Điểm tác giả · Giữ nguyên nhãn validation và test</p>
+    </section>
+    <section class="slide chart" aria-label="Figure 5" hidden>
+      <h2>Hướng của các trục dữ liệu có ý nghĩa</h2>
+      <img src="../figures/figure_05.png" alt="Boxplot trước và sau phép xoay ở điều kiện giữ hoặc loại 50 phần trăm đặc trưng">
+      <p class="source">Figure 5 · Điểm tác giả · Gaussian hóa trước khi xoay</p>
+    </section>
+    <section class="slide" aria-label="Công việc thực nghiệm" hidden>
+      <h2>Nhóm đã chạy, đối soát và tái lập những gì?</h2>
+      <div class="pipeline">
+        <div><strong>25.124</strong><span>fit thành công · V2 chính</span></div>
+        <div><strong>208.742</strong><span>fit thành công · V2 mở rộng</span></div>
+        <div><strong>5</strong><span>notebook đã chạy, có hình và dữ liệu nguồn</span></div>
+      </div>
+      <p class="takeaway">Chạy trên Kaggle và máy cá nhân → kiểm chứng đầu ra → chọn theo validation → vẽ lại bằng Python.</p>
+    </section>
+    <section class="slide" aria-label="Phạm vi tự chạy" hidden>
+      <h2>Phạm vi HPO có kết quả tự chạy</h2>
+      <div class="coverage" role="img" aria-label="Số cấu hình đủ repeats trên mẫu số 400 cấu hình mỗi cặp task và mô hình">
+        <div><span>Cây · numeric</span><b style="--pct:96.02%"></b><strong>96,02%</strong></div>
+        <div><span>Neural · numeric</span><b style="--pct:7.24%"></b><strong>7,24%</strong></div>
+        <div><span>Cây · categorical</span><b style="--pct:98.20%"></b><strong>98,20%</strong></div>
+        <div><span>Neural · categorical</span><b style="--pct:21.52%"></b><strong>21,52%</strong></div>
+      </div>
+      <p class="takeaway">24/57 thiết lập đủ đầu vào để so cùng ngân sách trên các họ mô hình.</p>
+      <p class="source">Mẫu số HPO tham chiếu 400 cấu hình ngoài default trên mỗi cặp task và mô hình</p>
+    </section>
+    <section class="slide chart" aria-label="Đối chứng do nhóm tự train" hidden>
+      <h2>Hai đối chứng do nhóm tự train</h2>
+      <div class="pair">
+        <figure><figcaption>Làm trơn trên eye_movements · 8 fit</figcaption><img src="../figures/figure_02_v2.png" alt="Accuracy của RF và MLP trong pilot làm trơn"></figure>
+        <figure><figcaption>Phép xoay · 381 cặp trước/sau</figcaption><img src="../figures/figure_05_v2.png" alt="Chênh lệch accuracy sau xoay trong các cặp đã kiểm chứng"></figure>
+      </div>
+      <p class="source">V2 + mở rộng · Accuracy thô · Phạm vi độc lập với benchmark đầy đủ của tác giả</p>
+    </section>
+    <section class="slide" aria-label="Kết luận" hidden>
+      <h2>Vì sao mô hình cây vẫn mạnh?</h2>
+      <ul class="conclusions">
+        <li>Khai thác được thứ tự quan trọng của các đặc trưng.</li>
+        <li>Giữ lợi thế ở các hàm mục tiêu có cấu trúc gồ ghề.</li>
+        <li>Tận dụng được hướng ban đầu của các trục dữ liệu.</li>
+      </ul>
+      <p class="takeaway">Tái lập 5 hình từ dữ liệu công bố và kiểm chứng tự train một phần.</p>
+      <p class="source"><a href="../report/bao-cao.pdf">Báo cáo</a> · <a href="../README.md">Notebook và nguồn dữ liệu</a></p>
+    </section>
+  </main>
+  <nav class="controls" aria-label="Điều khiển slide">
+    <button id="previous" type="button" aria-label="Slide trước">←</button>
+    <span id="counter" aria-live="polite">1 / 11</span>
+    <button id="next" type="button" aria-label="Slide sau">→</button>
+    <button id="fullscreen" type="button" aria-label="Chế độ trình chiếu" title="Trình chiếu (F)" aria-pressed="false">⛶</button>
+  </nav>
+</body>
+</html>

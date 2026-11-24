@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "rng": "R MT19937, seed 0",
+  "tolerance": 1e-12,
+  "reference_sha256": "428779ae5babb400f025c45f319400348cf0763a670c29fc88e8d8dab68f0371",
+  "figures": [
+    {
+      "figure": 1,
+      "rows": 12030,
+      "max_absolute_error": 2.220446049250313e-16,
+      "panels": [
+        {
+          "panel": "figure_01",
+          "rows": 12030,
+          "metric_cells": 36090,
+          "missing_cells": 0,
+          "max_absolute_error": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "figure": 2,
+      "rows": 240,
+      "max_absolute_error": 2.220446049250313e-16,
+      "panels": [
+        {
+          "panel": "figure_02",
+          "rows": 240,
+          "metric_cells": 240,
+          "missing_cells": 0,
+          "max_absolute_error": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "figure": 3,
+      "rows": 20,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "panels": [
+        {
+          "panel": "figure_03",
+          "rows": 20,
+          "metric_cells": 77,
+          "missing_cells": 3,
+          "max_absolute_error": 1.1102230246251565e-16
+        }
+      ]
+    },
+    {
+      "figure": 4,
+      "rows": 64,
+      "max_absolute_error": 2.220446049250313e-16,
+      "panels": [
+        {
+          "panel": "figure_04_4a",
+          "rows": 40,
+          "metric_cells": 160,
+          "missing_cells": 0,
+          "max_absolute_error": 1.1102230246251565e-16
+        },
+        {
+          "panel": "figure_04_4b_script",
+          "rows": 12,
+          "metric_cells": 48,
+          "missing_cells": 0,
+          "max_absolute_error": 2.220446049250313e-16
+        },
+        {
+          "panel": "figure_04_4b_caption",
+          "rows": 12,
+          "metric_cells": 48,
+          "missing_cells": 0,
+          "max_absolute_error": 1.1102230246251565e-16
+        }
+      ]
+    },
+    {
+      "figure": 5,
+      "rows": 480,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "panels": [
+        {
+          "panel": "figure_05",
+          "rows": 480,
+          "metric_cells": 480,
+          "missing_cells": 0,
+          "max_absolute_error": 1.1102230246251565e-16
+        }
+      ]
+    }
+  ]
+}

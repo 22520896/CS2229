@@ -1,0 +1,132 @@
+{
+  "project_commit": "6697c554309058ece19152bbc70fcbe6f821ae14",
+  "counts": {
+    "main": {
+      "completed": 25124,
+      "failed": 113,
+      "timeout": 107
+    },
+    "extensions": {
+      "completed": 208742,
+      "failed": 930,
+      "timeout": 3947
+    }
+  },
+  "original_source_files": 231,
+  "worker_files": 18,
+  "numeric_tolerance": 1e-12,
+  "r_panels": [
+    {
+      "data_kind": "numeric",
+      "task_type": "classification",
+      "datasets": 4,
+      "random_budget": 2,
+      "models": 7,
+      "shuffles": 15,
+      "eligible_tasks": [
+        "361055",
+        "361060",
+        "361062",
+        "361065"
+      ],
+      "search_rows": 1260,
+      "search_sha256": "eb1e061c742ec53331dcb836e2687525db8c9f481605f7461a8dbcb26bfb8574",
+      "aggregate_file": "numeric-classification-aggregate.csv",
+      "aggregate_sha256": "5ba50b6ce3e123f167ea90e60f9e702412ce0e4725d4d65486035b80de7b74cb",
+      "appendix_settings": 15
+    },
+    {
+      "data_kind": "numeric",
+      "task_type": "regression",
+      "datasets": 3,
+      "random_budget": 3,
+      "models": 7,
+      "shuffles": 15,
+      "eligible_tasks": [
+        "361072",
+        "361076",
+        "361078"
+      ],
+      "search_rows": 1260,
+      "search_sha256": "799fe11785ddc230c5327cbcf82ce50ceae0a6d6921b2ae2c240df6796edb616",
+      "aggregate_file": "numeric-regression-aggregate.csv",
+      "aggregate_sha256": "cf19138565f12ed9ac0f7a418a751906823fd698358012cddf43c3ac15158354",
+      "appendix_settings": 18
+    },
+    {
+      "data_kind": "categorical",
+      "task_type": "classification",
+      "datasets": 5,
+      "random_budget": 29,
+      "models": 8,
+      "shuffles": 15,
+      "eligible_tasks": [
+        "361111",
+        "361282",
+        "361283",
+        "361285",
+        "361286"
+      ],
+      "search_rows": 18000,
+      "search_sha256": "550385adaed10f38f02a2189744f4ea4c4dbd794a7148eaa9fddf25fee1ab357",
+      "aggregate_file": "categorical-classification-aggregate.csv",
+      "aggregate_sha256": "2201dc5cc094df6a73c6fd212478f2a0c127d924132dd0977e26231d2760a6c2",
+      "appendix_settings": 7
+    },
+    {
+      "data_kind": "categorical",
+      "task_type": "regression",
+      "datasets": 12,
+      "random_budget": 22,
+      "models": 8,
+      "shuffles": 15,
+      "eligible_tasks": [
+        "361094",
+        "361096",
+        "361098",
+        "361099",
+        "361101",
+        "361102",
+        "361103",
+        "361104",
+        "361287",
+        "361288",
+        "361289",
+        "361291"
+      ],
+      "search_rows": 33120,
+      "search_sha256": "2b63a32c9822e6339d3c62dba03f521a22e818269323cbeb2e8907c694f4581b",
+      "aggregate_file": "categorical-regression-aggregate.csv",
+      "aggregate_sha256": "0924808c443eebe0524ffd8ce4100d028a363bfeed1433bec4389209bc8efa4a",
+      "appendix_settings": 17
+    }
+  ],
+  "groups_at_400": [
+    3825,
+    52800,
+    38022,
+    39600,
+    8262,
+    38400,
+    28281,
+    28800
+  ],
+  "smoothing_scope": {
+    "dataset": "eye_movements",
+    "task": 361070,
+    "verified_fits": 8,
+    "seed": 0
+  },
+  "rotation_scope": {
+    "verified_default_fits": 762,
+    "planned_default_fits": 768,
+    "paired_deltas": 381,
+    "datasets": 16
+  },
+  "provenance": {
+    "closeout": "31e557210ceeed536648a303121b750e1f5500429870faf30cf03e6192686f28",
+    "a1": "9a5483030ec49a8cea3e086512fa043794a094100a8ba0ea6024e8a32cae4547",
+    "smoothing": "74ae583bda0065641b51f5eaa7d69129e712dc500e60fdcadb9096cafe4f74a5",
+    "rotation": "f142f9280bd8424afeffab762979e100e39d175f530ea73ccf96c396bb7e7698"
+  }
+}
