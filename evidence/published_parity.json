@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "source_pdf_sha256": "6940e2127afe2f9dc60a218a99d3fbf1f15e2e5b4c572e3edaba1765f0035b16",
+  "geometry_sha256": "6ad48b8c46f0f1062df77f61b4f0d54708b2a270ee2ffd3b969cdd354028eb61",
+  "pdf_extraction_rechecked": true,
+  "reanalyzed_tuned": true,
+  "digitized_figures": [
+    19,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    35,
+    36,
+    37,
+    38
+  ],
+  "digitized_flow_audit": {
+    "25": {
+      "max_node_width_error_pt": 6.103515625e-05,
+      "start_width_pt": 32.761871337890625,
+      "terminal_width_residual_pt": 0.0,
+      "internal_residuals_pt": {},
+      "used_share": 0.26744204459820353,
+      "not_used_share": 0.7325579554017965,
+      "nodes": 16,
+      "links": 24
+    },
+    "26": {
+      "max_node_width_error_pt": 1.52587890625e-05,
+      "start_width_pt": 40.857139587402344,
+      "terminal_width_residual_pt": 0.0,
+      "internal_residuals_pt": {},
+      "used_share": 0.059440617549918986,
+      "not_used_share": 0.940559382450081,
+      "nodes": 18,
+      "links": 29
+    },
+    "27": {
+      "max_node_width_error_pt": 1.52587890625e-05,
+      "start_width_pt": 32.50392150878906,
+      "terminal_width_residual_pt": 0.0,
+      "internal_residuals_pt": {},
+      "used_share": 0.10852713178294573,
+      "not_used_share": 0.8914728682170543,
+      "nodes": 16,
+      "links": 24
+    },
+    "28": {
+      "max_node_width_error_pt": 4.57763671875e-05,
+      "start_width_pt": 36.64068603515625,
+      "terminal_width_residual_pt": 0.41558837890625,
+      "internal_residuals_pt": {
+        "Balancing": 0.41558837890625
+      },
+      "used_share": 0.011342265221439864,
+      "not_used_share": 0.9773154695571202,
+      "nodes": 16,
+      "links": 24
+    },
+    "29": {
+      "max_node_width_error_pt": 1.52587890625e-05,
+      "start_width_pt": 32.0,
+      "terminal_width_residual_pt": 1.1444091796875e-05,
+      "internal_residuals_pt": {},
+      "used_share": 0.23333323001861572,
+      "not_used_share": 0.7666664123535156,
+      "nodes": 15,
+      "links": 22
+    },
+    "30": {
+      "max_node_width_error_pt": 1.52587890625e-05,
+      "start_width_pt": 55.10090637207031,
+      "terminal_width_residual_pt": 1.52587890625e-05,
+      "internal_residuals_pt": {},
+      "used_share": 0.020978966756048652,
+      "not_used_share": 0.9790207563194855,
+      "nodes": 14,
+      "links": 21
+    },
+    "31": {
+      "max_node_width_error_pt": 6.103515625e-05,
+      "start_width_pt": 32.0,
+      "terminal_width_residual_pt": 0.0,
+      "internal_residuals_pt": {},
+      "used_share": 0.1333332061767578,
+      "not_used_share": 0.8666667938232422,
+      "nodes": 15,
+      "links": 22
+    },
+    "32": {
+      "max_node_width_error_pt": 3.0517578125e-05,
+      "start_width_pt": 35.56036376953125,
+      "terminal_width_residual_pt": 0.0,
+      "internal_residuals_pt": {},
+      "used_share": 0.005333656013085694,
+      "not_used_share": 0.9946663439869143,
+      "nodes": 15,
+      "links": 22
+    }
+  },
+  "vector_curves_audit": {
+    "35": {
+      "series": 12,
+      "mean_vertices": 4860,
+      "max_tick_error_pt": 0.0017691476003278694
+    },
+    "36": {
+      "series": 16,
+      "mean_vertices": 8176,
+      "max_tick_error_pt": 0.001765950520621118
+    },
+    "37": {
+      "series": 12,
+      "mean_vertices": 198,
+      "max_tick_error_pt": 0.0017658051989428714
+    },
+    "38": {
+      "series": 16,
+      "mean_vertices": 288,
+      "max_tick_error_pt": 0.0017694382439685796
+    },
+    "39": {
+      "series": 12,
+      "mean_vertices": 4164,
+      "max_tick_error_pt": 0.001312255859375
+    },
+    "40": {
+      "series": 12,
+      "mean_vertices": 6618,
+      "max_tick_error_pt": 0.0017694382439685796
+    }
+  },
+  "tuned_r_reference_sha256": "26f5c3fb6149562cc29fda909da9d471c58520a69edc6fb4420afad9355e9d69",
+  "tuned_reference_tolerance": 1e-12,
+  "tuned_figures": [
+    {
+      "figure": 39,
+      "rows": 4164,
+      "max_r_error": 1.1102230246251565e-16,
+      "default_lines_checked": 12,
+      "max_pdf_default_error": 4.764966374803947e-06
+    },
+    {
+      "figure": 40,
+      "rows": 6618,
+      "max_r_error": 1.1102230246251565e-16,
+      "default_lines_checked": 12,
+      "max_pdf_default_error": 8.043263702073311e-06
+    }
+  ]
+}

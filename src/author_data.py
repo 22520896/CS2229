@@ -28,6 +28,7 @@ ABLATIONS = ("high_frequencies", "show_uninformative_features",
 PANELS = ("numerical_classification_medium", "numerical_regression_medium",
           "categorical_classification_medium", "categorical_regression_medium")
 TIME_REVISION = "5b2d812329d191f949f9d085616a6c41d3198688"
+TUNED_REVISION = "7265a3f41ae2d89a4b12e5609bb6591ab8f1161f"
 TIME_PANELS = (
     "numerical_classif_medium", "numerical_regression_medium",
     "categorical_classif_medium", "categorical_regression_medium",
@@ -89,6 +90,17 @@ SOURCES.update({
         digest, BO_COLUMNS, "data__categorical", ("0.0",),
     )
     for name, digest in BO_PINS.items()
+})
+SOURCES.update({
+    f"tuned_{kind}": Source(
+        "https://media.githubusercontent.com/media/LeoGrin/tabular-benchmark/"
+        f"{TUNED_REVISION}/analyses/results/random_search_benchmark_{kind}.csv?source=cs2229-tuned",
+        digest, ("benchmark", *COMMON), "benchmark", panels,
+    )
+    for kind, digest, panels in (
+        ("numerical", "cf01851eafe29ce6a3cd7dec6e42a5d23f79e03a91e2750ec83abe779d126bbe", TIME_PANELS[:2]),
+        ("categorical", "5a48d60bb23e7f983bd757364460abef8ad7e351febbec86d1d1f3c153a7e672", TIME_PANELS[2:]),
+    )
 })
 
 

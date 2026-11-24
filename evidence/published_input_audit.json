@@ -1,0 +1,76 @@
+{
+  "scanned_fields": [
+    "model__n_estimators",
+    "model__n_iter_no_change",
+    "model__early_stopping_rounds",
+    "model__max_iter"
+  ],
+  "scope": "Medium groups, recorded tree-model configuration columns; missing configuration fields were kept as missing.",
+  "snapshots": [
+    {
+      "revision": "5b2d812329d191f949f9d085616a6c41d3198688",
+      "suite": "categorical",
+      "sha256": "d035715efaaf54261dd31c107159f28a96804164485a3c53de656f8fc632020b",
+      "medium_tree_rows": 55672,
+      "terminal_marker_40000_rows": 0
+    },
+    {
+      "revision": "5b2d812329d191f949f9d085616a6c41d3198688",
+      "suite": "numerical",
+      "sha256": "395ea2c330a1e1e414b8e15ccba9bbf23f497241c265ea675670f6ae0e222e62",
+      "medium_tree_rows": 46620,
+      "terminal_marker_40000_rows": 0
+    },
+    {
+      "revision": "5eee638d6bbc38e084771ecbd05435a8c4f16e05",
+      "suite": "categorical",
+      "sha256": "af320778dfe252f59482e29bbf879cefb78e30ac32ffdb141b1ef5d331e73dcf",
+      "medium_tree_rows": 55672,
+      "terminal_marker_40000_rows": 0
+    },
+    {
+      "revision": "5eee638d6bbc38e084771ecbd05435a8c4f16e05",
+      "suite": "numerical",
+      "sha256": "6f6e5be3330f2752d8f0dc7f3f86ce75f8519eeb6c0a1d7d9dec8588f28c8b27",
+      "medium_tree_rows": 46620,
+      "terminal_marker_40000_rows": 0
+    },
+    {
+      "revision": "7265a3f41ae2d89a4b12e5609bb6591ab8f1161f",
+      "suite": "categorical",
+      "sha256": "5a48d60bb23e7f983bd757364460abef8ad7e351febbec86d1d1f3c153a7e672",
+      "medium_tree_rows": 83579,
+      "terminal_marker_40000_rows": 0
+    },
+    {
+      "revision": "7265a3f41ae2d89a4b12e5609bb6591ab8f1161f",
+      "suite": "numerical",
+      "sha256": "cf01851eafe29ce6a3cd7dec6e42a5d23f79e03a91e2750ec83abe779d126bbe",
+      "medium_tree_rows": 84936,
+      "terminal_marker_40000_rows": 0
+    }
+  ],
+  "independent_worker": {
+    "machine": "Desktop",
+    "sha256": "5a48d60bb23e7f983bd757364460abef8ad7e351febbec86d1d1f3c153a7e672",
+    "classification": {
+      "gbt_rows": 10007,
+      "tasks": 7,
+      "distinct_n_estimators": 960,
+      "range": [
+        11,
+        999
+      ]
+    },
+    "regression": {
+      "gbt_rows": 14802,
+      "tasks": 13,
+      "distinct_n_estimators": 982,
+      "range": [
+        11,
+        1000
+      ]
+    }
+  },
+  "new_training_runs": 0
+}

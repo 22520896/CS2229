@@ -101,6 +101,7 @@ def build():
 
     evidence = json.loads((ROOT / "evidence/project_snapshot.json").read_text(encoding="utf-8"))
     tests = json.loads((ROOT / "evidence/python_r_parity.json").read_text(encoding="utf-8"))
+    recovered = json.loads((ROOT / "evidence/published_parity.json").read_text(encoding="utf-8"))
     contents.append(Spacer(1, 46))
     p("ĐỒ ÁN CS2229", "sub")
     p("Vì sao mô hình cây vẫn mạnh trên dữ liệu bảng?", "cover")
@@ -108,8 +109,8 @@ def build():
     p("Paper gốc của Léo Grinsztajn, Edouard Oyallon và Gaël Varoquaux, NeurIPS 2022.")
     contents.append(Spacer(1, 22))
     p("Phạm vi", "sub")
-    p("Các notebook Python chạy lại từng hình từ các điểm của tác giả, gồm năm hình trong thân bài "
-      "và các hình phụ lục có dữ liệu. Phần đối chứng dùng kết quả V2 đã tự train và kiểm chứng độc lập.")
+    p("Bộ nộp có 40 notebook biểu đồ. Có 27 hình chạy lại từ kết quả công bố và 13 hình số hóa từ PDF. "
+      "Phần đối chứng dùng kết quả V2 đã tự train và kiểm chứng độc lập.")
     p("Nguồn điểm của từng biểu đồ được ghi dưới hình. Slide HTML trình bày câu hỏi và kết quả chính.")
     contents.append(PageBreak())
 
@@ -240,8 +241,59 @@ def build():
     figure("figure_34.png", "Figure 34 · Hồi quy trên dữ liệu chỉ có đặc trưng số.", width=358)
     p("Random search tổng hợp qua 15 hoán vị. Bayesian search giữ thứ tự công bố. Hai đường đều lấy "
       "điểm test của cấu hình tốt nhất theo validation tại mỗi ngân sách. Số liệu lấy từ CSV tác giả.", "small")
-    p("Bộ nộp có 25/40 figure với notebook riêng. Các hình 19, 25–32 và 35–40 cần thêm "
-      "đầu vào hoặc đặc tả thí nghiệm để tái lập. Phần tự train V2 được báo cáo riêng.", "small")
+    p("Figure 39–40 cũng chạy lại từ các CSV lịch sử. Các hình 19, 25–32 và 35–38 nằm ở nhóm số hóa PDF. "
+      "Mỗi figure có một notebook và ghi phương pháp ngay đầu file.", "small")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Đường biên trên Electricity", "head")
+    figure("figure_19.png", "Figure 19 · Lưới màu lấy từ hai vùng phóng của ảnh nhúng trong PDF.")
+    p("Random Forest có các đường biên dạng bậc và nhiều vùng nhỏ. MLP tạo các vùng liền mạch hơn. "
+      "Hai số accuracy 85% và 80% đọc từ paper.")
+    p("Lưới số hóa 260 × 240 phân nhóm màu đỏ, xanh và trung tính. Trục biểu thị vị trí trong vùng phóng. "
+      "Lưới cho thấy hình dạng vùng màu; ảnh gốc không cung cấp xác suất lớp hay lưới dự đoán từng điểm.")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Lọc bộ dữ liệu", "head")
+    p("Figure 25–32 đọc nhãn và độ rộng các nhánh Sankey trực tiếp từ PDF. Bảng báo tỷ lệ độ rộng "
+      "tại mỗi đích so với luồng đầu vào của chính sơ đồ.")
+    labels = (
+        ("25", "Medium · Số · Hồi quy"), ("26", "Medium · Số · Phân loại"),
+        ("27", "Medium · Có biến phân loại · Hồi quy"), ("28", "Medium · Có biến phân loại · Phân loại"),
+        ("29", "Large · Số · Hồi quy"), ("30", "Large · Số · Phân loại"),
+        ("31", "Large · Có biến phân loại · Hồi quy"), ("32", "Large · Có biến phân loại · Phân loại"),
+    )
+    diagram = recovered["digitized_flow_audit"]
+    table(["Figure", "Nhóm", "Được dùng", "Loại"], [
+        (number, label, f'{diagram[number]["used_share"]:.2%}',
+         f'{diagram[number]["not_used_share"]:.2%}') for number, label in labels
+    ], (53, 252, 88, 88))
+    figure("figure_28.png", "Figure 28 · Dựng lại từ các đường Bézier và nhãn của PDF.")
+    p("Figure 28 có chênh lệch khoảng 1,13% tổng độ rộng tại bước cân bằng. Bản dựng giữ chênh lệch. "
+      "Các tỷ lệ trong bảng là độ rộng hiển thị; số đếm theo từng bộ dữ liệu cần metadata gốc.", "small")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Tăng trần số cây", "head")
+    figure("figure_35.png", "Figure 35 · So theo số lượt tìm kiếm · Đặc trưng số.")
+    figure("figure_36.png", "Figure 36 · So theo số lượt tìm kiếm · Có biến phân loại.")
+    p("Các đường cong được số hóa từ PDF. Nhãn 10K/40K dùng theo hình công bố. "
+      "Caption mô tả nhánh thấp tìm kiếm với trần 1K và patience 20, dùng 10K cho default. "
+      "Nhánh cao dùng trần 40K và patience 100.", "small")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Thời gian khi tăng trần số cây", "head")
+    figure("figure_37.png", "Figure 37 · So theo thời gian · Đặc trưng số.")
+    figure("figure_38.png", "Figure 38 · So theo thời gian · Có biến phân loại.")
+    p("Trục giây dùng thang log, hiệu chuẩn từ vạch lưới và nhãn trong PDF. "
+      "Vùng tô và nét liền được dựng lại từ nét vector. Chưa xác minh được CSV của nhánh 40K.", "small")
+
+    contents.append(PageBreak())
+    p("Phụ lục · Cố định hay tune số cây", "head")
+    figure("figure_39.png", "Figure 39 · Đặc trưng số · Nét đứt là nhánh tune số cây.")
+    figure("figure_40.png", "Figure 40 · Có biến phân loại · Nét đứt là nhánh tune số cây.")
+    tuned_rows = sum(row["rows"] for row in recovered["tuned_figures"])
+    p(f"Tái lập từ checkpoint Git LFS cố định và tune số cây. {fmt(tuned_rows)} hàng khớp R ở ngưỡng 10⁻¹². "
+      "Cả 24 đường mặc định khớp tọa độ PDF ở ngưỡng 10⁻⁵. Phần hoán vị dùng seed 0 để chạy lại được.",
+      "small")
     target = ROOT / "report" / "bao-cao.pdf"
     SimpleDocTemplate(str(target), pagesize=A4, topMargin=64, bottomMargin=65,
                       leftMargin=57, rightMargin=57,

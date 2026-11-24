@@ -6,3 +6,4 @@ nbclient>=0.9,<1
 nbformat>=5.9,<6
 ipykernel>=6,<8
 reportlab>=4,<5
+PyMuPDF>=1.24,<2
