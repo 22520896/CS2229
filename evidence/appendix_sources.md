@@ -13,13 +13,27 @@
 
 Dấu chấm ở hạng mặc định dùng dữ liệu công bố. Hình trong notebook vẽ lại bằng Python và cố định seed 0 cho hoán vị; dữ liệu 50K là kết quả đã công bố của tác giả.
 
-Bộ nộp có 40 notebook figure đã chạy. Trong số đó, 27 hình tái lập phân tích từ kết quả công bố.
+Bộ nộp báo 27/40 hình tái lập phân tích từ kết quả công bố. Mỗi lượt có điểm validation/test đã lưu. Notebook chạy lại bước chọn cấu hình theo validation, rồi tổng hợp điểm test của các cấu hình được chọn.
 
-| Hình số hóa | Dữ liệu lấy trực tiếp từ PDF | Giới hạn |
+## Đầu vào cần để chạy lại 13 hình còn thiếu
+
+| Hình | Đầu vào và thao tác kiểm chứng | Hiện trạng |
 | --- | --- | --- |
-| 19 | Hai bảng màu cắt theo vùng phóng trên Electricity. Mỗi ô trong lưới 260 × 240 được phân nhóm theo chênh lệch kênh đỏ và xanh. | Trục là vị trí trong vùng phóng. Chưa có xác suất dự đoán hoặc checkpoint RF/MLP của hình. |
-| 25–32 | Nhãn, tọa độ nút và hai đường Bézier của từng nhánh. | Độ rộng dùng để tính tỷ lệ trong sơ đồ. Chưa có metadata để xác nhận số đếm. Figure 28 có chênh lệch khoảng 1,13% giữa đầu và cuối, được giữ nguyên. |
-| 35–38 | Đường trung bình và dải vector theo trục log. | Các tọa độ có giới hạn độ chính xác của PDF. Ba mốc CSV lịch sử đã ghim hash không chứa lượt được đánh dấu 40K ở cột trần số vòng hoặc số cây; chưa tìm được đầu vào chính xác cho nhánh này. |
+| 19 | Dùng Electricity, khớp hai đặc trưng, biến đổi Gaussian và split gốc. Train lại RF/MLP theo cấu hình mặc định của thí nghiệm hoặc nạp checkpoint gốc, đánh giá trên split giữ riêng và xuất dự đoán trên lưới. | Có dữ liệu, mô tả và mặc định trong repo. Hai đặc trưng, split và cấu hình chính xác của hình chưa được xác minh đầy đủ. |
+| 25–32 | Khôi phục danh sách dữ liệu ứng viên và trạng thái theo từng bước lọc của tác giả. Chạy lại quy tắc và đếm ID dữ liệu ở mỗi nhánh. | Có mô tả quy tắc và mã dựng Sankey. Thiếu metadata ứng viên ban đầu và log quyết định lọc. |
+| 35–38 | Dùng đúng cặp bộ dữ liệu, splits, mô hình và cấu hình lấy mẫu. Chạy nhánh giới hạn thấp và 40K, lưu validation/test và thời gian từng lượt. Dựng lại đường cong theo số lượt và theo thời gian. | Paper ghi trần, patience và cấu hình mặc định. Các CSV lịch sử đã kiểm tra chưa có kết quả từng lượt của nhánh 40K. |
+
+Có ba mốc kiểm chứng. Khi có kết quả từng lượt, chạy lại phân tích chọn bằng validation và tổng hợp test. Khi có checkpoint và split gốc, nạp mô hình để đo lại điểm. Khi có mã huấn luyện, cấu hình, phiên bản dữ liệu, split và seed, có thể fit lại rồi đánh giá. Cấu hình được chọn bằng validation trước khi tổng hợp test. Phạm vi hoàn tất thực nghiệm được tính từ lượt chạy có đầu ra kiểm chứng.
+
+## Tư liệu đọc hình công bố
+
+Các bản số hóa chỉ phục vụ đối chiếu với paper. Chúng nằm ngoài số hình tái lập và số fit. Những notebook này đọc hình học đã trích sẵn và chạy offline.
+
+- [Figure 19](../notebooks/figure_19_decision_regions_from_pdf.ipynb)
+- [Figure 25](../notebooks/figure_25_filter_medium_numerical_regression.ipynb) · [26](../notebooks/figure_26_filter_medium_numerical_classification.ipynb) · [27](../notebooks/figure_27_filter_medium_categorical_regression.ipynb) · [28](../notebooks/figure_28_filter_medium_categorical_classification.ipynb) · [29](../notebooks/figure_29_filter_large_numerical_regression.ipynb) · [30](../notebooks/figure_30_filter_large_numerical_classification.ipynb) · [31](../notebooks/figure_31_filter_large_categorical_regression.ipynb) · [32](../notebooks/figure_32_filter_large_categorical_classification.ipynb)
+- [Figure 35](../notebooks/figure_35_estimators_budget_numeric_from_pdf.ipynb) · [36](../notebooks/figure_36_estimators_budget_categorical_from_pdf.ipynb) · [37](../notebooks/figure_37_estimators_time_numeric_from_pdf.ipynb) · [38](../notebooks/figure_38_estimators_time_categorical_from_pdf.ipynb)
+
+Để đọc lại từ bản PDF đã ghim SHA-256, chạy `python -m src.published_figures --pdf <đường-dẫn-PDF>`. Báo cáo chênh lệch khoảng 1,13% ở Figure 28 chỉ mô tả độ rộng sơ đồ trong PDF.
 
 Trong Figure 39–40, ba mô hình ở cả hai nhánh dùng đúng các nhóm 15, 19, 7 và 13 bộ dữ liệu. Hồi quy số loại isolet theo script của tác giả. Hạng 0 kiểm tra nguồn vì điểm này không phụ thuộc vào thứ tự hoán vị. Các đường cong chạy lại dùng seed 0.
 

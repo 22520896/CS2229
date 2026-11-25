@@ -1,6 +1,6 @@
 # CS2229 · Vì sao mô hình cây vẫn mạnh trên dữ liệu bảng?
 
-Tái hiện các hình của Grinsztajn, Oyallon và Varoquaux tại NeurIPS 2022. Cả 40 figure có notebook Python đã chạy, gồm 27 hình tái lập phân tích từ kết quả công bố và 13 hình số hóa từ PDF. Phần tự train V2 có phạm vi riêng.
+Tái lập phân tích của Grinsztajn, Oyallon và Varoquaux tại NeurIPS 2022. **27/40 hình** được tính lại từ kết quả từng lượt tác giả công bố. Phần tự train V2 có phạm vi riêng, với số lượt và độ bao phủ được báo cáo riêng.
 
 - [Báo cáo PDF](report/bao-cao.pdf)
 - [Slide HTML](slides/index.html) · Clone hoặc tải ZIP, rồi mở file này trong trình duyệt. Dùng ←/→ để chuyển slide, F để bật hoặc thoát toàn màn hình.
@@ -19,15 +19,14 @@ Tái hiện các hình của Grinsztajn, Oyallon và Varoquaux tại NeurIPS 202
 | 8–11 | [8](notebooks/figure_08_train_size_numerical_classification.ipynb) · [9](notebooks/figure_09_train_size_numerical_regression.ipynb) · [10](notebooks/figure_10_train_size_categorical_classification.ipynb) · [11](notebooks/figure_11_train_size_categorical_regression.ipynb) | Cùng nhóm dữ liệu, train 10K và 50K |
 | 12–17 | [12](notebooks/figure_12_numerical_classification.ipynb) · [13](notebooks/figure_13_numerical_regression.ipynb) · [14](notebooks/figure_14_categorical_classification.ipynb) · [15](notebooks/figure_15_categorical_regression.ipynb) · [16](notebooks/figure_16_large_numerical.ipynb) · [17](notebooks/figure_17_large_categorical.ipynb) | Điểm thô theo từng bộ dữ liệu, cả hai quy mô |
 | 18 · 20–24 | [18](notebooks/figure_18_smoothing_by_dataset.ipynb) · [20](notebooks/figure_20_feature_importance_by_dataset.ipynb) · [21](notebooks/figure_21_feature_addition_by_dataset.ipynb) · [22](notebooks/figure_22_feature_removal_by_dataset.ipynb) · [23](notebooks/figure_23_rotation_by_dataset.ipynb) · [24](notebooks/figure_24_rotation_pruned_by_dataset.ipynb) | Làm trơn, thêm hoặc bỏ đặc trưng và xoay theo từng dữ liệu |
-| 19 | [RF và MLP trên Electricity](notebooks/figure_19_decision_regions_from_pdf.ipynb) | Số hóa hai vùng màu của hình công bố |
-| 25–32 | [25](notebooks/figure_25_filter_medium_numerical_regression.ipynb) · [26](notebooks/figure_26_filter_medium_numerical_classification.ipynb) · [27](notebooks/figure_27_filter_medium_categorical_regression.ipynb) · [28](notebooks/figure_28_filter_medium_categorical_classification.ipynb) · [29](notebooks/figure_29_filter_large_numerical_regression.ipynb) · [30](notebooks/figure_30_filter_large_numerical_classification.ipynb) · [31](notebooks/figure_31_filter_large_categorical_regression.ipynb) · [32](notebooks/figure_32_filter_large_categorical_classification.ipynb) | Số hóa tám sơ đồ lọc Sankey |
 | 33 · 34 | [Phân loại](notebooks/figure_33_bayesian_classification.ipynb) · [Hồi quy](notebooks/figure_34_bayesian_regression.ipynb) | Random search và tìm kiếm Bayes |
-| 35–38 | [35](notebooks/figure_35_estimators_budget_numeric_from_pdf.ipynb) · [36](notebooks/figure_36_estimators_budget_categorical_from_pdf.ipynb) · [37](notebooks/figure_37_estimators_time_numeric_from_pdf.ipynb) · [38](notebooks/figure_38_estimators_time_categorical_from_pdf.ipynb) | Số hóa đường cong benchmark 10K/40K theo hình và thời gian |
 | 39 · 40 | [Đặc trưng số](notebooks/figure_39_tuned_estimators_numeric.ipynb) · [Có biến phân loại](notebooks/figure_40_tuned_estimators_categorical.ipynb) | Tính lại đối chiếu cố định và tune số cây từ hai checkpoint công bố |
 | A.1 · A.3 | [Danh mục benchmark và siêu tham số](notebooks/appendix_a1_a3_catalog.ipynb) | 57 thiết lập, 8 bảng và 70 mục siêu tham số |
 | A.4 | [Bốn bảng hồi quy](notebooks/appendix_a4_regression.ipynb) | Hệ số Python, đối chiếu R và cột hệ số công bố |
 
 Biểu đồ được lưu sẵn trong notebook. `figures/` chứa hình và các bảng số. PDF dùng các hình chính và một số phụ lục. Slide tập trung vào Figure 1–5.
+
+Figure 19, 25–32 và 35–38 đang chờ đầu vào để chạy lại. Các notebook đọc hình in trong PDF được giữ làm tư liệu tham chiếu ở [phụ lục nguồn và trạng thái](evidence/appendix_sources.md).
 
 ## Chạy lại
 
@@ -47,7 +46,6 @@ python -m src.notebooks 1
 python -m src.appendix_notebooks 6
 python -m src.appendix_notebooks a4
 python -m src.appendix_notebooks catalog
-python -m src.published_notebooks 28
 python -m src.published_notebooks 39
 python -m src.verify --reanalyze
 python -m src.verify_appendix --reanalyze
@@ -56,8 +54,6 @@ python -m src.build_report
 ```
 
 Trên Linux/macOS, kích hoạt bằng `source .venv/bin/activate`. Có thể mở notebook trong Jupyter hoặc VS Code và bấm **Run All**. Kiểm tra offline các kết quả đã lưu bằng `python -m unittest discover -s tests`.
-
-Các notebook số hóa đọc hình học đã trích sẵn và chạy offline. Để trích lại từ bản PDF đã ghim SHA-256, chạy `python -m src.published_figures --pdf <đường-dẫn-PDF>` hoặc bỏ `--pdf` để tải từ NeurIPS. [Kiểm chứng phần bổ sung](evidence/published_parity.json)
 
 `src/analysis.py` tái lập lọc dữ liệu, chuẩn hóa, xáo thứ tự, chọn theo validation và tổng hợp theo từng hình. Seed 0 cố định, dùng chuỗi uniform MT19937 của R. Figure 4b chính dùng script tác giả với 15 lần xáo và dải phân vị 20%–80%. Bảng riêng dùng 30 lần xáo và min–max theo phần mô tả của paper.
 
