@@ -25,20 +25,12 @@ Bộ nộp báo 27/40 hình tái lập phân tích từ kết quả công bố. 
 
 Có ba mốc kiểm chứng. Khi có kết quả từng lượt, chạy lại phân tích chọn bằng validation và tổng hợp test. Khi có checkpoint và split gốc, nạp mô hình để đo lại điểm. Khi có mã huấn luyện, cấu hình, phiên bản dữ liệu, split và seed, có thể fit lại rồi đánh giá. Cấu hình được chọn bằng validation trước khi tổng hợp test. Phạm vi hoàn tất thực nghiệm được tính từ lượt chạy có đầu ra kiểm chứng.
 
-## Tư liệu đọc hình công bố
-
-Các bản số hóa chỉ phục vụ đối chiếu với paper. Chúng nằm ngoài số hình tái lập và số fit. Những notebook này đọc hình học đã trích sẵn và chạy offline.
-
-- [Figure 19](../notebooks/figure_19_decision_regions_from_pdf.ipynb)
-- [Figure 25](../notebooks/figure_25_filter_medium_numerical_regression.ipynb) · [26](../notebooks/figure_26_filter_medium_numerical_classification.ipynb) · [27](../notebooks/figure_27_filter_medium_categorical_regression.ipynb) · [28](../notebooks/figure_28_filter_medium_categorical_classification.ipynb) · [29](../notebooks/figure_29_filter_large_numerical_regression.ipynb) · [30](../notebooks/figure_30_filter_large_numerical_classification.ipynb) · [31](../notebooks/figure_31_filter_large_categorical_regression.ipynb) · [32](../notebooks/figure_32_filter_large_categorical_classification.ipynb)
-- [Figure 35](../notebooks/figure_35_estimators_budget_numeric_from_pdf.ipynb) · [36](../notebooks/figure_36_estimators_budget_categorical_from_pdf.ipynb) · [37](../notebooks/figure_37_estimators_time_numeric_from_pdf.ipynb) · [38](../notebooks/figure_38_estimators_time_categorical_from_pdf.ipynb)
-
-Để đọc lại từ bản PDF đã ghim SHA-256, chạy `python -m src.published_figures --pdf <đường-dẫn-PDF>`. Báo cáo chênh lệch khoảng 1,13% ở Figure 28 chỉ mô tả độ rộng sơ đồ trong PDF.
-
 Trong Figure 39–40, ba mô hình ở cả hai nhánh dùng đúng các nhóm 15, 19, 7 và 13 bộ dữ liệu. Hồi quy số loại isolet theo script của tác giả. Hạng 0 kiểm tra nguồn vì điểm này không phụ thuộc vào thứ tự hoán vị. Các đường cong chạy lại dùng seed 0.
 
 Chạy `python -m src.verify_appendix --reanalyze` để đối chiếu lại dữ liệu với R. `src/reference/` có các wrapper để chạy lại bản R từ projection trong `.cache/`. Dùng thư mục `analyses` của repo tác giả tại commit `9d54cf5` và R có `tidyverse`, `zoo`, `RColorBrewer`. Ví dụ `Rscript src/reference/time.R 6 <author-analyses> .cache figure_06_r.csv`. Wrapper A.4 dùng số 2–5 tương ứng bốn thí nghiệm; Figure 21 theo chú thích dùng số 121.
 
-[Đối chiếu Python–R](appendix_parity.json) · [Kiểm tra độc lập CSV lịch sử](appendix_input_verification.json) · [Kiểm chứng số hóa và Figure 39–40](published_parity.json) · [Rà soát cấu hình số cây](published_input_audit.json)
+[Đối chiếu Python–R](appendix_parity.json) · [Kiểm tra độc lập CSV lịch sử](appendix_input_verification.json) · [Kiểm chứng Figure 39–40](published_parity.json) · [Rà soát cấu hình số cây](published_input_audit.json)
+
+Tư liệu đọc hình đã chuyển ra khỏi cây thư mục bản nộp. [Bản lưu trong lịch sử Git](https://github.com/22520896/CS2229/tree/965690418d842a66190f0bd92abbfdb982ffbe20)
 
 [Phụ lục NeurIPS 2022](https://papers.neurips.cc/paper_files/paper/2022/file/0378c7692da36807bdec87ab043cdadc-Supplemental-Datasets_and_Benchmarks.pdf) · [Mã và CSV lịch sử](https://github.com/LeoGrin/tabular-benchmark/tree/5b2d812329d191f949f9d085616a6c41d3198688/analyses)

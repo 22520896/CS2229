@@ -264,7 +264,7 @@ def build():
         ("35–38", "Cấu hình từng lượt và kết quả validation/test/thời gian cho nhánh 40K.",
          "Chạy hai nhánh theo protocol của tác giả, rồi dựng đường theo ngân sách và thời gian."),
     ], (55, 213, 213))
-    p("Các bản đọc hình trong PDF được lưu ở mục tư liệu của repo. Phạm vi 27/40 hình chỉ tính từ đầu ra từng lượt.",
+    p("Phạm vi 27/40 hình chỉ tính từ đầu ra từng lượt. Bảng trên liệt kê các hình đang chờ đầu vào gốc.",
       "small")
     target = ROOT / "report" / "bao-cao.pdf"
     SimpleDocTemplate(str(target), pagesize=A4, topMargin=64, bottomMargin=65,

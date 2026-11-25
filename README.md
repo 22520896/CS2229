@@ -26,7 +26,7 @@ Tái lập phân tích của Grinsztajn, Oyallon và Varoquaux tại NeurIPS 202
 
 Biểu đồ được lưu sẵn trong notebook. `figures/` chứa hình và các bảng số. PDF dùng các hình chính và một số phụ lục. Slide tập trung vào Figure 1–5.
 
-Figure 19, 25–32 và 35–38 đang chờ đầu vào để chạy lại. Các notebook đọc hình in trong PDF được giữ làm tư liệu tham chiếu ở [phụ lục nguồn và trạng thái](evidence/appendix_sources.md).
+Figure 19, 25–32 và 35–38 đang chờ đầu vào để chạy lại. [Phụ lục nguồn và trạng thái](evidence/appendix_sources.md)
 
 ## Chạy lại
 
