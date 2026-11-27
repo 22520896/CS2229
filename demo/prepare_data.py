@@ -143,7 +143,12 @@ def write_manifest():
     ]
     paths += [
         "demo/data/" + p
-        for p in ["author_anchors.csv", "normalization.json", "execution.json"]
+        for p in [
+            "author_anchors.csv",
+            "normalization.json",
+            "execution.json",
+            "progress_targets.json",
+        ]
     ]
     manifest = dict(
         schema=2,

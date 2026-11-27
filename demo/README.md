@@ -24,13 +24,16 @@ Mở http://127.0.0.1:8503/. `-Port 8504` để đổi cổng.
 | --- | --- |
 | Benchmark | Xem đường Paper đã kiểm chứng; đọc CSV/CSV.GZ hoặc upload CSV, đổi nhóm, số hoán vị và ngân sách, tính lại phân tích. Có đường default và trục log. |
 | Decision boundary | Chuẩn bị dữ liệu; chọn hai feature hoặc tính top-2 theo RF; chạy RF/MLP; chỉnh vùng nhìn mà không train lại. |
-| Target smoothing | Chọn hệ số covariance, số feature và covariance thường/robust; chạy và xem tỷ lệ nhãn train đổi. |
-| Noise / removal | Chọn tỷ lệ thêm/bỏ feature; tùy chọn GBT học trên feature bị loại. |
-| Rotation | Có/không xoay và tùy chọn bỏ 50% feature trước khi xoay. |
+| Target smoothing | Chọn nhiều hệ số và covariance thường/robust để so cùng plot; xem tỷ lệ nhãn train đổi. |
+| Noise / removal | Chọn nhiều tỷ lệ thêm/bỏ; chọn nhánh giữ lại/bị loại hoặc cả hai (nhánh bị loại dùng GBT). |
+| Rotation | Chọn giữ toàn bộ / bỏ 50% feature hoặc cả hai; cùng plot, split và seed. |
 
 Dataset, target, số mẫu train/test, seed và model nằm trong **Dữ liệu demo** ở sidebar.
 Dataset công khai tải từ mirror Hugging Face được bản gốc sử dụng; cache tại
 `.cache/demo-live/`. Nhấn **Tải dataset** nếu chưa có, rồi **Chuẩn bị dữ liệu**.
+Ba dataset **electricity, MagicTelescope, bank-marketing** đã được chuẩn bị trên máy này;
+danh sách đưa các dataset có cache lên đầu, đánh dấu **🟢 Có sẵn**. Các máy clone mới
+vẫn cần tải; trạng thái được xác định từ file thực tế, không gán cứng.
 Model chỉ train sau khi bấm **Chạy demo** hoặc nút tính RF importance. Một action,
 một luồng CPU; giới hạn RAM và kích thước tải bảo vệ máy local. Không chạy Kaggle.
 
@@ -46,13 +49,30 @@ và link notebook. Confusion matrix chỉ hiện ở ba mẫu RF/Electricity có
 Benchmark tự chạy ít ngân sách được giữ dưới expander/bảng chứng cứ; không làm plot chính.
 Feature removal đại diện vẫn được lưu, không gắn nhãn full-paper.
 
-**Tiến độ theo paper** dùng phạm vi thí nghiệm gốc, không dùng kế hoạch chạy đại diện
-làm mẫu số. Bảng nêu phần đã làm, yêu cầu paper và phần còn thiếu. **Chưa định lượng** nghĩa là
-chưa có mẫu số đầy đủ/comparable để cho một tỷ lệ tự train; không tự suy ra 100% từ
-168/168, 224/224 hoặc 240/240 ô của grid một cấu hình công bố/điều kiện.
-Khối lượng grid/HPO đã chạy nằm trong expander riêng và không có % paper giả định.
-27/40 Figure IDs (67,5%) chỉ là độ phủ **phân tích CSV tác giả**, được hiển thị riêng.
-Danh mục có Figure 1–40, Table 1–8 và các mục phụ lục, với tìm kiếm và nguồn notebook.
+**Tiến độ theo paper** có **% ước lượng khối lượng cấu hình**, dùng ngân sách của
+paper/repo gốc, không lấy số case trong queue làm mẫu số. Công thức là:
+
+`100 × cấu hình đủ original repeats đã kiểm chứng / ngân sách cấu hình tham chiếu`.
+
+Ba cơ chế dùng cohort/model/điều kiện từ CSV nguồn đã kiểm hash, nhân với ngân sách
+HPO ở hạng 20/30/60 của script. Vì chỉ chạy một cấu hình công bố mỗi điều kiện,
+Noise và Rotation ước lượng 5%, Smoothing khoảng 1,67% **về khối lượng HPO**;
+đủ grid điều kiện không thành 100% paper. Hạng có default/rank gaps nên đây là ước
+lượng ngân sách, không phải đếm chính xác lịch sử, độ giống kết quả hay thời gian.
+Số hoán vị không nhân vào lượt train vì dùng lại output đã có.
+
+Benchmark: tổng cấu hình đủ seed trong snapshot chia ngân sách 400 cho 437 cặp
+model-dataset của Figure1 (35 numeric setting × 7 model + 24 categorical × 8).
+Mẫu số không bị thu xuống catalog 57 setting của nhóm. 50K dùng 38.006 nhóm HPO
+đủ repeats đã audit và cùng mốc ngân sách; đây là ước lượng từ tổng số, chưa chứng
+minh paired/cohort parity. Những nhánh chưa có tự train đúng phạm vi là 0%.
+Tài liệu/hồi quy từ dữ liệu tác giả không có % tự train; được báo riêng. Không cộng
+các Figure dùng chung training thành một tỷ lệ full paper.
+
+Mỗi hàng mở được **Phạm vi gốc & phần còn thiếu**, có tử số/mẫu số, nguồn và giả định.
+`data/progress_targets.json` lưu grid của tác giả; `prepare_progress.py` chỉ dành cho
+maintainer, không được app gọi. 27/40 Figure IDs (67,5%) chỉ là độ phủ **phân tích
+CSV tác giả**, hiển thị riêng. Danh mục có Figure1–40, Table1–8 và các mục phụ lục.
 
 ## Nguồn và kiểm chứng
 
@@ -71,7 +91,7 @@ Paper/Ours ba cơ chế dùng cùng cohort và mốc normalization tác giả; k
 Bảng per-dataset Figure18/21/23/24 được chuẩn hóa để khớp Figure2/4b/5 tại `1e-12`.
 Ẩn model không thay mốc. Benchmark của hai nguồn vẫn giữ cohort/ngân sách riêng.
 
-`data/manifest.json` khóa 32 nguồn đã lưu. Hash CSV/JSON chỉ chuẩn hóa xuống dòng
+`data/manifest.json` khóa 33 nguồn đã lưu. Hash CSV/JSON chỉ chuẩn hóa xuống dòng
 CRLF thành LF; numeric NPZ đối chiếu nguyên byte. Thiếu hoặc sửa nguồn sẽ báo lỗi.
 `prepare_data.py` chỉ là công cụ maintainer; app không gọi nó. Không upload dữ liệu
 live, CSV người dùng, weights hoặc cache khi push repository.
@@ -92,7 +112,8 @@ demo/
   benchmark*.py          CSV và engine phân tích đã đối chiếu R
   evidence.py, charts.py đọc bằng chứng và plot
   inventory.py          phạm vi paper và danh mục
-  progress_ui.py        tiến độ, không lấy pilot làm mẫu số
+  progress_ui.py        tiến độ ước lượng, không lấy pilot làm mẫu số
+  progress_estimates.py công thức và tử số/mẫu số theo paper
   upstream/             source demo gốc đã pin
   data/                 hash, normalization và trạng thái snapshot
   tests/                parity và các luồng app

@@ -97,6 +97,9 @@ def coverage():
 
 
 def paper_inventory():
+    from demo.progress_estimates import all_estimates, figure_estimate
+
+    estimates = all_estimates()
     rows = []
     source = csv("reproduce/results/figure_inventory.csv")
     for r in source.itertuples():
@@ -122,7 +125,8 @@ def paper_inventory():
                 "Phân tích tác giả": "Đã tính lại"
                 if r.author_results_analysis
                 else "Chưa có đầu vào",
-                "Tự train theo paper (%)": None if not own.startswith("Chưa") else 0.0,
+                "Ước lượng tự train (%)": figure_estimate(n, estimates)["percent"],
+                "Cơ sở ước lượng": figure_estimate(n, estimates)["basis"],
                 "Tự chạy": own,
                 "Bằng chứng": link("notebooks/" + r.author_notebook)
                 if r.author_results_analysis
@@ -191,11 +195,10 @@ def paper_inventory():
 
 
 def paper_scope():
-    """Denominator is the original experiment, never our selected pilot grid.
+    """Source HPO-budget estimates, explicitly distinct from protocol parity."""
+    from demo.progress_estimates import all_estimates
 
-    A partial protocol has no honest single completion ratio without a complete,
-    comparable source fit/configuration ledger. Keep that percentage unavailable.
-    """
+    estimates = all_estimates()
     rows = []
     descriptions = [
         (
@@ -342,14 +345,21 @@ def paper_scope():
             if mechanism != "feature_removal":
                 selected = selected.loc[selected.reference_grid]
             own = f"{len(selected)} ô đủ seed · {selected.dataset.nunique()} dataset · cấu hình công bố/đại diện"
-        no_run = own.startswith(("Chưa tái", "Chưa có", "Chưa tự train"))
+        estimated = estimates[figure]
+        if mechanism:
+            own = f"{estimated['numerator']:,} cấu hình đủ seed khớp phạm vi gốc · một cấu hình/điều kiện"
         rows.append(
             {
                 "Paper": figure,
                 "Hạng mục": name,
                 "Phạm vi gốc": required,
                 "Đã thực hiện": own,
-                "Tự train theo paper (%)": 0.0 if no_run else None,
+                "Ước lượng tự train (%)": estimated["percent"]
+                if not figure.startswith("A.")
+                else None,
+                "Cơ sở ước lượng": estimated["basis"],
+                "Cấu hình được tính": estimated["numerator"],
+                "Ngân sách tham chiếu": estimated["denominator"],
                 "Còn thiếu / giới hạn": missing,
             }
         )

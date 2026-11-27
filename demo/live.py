@@ -23,6 +23,24 @@ D.DATA_DIR = CACHE / "clf_num"
 LOCK = threading.Lock()
 MAX_DOWNLOAD = 256 * 1024**2
 MIN_RAM = 768 * 1024**2
+PREFERRED_DATASETS = ("electricity", "MagicTelescope", "bank-marketing")
+
+
+def dataset_options():
+    order = [
+        *PREFERRED_DATASETS,
+        *[name for name in D.CLF_NUM_DATASETS if name not in PREFERRED_DATASETS],
+    ]
+    available = [name for name in order if D.local_path(name).is_file()]
+    return available + [name for name in order if name not in available]
+
+
+def dataset_label(name):
+    return (
+        f"🟢 {name} · Có sẵn"
+        if D.local_path(name).is_file()
+        else f"↓ {name} · Chưa tải"
+    )
 
 
 def verify_upstream():
@@ -164,8 +182,11 @@ def run(kind, data, models, seeds, *, settings=None, on_fit=None):
         elif kind == "add":
             output = X.run_add_features(data, settings["levels"], models, seeds)
         elif kind == "remove":
+            parts = settings.get("train_parts")
+            selected_models = models if parts is None or "kept" in parts else []
+            on_removed = settings["on_removed"] if parts is None else "removed" in parts
             output = X.run_remove_features(
-                data, settings["levels"], models, seeds, settings["on_removed"]
+                data, settings["levels"], selected_models, seeds, on_removed
             )
         else:
             output = X.run_rotation(data, settings["remove_half"], models, seeds)
@@ -173,6 +194,63 @@ def run(kind, data, models, seeds, *, settings=None, on_fit=None):
         "output": output,
         "fits": pd.DataFrame(fits),
         "warnings": sorted(set(notices)),
+    }
+
+
+def compare(kind, data, models, seeds, *, settings, on_fit=None):
+    """Run selected upstream cases on the SAME prepared split and seeds.
+
+    This orchestrates original calls and adds labels; it does not modify their math.
+    """
+    settings = dict(settings)
+    cases = [("Mặc định", dict(settings))]
+    if kind == "rotation":
+        selected = settings.pop("remove_halves", [settings.pop("remove_half", False)])
+        cases = [
+            (
+                "Bỏ 50% feature" if half else "Giữ toàn bộ feature",
+                {**settings, "remove_half": half},
+            )
+            for half in [False, True]
+            if half in selected
+        ]
+    elif kind == "smoothing":
+        selected = settings.pop("covariance_modes", [settings.pop("robust", False)])
+        cases = [
+            (
+                "Robust · MinCovDet" if robust else "Covariance thường",
+                {**settings, "robust": robust},
+            )
+            for robust in [False, True]
+            if robust in selected
+        ]
+    if not cases:
+        raise ValueError("Chọn ít nhất một chế độ so sánh.")
+    outputs, fits, changes = [], [], []
+    notices: list[str] = []
+    completed = 0
+    for label, case in cases:
+
+        def progress(count, name):
+            if on_fit:
+                on_fit(completed + count, name + " · " + label)
+
+        result = run(kind, data, models, seeds, settings=case, on_fit=progress)
+        completed += len(result["fits"])
+        fits.append(result["fits"].assign(variant=label))
+        notices.extend(label + ": " + warning for warning in result["warnings"])
+        frame = result["output"]
+        if kind == "smoothing":
+            frame, labels = frame
+            changes.append(labels.assign(variant=label))
+        outputs.append(frame.assign(variant=label))
+    return {
+        "output": pd.concat(outputs, ignore_index=True),
+        "fits": pd.concat(fits, ignore_index=True),
+        "label_changes": pd.concat(changes, ignore_index=True)
+        if changes
+        else pd.DataFrame(),
+        "warnings": notices,
     }
 
 

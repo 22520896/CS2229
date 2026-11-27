@@ -9,7 +9,7 @@ from demo import evidence as E, inventory as I
 def render():
     st.header("Tiến độ theo paper")
     st.caption(
-        "Snapshot 28/11 · Chưa full paper · Chưa định lượng khi thiếu mẫu số toàn quy trình · Demo local không được cộng"
+        "Ước lượng theo khối lượng cấu hình / ngân sách paper · Không phải % khớp toàn protocol · Không cộng demo local"
     )
     mode = st.radio(
         "Danh mục",
@@ -21,7 +21,7 @@ def render():
     if mode == "Thực nghiệm theo paper":
         table = I.paper_scope()
         displayed = table[
-            ["Paper", "Hạng mục", "Tự train theo paper (%)", "Đã thực hiện"]
+            ["Paper", "Hạng mục", "Ước lượng tự train (%)", "Đã thực hiện"]
         ]
     else:
         table = I.paper_inventory()
@@ -53,15 +53,15 @@ def render():
             [
                 "ID",
                 "Nội dung",
-                "Tự train theo paper (%)",
+                "Ước lượng tự train (%)",
                 "Phân tích tác giả",
                 "Tự chạy",
                 "Bằng chứng",
             ]
         ]
     displayed = displayed.copy()
-    displayed["Tự train theo paper (%)"] = displayed["Tự train theo paper (%)"].map(
-        lambda value: "Chưa định lượng" if pd.isna(value) else f"{value:.0f}%"
+    displayed["Ước lượng tự train (%)"] = displayed["Ước lượng tự train (%)"].map(
+        lambda value: "— (không phải training)" if pd.isna(value) else f"≈ {value:.2f}%"
     )
     st.dataframe(
         displayed,
@@ -70,7 +70,7 @@ def render():
         height="auto",
         column_config={
             "Bằng chứng": st.column_config.LinkColumn(display_text="Mở"),
-            "Tự train theo paper (%)": st.column_config.TextColumn(width="medium"),
+            "Ước lượng tự train (%)": st.column_config.TextColumn(width="medium"),
             "Paper": st.column_config.TextColumn(width="small"),
             "Hạng mục": st.column_config.TextColumn(width="medium"),
             "Đã thực hiện": st.column_config.TextColumn(width="large"),
@@ -84,6 +84,7 @@ def render():
             row = table.set_index("Paper").loc[selected]
             st.write("**Paper:** " + row["Phạm vi gốc"])
             st.write("**Đã làm:** " + row["Đã thực hiện"])
+            st.write("**Cách tính %:** " + row["Cơ sở ước lượng"])
             st.write("**Còn thiếu:** " + row["Còn thiếu / giới hạn"])
     st.download_button(
         "CSV phạm vi paper",
@@ -92,6 +93,19 @@ def render():
         "text/csv",
         key="progress_export",
     )
+    with st.expander("Cách tính % ước lượng"):
+        st.write(
+            "100 × cấu hình đủ seed đã xác minh / ngân sách cấu hình của paper, chỉ cộng khi cùng dataset, model và điều kiện. Các seed thuộc cùng cấu hình không đếm thành cấu hình mới."
+        )
+        st.write(
+            "Ba cơ chế: mẫu số là grid gốc × ngân sách HPO tại hạng 20/30/60 trong script tác giả. Một cấu hình/điều kiện tương đương khoảng 1/ngân sách; số hoán vị là bước phân tích, không nhân thành số lượt train."
+        )
+        st.write(
+            "Đây là ước lượng khối lượng, không phải xác nhận đã tái hiện đúng mọi bước. Hạng HPO có default và khoảng trống nên không phải đếm chính xác lịch sử. Nhánh 50K dùng tổng nhóm HPO đủ repeats của snapshot, chưa khẳng định khớp từng cohort. Các Figure dùng chung training không được cộng lại thành % tổng."
+        )
+        st.markdown(
+            f"[Mẫu số và nguồn]({E.link('demo/data/progress_targets.json')}) · [Công thức]({E.link('demo/progress_estimates.py')})"
+        )
     with st.expander("Khối lượng đã chạy · không phải % paper"):
         st.dataframe(I.work_volume(), hide_index=True, width="stretch")
         st.caption(

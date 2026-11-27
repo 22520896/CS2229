@@ -37,7 +37,8 @@
     "evidence/project_snapshot.json": "27e3ccca32c7d6162204df7abbf313d548f8d1802686f30a460670f4ed3ca18d",
     "demo/data/author_anchors.csv": "b13b40820e0be5aca7c2052e31cb5207f83f2d92d6589f9bc77e3f09a295d756",
     "demo/data/normalization.json": "78089475de67933b4b70878a333ae7543f2674aeb60217e5eb0a50fe3ccff2f2",
-    "demo/data/execution.json": "542631f8653ef52aa8324174b703b1ca3188fd84767b65e13698c8c15f2992da"
+    "demo/data/execution.json": "542631f8653ef52aa8324174b703b1ca3188fd84767b65e13698c8c15f2992da",
+    "demo/data/progress_targets.json": "6e08dd0960538ce05c95f8d25e31c9aaa25bc9aeb74eca8209a7475bc2c84180"
   },
   "hash_policy": "csv/json CRLF-to-LF; other files byte-exact"
 }

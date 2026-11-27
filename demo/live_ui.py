@@ -29,7 +29,12 @@ def raw_data(name):
 
 def configuration():
     with st.sidebar.expander("Dữ liệu demo", expanded=True):
-        name = st.selectbox("Dataset", L.D.CLF_NUM_DATASETS, key="live_dataset")
+        name = st.selectbox(
+            "Dataset",
+            L.dataset_options(),
+            format_func=L.dataset_label,
+            key="live_dataset",
+        )
         raw = raw_data(name)
         if raw is None:
             if name in L.D.LARGE_DATASETS:
@@ -94,12 +99,17 @@ def perform(kind, signature, data, models, seeds, settings):
         "Chạy demo",
         type="primary",
         key="live_run_" + kind,
-        disabled=not models or not settings.get("levels", [True]),
+        disabled=not models
+        or not settings.get("levels", [True])
+        or not settings.get("remove_halves", [True])
+        or not settings.get("covariance_modes", [True]),
+        # Input widgets do not launch work until this action is requested.
     ):
         counter = st.empty()
         try:
             with st.spinner("Đang chạy trên CPU local…"):
-                result = L.run(
+                runner = L.run if kind == "boundary" else L.compare
+                result = runner(
                     kind,
                     data,
                     models,
@@ -125,16 +135,30 @@ def perform(kind, signature, data, models, seeds, settings):
 
 
 def results(frame, kind, by, x_title, signature, settings, fits):
-    summary = L.X.summarize(frame, ["model", by])
+    if frame.empty or "model" not in frame:
+        st.info("Không có fit cho lựa chọn này. Nhánh bị loại cần tỷ lệ lớn hơn 0.")
+        return
+    variants = "variant" in frame
+    summary = L.X.summarize(frame, ["model", *(["variant"] if variants else []), by])
     figure = go.Figure()
-    for model, group in summary.groupby("model", sort=False):
+    styles = ["solid", "dash", "dot", "dashdot"]
+    variant_names = list(frame.variant.unique()) if variants else [""]
+    groups = summary.groupby(
+        ["model", "variant"] if variants else ["model"], sort=False
+    )
+    for identity, group in groups:
+        model, variant = identity if variants else (identity[0], "")
+        title = model + (" · " + variant if variant else "")
         figure.add_trace(
             go.Scatter(
                 x=group[by],
                 y=group.mean_acc,
                 mode="lines+markers",
-                name=model,
-                line=dict(color=COLORS.get(model.split(" · ")[0], "#777777")),
+                name=title,
+                line=dict(
+                    color=COLORS.get(model.split(" · ")[0], "#777777"),
+                    dash=styles[variant_names.index(variant) % len(styles)],
+                ),
                 error_y=dict(
                     type="data",
                     array=group.std_acc,
@@ -147,7 +171,7 @@ def results(frame, kind, by, x_title, signature, settings, fits):
         height=430,
         xaxis_title=x_title,
         yaxis_title="Test accuracy",
-        yaxis_tickformat=".0%",
+        yaxis_tickformat=".1%",
         legend=dict(orientation="h", y=-0.25),
         margin=dict(t=20, b=65),
     )
@@ -166,6 +190,8 @@ def results(frame, kind, by, x_title, signature, settings, fits):
             json.dumps(
                 {
                     "data": signature,
+                    "models": sorted(fits.model.unique().tolist()),
+                    "seeds": sorted(fits.seed.unique().tolist()),
                     "settings": settings,
                     "upstream_commit": "e9fce1eba2fb498b9571b33a331832a3eef63626",
                     "purpose": "local illustration; excluded from reproduction progress",
@@ -275,6 +301,10 @@ def render():
             key="live_smoothing_levels",
         )
         max_features = min(10, data.X_train.shape[1])
+        if "live_smoothing_k" in st.session_state:
+            st.session_state["live_smoothing_k"] = min(
+                max_features, st.session_state["live_smoothing_k"]
+            )
         k = b.number_input(
             "Feature quan trọng giữ lại",
             2,
@@ -282,13 +312,17 @@ def render():
             min(5, max_features),
             key="live_smoothing_k",
         )
-        robust = st.checkbox(
-            "Covariance robust · MinCovDet", key="live_smoothing_robust"
+        modes = st.multiselect(
+            "Covariance · chọn nhiều để so sánh",
+            [False, True],
+            default=[False],
+            format_func=lambda value: "Robust · MinCovDet" if value else "Thường",
+            key="live_covariance_modes",
         )
-        settings = {"levels": sorted(levels), "k": int(k), "robust": robust}
+        settings = {"levels": sorted(levels), "k": int(k), "covariance_modes": modes}
         result = perform("smoothing", signature, data, models, seeds, settings)
         if result:
-            frame, changes = result["output"]
+            frame, changes = result["output"], result["label_changes"]
             results(
                 frame,
                 "smoothing",
@@ -321,15 +355,27 @@ def render():
         )
         settings = {"levels": sorted(levels)}
         if kind == "remove":
-            settings["on_removed"] = st.checkbox(
-                "Thêm GBT học trên các feature đã bỏ", value=True, key="live_on_removed"
+            parts = st.multiselect(
+                "Nhánh train · chọn nhiều để so sánh",
+                ["kept", "removed"],
+                default=["kept", "removed"],
+                format_func=lambda part: "Feature giữ lại"
+                if part == "kept"
+                else "Feature đã bỏ · GBT",
+                key="live_removal_parts",
             )
+            if not parts:
+                st.info("Chọn ít nhất một nhánh train.")
+                return
+            settings["train_parts"] = parts
+            st.caption("Nhánh feature bị loại dùng GBT như demo gốc.")
         result = perform(kind, signature, data, models, seeds, settings)
         if result:
             frame = result["output"].copy()
             if "trained_on" in frame:
                 mask = frame.trained_on.eq("removed")
-                frame.loc[mask, "model"] += " · feature đã bỏ"
+                frame["variant"] = "Feature giữ lại"
+                frame.loc[mask, "variant"] = "Feature đã bỏ · GBT"
             frame["fraction"] *= 100
             results(
                 frame,
@@ -341,10 +387,16 @@ def render():
                 result["fits"],
             )
     else:
-        half = st.checkbox(
-            "Bỏ 50% feature ít quan trọng trước khi xoay", key="live_remove_half"
+        halves = st.multiselect(
+            "Feature trước khi xoay · chọn nhiều để so sánh",
+            [False, True],
+            default=[False, True],
+            format_func=lambda value: "Bỏ 50% feature ít quan trọng"
+            if value
+            else "Giữ toàn bộ feature",
+            key="live_rotation_halves",
         )
-        settings = {"remove_half": half}
+        settings = {"remove_halves": halves}
         result = perform("rotation", signature, data, models, seeds, settings)
         if result:
             results(

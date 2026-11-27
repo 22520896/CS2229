@@ -1,0 +1,29 @@
+{
+  "purpose": "Three prepared local demo datasets; CSV files are cached locally, not bundled or uploaded",
+  "datasets": [
+    {
+      "dataset": "electricity",
+      "url": "https://huggingface.co/datasets/inria-soda/tabular-benchmark/resolve/main/clf_num/electricity.csv",
+      "bytes": 2546169,
+      "sha256": "d6005007c4b1f7ba88cf91cb1f231969cce3e49c98d445338c0ab0342ead5d7e",
+      "rows": 38474,
+      "target": "class"
+    },
+    {
+      "dataset": "MagicTelescope",
+      "url": "https://huggingface.co/datasets/inria-soda/tabular-benchmark/resolve/main/clf_num/MagicTelescope.csv",
+      "bytes": 1043061,
+      "sha256": "67d05a42c20136481420e4df91722e6057a71e992b2fa83e6099a693e3d3d26e",
+      "rows": 13376,
+      "target": "class"
+    },
+    {
+      "dataset": "bank-marketing",
+      "url": "https://huggingface.co/datasets/inria-soda/tabular-benchmark/resolve/main/clf_num/bank-marketing.csv",
+      "bytes": 307059,
+      "sha256": "3433fecd416ce949692442882669881746e8a6b24b904a5f808cdcb196443e7e",
+      "rows": 10578,
+      "target": "Class"
+    }
+  ]
+}

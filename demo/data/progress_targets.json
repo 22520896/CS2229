@@ -1,0 +1,310 @@
+{
+  "schema": 1,
+  "source_sha256": "25314ccb2d138dae43fd23840f729f62fba0b5f5ab559aeb3727403dedb4e429",
+  "projection_sha256": "0e2d71c4ca6cf42ffddb93f4b506dc8680658cbc47c1223b3d7214c1bafe209d",
+  "formula": "100 * verified full-repeat configurations / (source dataset-model-condition cells * HPO rank)",
+  "interpretation": "Approximate configuration-work coverage, not protocol parity, runtime or overall paper completion. Source analysis rank is an approximate HPO budget; default/rank gaps are not replayed.",
+  "targets": {
+    "Figure 2": {
+      "experiment": "high_frequencies",
+      "hpo_rank": 60,
+      "datasets": [
+        "Higgs",
+        "MagicTelescope",
+        "MiniBooNE",
+        "bank-marketing",
+        "california",
+        "covertype",
+        "credit",
+        "electricity",
+        "eye_movements",
+        "house_16H",
+        "jannis",
+        "kdd_ipums_la_97-small",
+        "phoneme",
+        "pol",
+        "wine"
+      ],
+      "models": [
+        "FT Transformer",
+        "GradientBoostingTree",
+        "RandomForest",
+        "Resnet"
+      ],
+      "conditions": [
+        [
+          0.0,
+          "robust"
+        ],
+        [
+          0.05,
+          "robust"
+        ],
+        [
+          0.1,
+          "robust"
+        ],
+        [
+          0.25,
+          "robust"
+        ]
+      ],
+      "source": "src.analysis.figure2"
+    },
+    "Figure 3": {
+      "experiment": "show_uninformative_features",
+      "hpo_rank": 20,
+      "datasets": [
+        "Higgs",
+        "MagicTelescope",
+        "MiniBooNE",
+        "bank-marketing",
+        "california",
+        "covertype",
+        "credit",
+        "electricity",
+        "eye_movements",
+        "house_16H",
+        "jannis",
+        "kdd_ipums_la_97-small",
+        "phoneme",
+        "pol",
+        "wine"
+      ],
+      "models": [
+        "GradientBoostingTree"
+      ],
+      "conditions": [
+        [
+          0.0,
+          false
+        ],
+        [
+          0.1,
+          false
+        ],
+        [
+          0.1,
+          true
+        ],
+        [
+          0.2,
+          false
+        ],
+        [
+          0.2,
+          true
+        ],
+        [
+          0.3,
+          false
+        ],
+        [
+          0.3,
+          true
+        ],
+        [
+          0.4,
+          false
+        ],
+        [
+          0.4,
+          true
+        ],
+        [
+          0.5,
+          false
+        ],
+        [
+          0.5,
+          true
+        ],
+        [
+          0.6,
+          false
+        ],
+        [
+          0.6,
+          true
+        ],
+        [
+          0.7,
+          false
+        ],
+        [
+          0.7,
+          true
+        ],
+        [
+          0.8,
+          false
+        ],
+        [
+          0.8,
+          true
+        ],
+        [
+          0.9,
+          false
+        ],
+        [
+          0.9,
+          true
+        ]
+      ],
+      "source": "src.analysis.figure3"
+    },
+    "Figure 4a": {
+      "experiment": "remove_uninformative_features",
+      "hpo_rank": 30,
+      "datasets": [
+        "Higgs",
+        "MagicTelescope",
+        "MiniBooNE",
+        "bank-marketing",
+        "california",
+        "covertype",
+        "credit",
+        "electricity",
+        "eye_movements",
+        "house_16H",
+        "kdd_ipums_la_97-small",
+        "phoneme",
+        "pol",
+        "wine"
+      ],
+      "models": [
+        "FT Transformer",
+        "GradientBoostingTree",
+        "RandomForest",
+        "Resnet"
+      ],
+      "conditions": [
+        [
+          0.0,
+          false
+        ],
+        [
+          0.1,
+          false
+        ],
+        [
+          0.2,
+          false
+        ],
+        [
+          0.3,
+          false
+        ],
+        [
+          0.4,
+          false
+        ],
+        [
+          0.5,
+          false
+        ],
+        [
+          0.6,
+          false
+        ],
+        [
+          0.7,
+          false
+        ],
+        [
+          0.8,
+          false
+        ],
+        [
+          0.9,
+          false
+        ]
+      ],
+      "source": "src.analysis.figure4"
+    },
+    "Figure 4b": {
+      "experiment": "add_uninformative_features",
+      "hpo_rank": 20,
+      "datasets": [
+        "Higgs",
+        "MagicTelescope",
+        "MiniBooNE",
+        "bank-marketing",
+        "california",
+        "covertype",
+        "credit",
+        "electricity",
+        "eye_movements",
+        "house_16H",
+        "kdd_ipums_la_97-small",
+        "phoneme",
+        "pol",
+        "wine"
+      ],
+      "models": [
+        "FT Transformer",
+        "GradientBoostingTree",
+        "RandomForest",
+        "Resnet"
+      ],
+      "conditions": [
+        [
+          1.0
+        ],
+        [
+          1.5
+        ],
+        [
+          2.0
+        ]
+      ],
+      "source": "src.analysis.figure4"
+    },
+    "Figure 5": {
+      "experiment": "random_rotation",
+      "hpo_rank": 20,
+      "datasets": [
+        "Higgs",
+        "MagicTelescope",
+        "MiniBooNE",
+        "bank-marketing",
+        "california",
+        "covertype",
+        "credit",
+        "electricity",
+        "eye_movements",
+        "house_16H",
+        "kdd_ipums_la_97-small",
+        "phoneme",
+        "pol",
+        "wine"
+      ],
+      "models": [
+        "FT Transformer",
+        "GradientBoostingTree",
+        "RandomForest",
+        "Resnet"
+      ],
+      "conditions": [
+        [
+          0.0,
+          false
+        ],
+        [
+          0.0,
+          true
+        ],
+        [
+          0.5,
+          false
+        ],
+        [
+          0.5,
+          true
+        ]
+      ],
+      "source": "src.analysis.figure5"
+    }
+  }
+}

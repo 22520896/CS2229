@@ -19,6 +19,97 @@ def unit_fixture():
 
 
 class UpstreamAndLive(unittest.TestCase):
+    def test_cached_datasets_are_first_and_explicitly_labelled(self):
+        with patch.object(
+            L.D,
+            "local_path",
+            side_effect=lambda name: L.ROOT
+            / (
+                "README.md"
+                if name in L.PREFERRED_DATASETS
+                else "not-cached-unit-fixture"
+            ),
+        ):
+            self.assertEqual(L.dataset_options()[:3], list(L.PREFERRED_DATASETS))
+            self.assertIn("Có sẵn", L.dataset_label("MagicTelescope"))
+            self.assertIn("Chưa tải", L.dataset_label("Higgs"))
+
+    def test_rotation_comparison_keeps_both_cases_and_matches_upstream(self):
+        data = L.prepare(unit_fixture(), "class", 160, 80, 0)
+        result = L.compare(
+            "rotation",
+            data,
+            ["RandomForest"],
+            [0],
+            settings={"remove_halves": [False, True]},
+        )
+        self.assertEqual(len(result["fits"]), 4)
+        self.assertEqual(result["output"].variant.nunique(), 2)
+        for half, label in [(False, "Giữ toàn bộ feature"), (True, "Bỏ 50% feature")]:
+            expected = L.run(
+                "rotation", data, ["RandomForest"], [0], settings={"remove_half": half}
+            )["output"]
+            actual = (
+                result["output"]
+                .loc[result["output"].variant.eq(label)]
+                .drop(columns="variant")
+                .reset_index(drop=True)
+            )
+            pd.testing.assert_frame_equal(actual, expected)
+        with self.assertRaisesRegex(ValueError, "ít nhất"):
+            L.compare(
+                "rotation", data, ["RandomForest"], [0], settings={"remove_halves": []}
+            )
+
+    def test_smoothing_comparison_separates_covariance_and_label_changes(self):
+        data = L.prepare(unit_fixture(), "class", 160, 80, 0)
+        result = L.compare(
+            "smoothing",
+            data,
+            ["RandomForest"],
+            [0],
+            settings={"levels": [0.0, 0.1], "k": 5, "covariance_modes": [False, True]},
+        )
+        self.assertEqual(len(result["fits"]), 4)
+        self.assertEqual(result["label_changes"].variant.nunique(), 2)
+        for robust, label in [
+            (False, "Covariance thường"),
+            (True, "Robust · MinCovDet"),
+        ]:
+            expected = L.run(
+                "smoothing",
+                data,
+                ["RandomForest"],
+                [0],
+                settings={"levels": [0.0, 0.1], "k": 5, "robust": robust},
+            )["output"][0]
+            actual = (
+                result["output"]
+                .loc[result["output"].variant.eq(label)]
+                .drop(columns=["variant", "seconds"])
+                .reset_index(drop=True)
+            )
+            pd.testing.assert_frame_equal(actual, expected.drop(columns="seconds"))
+
+    def test_removal_can_select_only_removed_features_or_both(self):
+        data = L.prepare(unit_fixture(), "class", 160, 80, 0)
+        result = L.compare(
+            "remove",
+            data,
+            ["RandomForest"],
+            [0],
+            settings={"levels": [0.5], "train_parts": ["removed"]},
+        )
+        self.assertEqual(result["output"].trained_on.tolist(), ["removed"])
+        both = L.compare(
+            "remove",
+            data,
+            ["RandomForest"],
+            [0],
+            settings={"levels": [0.5], "train_parts": ["kept", "removed"]},
+        )
+        self.assertEqual(set(both["output"].trained_on), {"kept", "removed"})
+
     def test_pinned_original_core_is_unchanged(self):
         source = L.verify_upstream()
         self.assertEqual(source["commit"], "e9fce1eba2fb498b9571b33a331832a3eef63626")
@@ -145,11 +236,18 @@ class BenchmarkAndScope(unittest.TestCase):
             B.read_csv(b"model_name,mean_test_score\nMLP,0.9\n")
 
     def test_partial_grids_never_become_100_percent_paper(self):
+        from demo.progress_estimates import all_estimates
+
         scope = I.paper_scope()
-        percent = scope["Tự train theo paper (%)"]
-        self.assertTrue(percent.dropna().eq(0).all())
-        mechanisms = scope.loc[scope.Paper.isin(["Figure 2", "Figure 4b", "Figure 5"])]
-        self.assertTrue(mechanisms["Tự train theo paper (%)"].isna().all())
+        percent = scope["Ước lượng tự train (%)"]
+        self.assertTrue(percent.dropna().between(0, 100, inclusive="left").all())
+        estimates = all_estimates()
+        self.assertAlmostEqual(estimates["Figure 2"]["percent"], 100 / 60)
+        self.assertEqual(estimates["Figure 4b"]["percent"], 5.0)
+        self.assertEqual(estimates["Figure 5"]["percent"], 5.0)
+        self.assertEqual(estimates["Figure 1"]["denominator"], (35 * 7 + 24 * 8) * 400)
+        self.assertEqual(estimates["Figure 8–11, 16–17"]["numerator"], 38006)
+        self.assertTrue(scope["Cơ sở ước lượng"].str.len().gt(0).all())
         self.assertNotIn("Phân tích (%)", I.paper_inventory())
         self.assertNotIn("percent", I.work_volume())
 
@@ -205,13 +303,14 @@ class LiveAppFlows(unittest.TestCase):
                 self.assertFalse(app.exception, name + str(app.exception))
             app.radio(key="page").set_value("Tiến độ theo paper").run()
             self.assertFalse(app.exception)
-            displayed = app.dataframe[0].value["Tự train theo paper (%)"]
-            self.assertTrue(displayed.isin(["0%", "Chưa định lượng"]).all())
+            displayed = app.dataframe[0].value["Ước lượng tự train (%)"]
+            self.assertFalse(displayed.str.contains("Chưa định lượng").any())
+            self.assertTrue(displayed.str.startswith(("≈ ", "— (")).all())
 
     def test_live_button_runs_once_and_keeps_result_when_switching_pages(self):
         with (
             patch("demo.live_ui.raw_data", return_value=unit_fixture()),
-            patch.object(L, "run", wraps=L.run) as run,
+            patch.object(L, "compare", wraps=L.compare) as run,
         ):
             app = AppTest.from_file(
                 str(L.ROOT / "demo/app.py"), default_timeout=30
@@ -226,11 +325,18 @@ class LiveAppFlows(unittest.TestCase):
             self.assertFalse(app.error)
             self.assertEqual(run.call_count, 1)
             self.assertGreater(len(app.get("plotly_chart")), 0)
+            plotted = app.session_state["_live_result_rotation"][1]["output"]
+            self.assertEqual(plotted.variant.nunique(), 2)
+            self.assertEqual(len(plotted), 4)
+            self.assertEqual(len(app.multiselect(key="live_rotation_halves").value), 2)
             app.radio(key="page").set_value("Kết quả tự chạy").run()
             app.radio(key="page").set_value("Demo tương tác").run()
             self.assertFalse(app.exception)
             self.assertEqual(run.call_count, 1)
             self.assertGreater(len(app.get("plotly_chart")), 0)
+            app.multiselect(key="live_rotation_halves").set_value([]).run()
+            self.assertTrue(app.button(key="live_run_rotation").disabled)
+            self.assertEqual(run.call_count, 1)
 
 
 if __name__ == "__main__":
