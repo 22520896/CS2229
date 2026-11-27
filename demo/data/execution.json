@@ -1,0 +1,10 @@
+{
+  "state": "stopped_by_user",
+  "as_of": "2026-11-28",
+  "results_snapshot": "2026-11-28T02:00:00+07:00",
+  "all_training_stopped": true,
+  "later_stop_results_integrated": false,
+  "interrupted_fits_are_not_successes": true,
+  "automatic_training": false,
+  "new_job_submission": false
+}

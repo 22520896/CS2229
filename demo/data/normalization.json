@@ -1,0 +1,12 @@
+{
+  "source_sha256": "25314ccb2d138dae43fd23840f729f62fba0b5f5ab559aeb3727403dedb4e429",
+  "projection_sha256": "0e2d71c4ca6cf42ffddb93f4b506dc8680658cbc47c1223b3d7214c1bafe209d",
+  "formula": "(score - author_dataset_q10) / (author_dataset_max - author_dataset_q10)",
+  "same_author_anchors_for_both_series": true,
+  "clipping": false,
+  "tolerance": 1e-12,
+  "original_analysis_function": "src.analysis.normalize",
+  "original_formula_parity": true,
+  "model_selection_changed": false,
+  "model_fit_calls": 0
+}
