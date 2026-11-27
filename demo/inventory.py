@@ -122,7 +122,7 @@ def paper_inventory():
                 "Phân tích tác giả": "Đã tính lại"
                 if r.author_results_analysis
                 else "Chưa có đầu vào",
-                "Phân tích (%)": 100.0 if r.author_results_analysis else 0.0,
+                "Tự train theo paper (%)": None if not own.startswith("Chưa") else 0.0,
                 "Tự chạy": own,
                 "Bằng chứng": link("notebooks/" + r.author_notebook)
                 if r.author_results_analysis
@@ -188,3 +188,185 @@ def paper_inventory():
             }
         )
     return pd.DataFrame(rows)
+
+
+def paper_scope():
+    """Denominator is the original experiment, never our selected pilot grid.
+
+    A partial protocol has no honest single completion ratio without a complete,
+    comparable source fit/configuration ledger. Keep that percentage unavailable.
+    """
+    rows = []
+    descriptions = [
+        (
+            "Figure 1",
+            "Benchmark",
+            "4 nhóm; HPO tối đa 400 cấu hình/model/setting, default-first, chọn validation",
+            "HPO có phạm vi riêng; bộ đối chứng cân bằng 24/57 thiết lập",
+            "Chưa đủ toàn bộ mô hình, ngân sách và quy trình gốc",
+        ),
+        (
+            "Figure 2",
+            "Target smoothing",
+            "Làm trơn nhãn train; HPO hạng 60, 15 hoán vị theo script",
+            "target_smoothing",
+            "Một cấu hình công bố/điều kiện; chưa replay HPO và hoán vị",
+        ),
+        (
+            "Figure 3",
+            "Feature importance",
+            "GBT trên feature giữ lại/bị loại; HPO hạng 20, 30 hoán vị",
+            "feature_removal",
+            "Case đại diện; chưa đủ grid và HPO gốc",
+        ),
+        (
+            "Figure 4a",
+            "Feature removal",
+            "Loại biến ít thông tin; HPO hạng 30, 30 hoán vị",
+            "feature_removal",
+            "Case đại diện; chưa đủ grid và HPO gốc",
+        ),
+        (
+            "Figure 4b",
+            "Noise features",
+            "Thêm biến nhiễu; HPO hạng 20, 15 hoán vị theo script",
+            "noise_features",
+            "Một cấu hình công bố/điều kiện; chưa replay HPO và hoán vị",
+        ),
+        (
+            "Figure 5",
+            "Rotation",
+            "Có/không xoay; loại 0%/50% biến; HPO hạng 20, 30 hoán vị",
+            "rotation",
+            "Một cấu hình công bố/điều kiện; chưa replay HPO và hoán vị",
+        ),
+        (
+            "Figure 6–7",
+            "Ngân sách thời gian",
+            "Tổng hợp theo thời gian tìm kiếm ở cả numeric/categorical",
+            "Có timing tự chạy; chưa đủ phép tổng hợp gốc",
+            "Phạm vi HPO/time bins còn thiếu",
+        ),
+        (
+            "Figure 8–11, 16–17",
+            "Train 10K / 50K",
+            "So cùng cohort theo từng nhóm và quy mô dữ liệu",
+            "Có default và HPO 50K một phần",
+            "Chưa đủ paired HPO theo paper",
+        ),
+        (
+            "Figure 12–15",
+            "Điểm từng dataset",
+            "Đủ model/setting và quy trình HPO trong bốn nhóm",
+            "Có kết quả tự chạy một phần",
+            "Không đồng nhất 57 setting A.1 với 59 nhãn Figure 1",
+        ),
+        (
+            "Figure 18, 20–24",
+            "Cơ chế · từng dataset",
+            "Phân rã các thực nghiệm Figure 2–5, giữ cùng quy trình",
+            "Đã có ba lưới cấu hình công bố và case removal",
+            "Cùng giới hạn HPO của các hình chính; không đếm hai lần",
+        ),
+        (
+            "Figure 19",
+            "Decision boundary",
+            "Electricity, feature/split/model gốc của thí nghiệm",
+            "Chưa tái hiện đúng phạm vi",
+            "Demo 2D local được giữ riêng, không tính là Figure 19",
+        ),
+        (
+            "Figure 25–32",
+            "Lọc dataset",
+            "Các cohort lọc của paper, ở 10K và 50K",
+            "Chưa có thực nghiệm đúng phạm vi",
+            "Thiếu grid đối chứng và quy trình lọc gốc",
+        ),
+        (
+            "Figure 33–34",
+            "Bayesian search",
+            "Random search so với Bayesian optimization",
+            "Chưa tự train Bayesian benchmark",
+            "Hiện mới phân tích CSV công bố",
+        ),
+        (
+            "Figure 35–38",
+            "40K estimators / patience",
+            "Train với giới hạn số cây/patience dài và đo ngân sách",
+            "Chưa có thực nghiệm đúng phạm vi",
+            "Không phải 40K dòng train",
+        ),
+        (
+            "Figure 39–40",
+            "Tune số cây",
+            "Nhánh cố định so với HPO có tune n_estimators",
+            "Chưa tự train đủ hai nhánh",
+            "Hiện mới phân tích CSV công bố",
+        ),
+        (
+            "A.1–A.3",
+            "Dataset / siêu tham số",
+            "Danh mục 57 thiết lập và 8 bảng HPO; protocol chi tiết",
+            "Đã đối chiếu danh mục; có cấu hình nguồn",
+            "Đối chiếu tài liệu, không có % tự train riêng",
+        ),
+        (
+            "A.4",
+            "Hồi quy định lượng",
+            "Bốn mô hình hồi quy trên kết quả thực nghiệm gốc",
+            "Đã chạy phân tích từ CSV tác giả, đối chiếu Python/R",
+            "Phân tích kết quả tác giả, không phải tự train benchmark",
+        ),
+        (
+            "A.5–A.10",
+            "Các mục phụ lục khác",
+            "Lọc dữ liệu, đối chiếu benchmark, Bayes và phân tích bổ sung",
+            "Xem danh mục từng Figure / mục phụ lục",
+            "Không gộp thành một % hoàn thành paper",
+        ),
+    ]
+    from demo.evidence import cells
+
+    evidence = cells()
+    for figure, name, required, own, missing in descriptions:
+        mechanism = (
+            own
+            if own
+            in {"target_smoothing", "feature_removal", "noise_features", "rotation"}
+            else None
+        )
+        if mechanism:
+            selected = evidence.loc[
+                evidence.mechanism.eq(mechanism) & evidence.full_repeats
+            ]
+            if mechanism != "feature_removal":
+                selected = selected.loc[selected.reference_grid]
+            own = f"{len(selected)} ô đủ seed · {selected.dataset.nunique()} dataset · cấu hình công bố/đại diện"
+        no_run = own.startswith(("Chưa tái", "Chưa có", "Chưa tự train"))
+        rows.append(
+            {
+                "Paper": figure,
+                "Hạng mục": name,
+                "Phạm vi gốc": required,
+                "Đã thực hiện": own,
+                "Tự train theo paper (%)": 0.0 if no_run else None,
+                "Còn thiếu / giới hạn": missing,
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def work_volume():
+    frame = csv("reproduce/results/coverage.csv")
+    return pd.DataFrame(
+        {
+            "Hạng mục": frame.key.map(COVERAGE_LABELS),
+            "Đã ghi nhận": frame.complete,
+            "Đơn vị": frame.unit,
+            "Phạm vi": frame.key.map(
+                lambda key: "Lưới một cấu hình công bố/điều kiện"
+                if key in {"noise_features", "rotation", "target_smoothing"}
+                else "Catalog / ngân sách tự chạy đã khóa"
+            ),
+        }
+    )

@@ -1,37 +1,38 @@
 # Kiểm chứng demo · 28/11/2026
 
-Môi trường: Windows, Python 3.12.14; phiên bản dependency trong
-`requirements-lock.txt`. Demo chỉ đọc kết quả đã lưu, không training hay gửi job.
+Windows/Python 3.12.14; dependencies trong `requirements-lock.txt`.
 
 | Kiểm tra | Kết quả |
 | --- | --- |
-| `python -m unittest discover -s demo/tests -v` | 16/16 pass |
-| Test hiện có tại `tests/` | 9/9 pass |
-| Test hiện có tại `reproduce/tests/` | 4/4 pass |
-| Ruff · lỗi import, cú pháp và tên biến | Pass |
-| Mypy · app, evidence, charts, inventory | Pass |
-| PowerShell parser · `run.ps1` | Pass |
-| Local HTTP / health và giao diện trong Codex | Pass |
+| `python -m unittest discover -s demo/tests -v` | 27/27 pass |
+| Test hiện có `tests/` | 9/9 pass |
+| Test hiện có `reproduce/tests/` | 4/4 pass |
+| Ruff và Mypy · 9 module ứng dụng | Pass |
+| Source demo gốc | App, README, dependencies và sáu core files nguyên byte, đúng commit/hash |
+| Live smoke · Electricity thật | 13 fit thành công: boundary RF/MLP, smoothing, add, removal, rotation và pruned rotation |
 
-Các test kiểm tra 32 hash nguồn, 632 ô / 1.556 fit của ba lưới công bố,
-seed/repeats, raw accuracy và dữ liệu mẫu numeric. Đường Paper tính từ bảng
-per-dataset khớp Figure 2, 4b và 5 tại `1e-12`, gồm cả hai mức loại feature
-của Rotation. Mốc chuẩn hóa không đổi khi ẩn model. CSV/JSON giữ nguyên giá trị
-khi export; thiếu hoặc sửa nguồn sẽ báo lỗi và không hiện biểu đồ.
-Hash CSV/JSON chuẩn hóa riêng ký tự xuống dòng CRLF/LF, có test portability;
-numeric NPZ vẫn được đối chiếu nguyên byte.
+Smoke dùng 1.000 train / 500 test, seed 0; tổng khoảng 5,84 giây trong lần đo.
+Đây là phép thử tính năng nhỏ, không phải ước lượng thời gian full benchmark.
+Test so adapter với trực tiếp core gốc: preprocessing, các score và labels khớp;
+nhãn test không đổi. RF/BLAS chỉ giới hạn số luồng, không đổi estimator/formula.
+Kiểm tra độc quyền một action và không train do mở trang/đổi bộ lọc.
 
-AppTest kiểm tra năm nhóm thực nghiệm, đổi nguồn benchmark, bộ lọc, tìm kiếm,
-đổi trang và giữ state, empty state, error state, bảng mẫu và nút download.
-Đã xem trực tiếp biểu đồ, bảng tiến độ và tìm Figure 19 trong trình duyệt Codex.
-Chưa kiểm tra trực tiếp trên thiết bị mobile hoặc bằng screen reader.
+32 nguồn kết quả giữ hash. Đường Paper main/per-dataset khớp `1e-12` cho Figure2,
+4b và 5 (hai mức pruning). CSV/JSON round-trip, seed/repeats và numeric samples
+được kiểm tra. Hash CSV/JSON hỗ trợ CRLF/LF; NPZ vẫn byte-exact.
+CSV benchmark được kiểm schema và tính bằng engine đã đối chiếu R; normalization
+không phụ thuộc bộ chọn ẩn model. Giữ separate source/cohort và không ngoại suy HPO.
 
-Một lần đo server local dùng khoảng **156 MiB RAM**, không có tiến trình con
-training; đây là số đo của phiên kiểm tra, không phải cam kết tài nguyên.
-Streamlit không có bước production build riêng: kiểm tra bằng khởi động app,
-HTTP health, type-check và AppTest. Server QA được dừng sau khi kiểm tra.
+AppTest kiểm tra năm module gốc, prepare/run, giữ output/state qua đổi trang,
+empty/error states và nguồn thiếu/hash sai. Không lưu trạng thái button/download
+như input để tránh kích hoạt lại action hoặc lỗi read-only widget.
+Bảng paper scope không có giá trị 100% cho grid đại diện: các tỷ lệ thiếu mẫu số
+là null; phân tích CSV tác giả nằm riêng. Unit fixtures không dùng làm output sản phẩm.
 
-Không sửa thuật toán, model, preprocessing, optimizer, seed, cấu hình training,
-kết quả gốc hoặc PDF. Snapshot vẫn là 02:00 ngày 28/11/2026; chưa tích hợp kết quả
-sau cutoff. 27/40 chỉ là phân tích Figure từ CSV tác giả; ba lưới dùng cấu hình
-công bố không đồng nghĩa replay đầy đủ HPO hay hoàn thành full paper.
+Không sửa thuật toán/kết quả V2, notebook, numeric source hay PDF. Không gửi job
+Kaggle/Dell/Desktop và không bật schedule. Local live chỉ chạy các smoke nhỏ và
+các action do người dùng bấm. Chưa kiểm tra bằng screen reader hoặc thiết bị mobile.
+Streamlit không có bước production build riêng; kiểm bằng khởi động, HTTP health,
+AppTest, lint và type-check. Server local được giữ chạy theo yêu cầu host của người dùng.
+
+Đã xem trực tiếp trong Codex: RF/MLP fit Electricity, hai heatmap và train/test score; bảng tiến độ theo paper, chi tiết phạm vi và trạng thái chưa định lượng.

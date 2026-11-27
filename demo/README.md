@@ -1,12 +1,11 @@
 # Demo local
 
-**Hai trang: Thực nghiệm và Tiến độ & bằng chứng.** Giữ nền sáng, bố cục
-Streamlit/Plotly và màu model từ demo [LoylP/tabular-trees](https://github.com/LoylP/tabular-trees/tree/e9fce1eba2fb498b9571b33a331832a3eef63626).
-Không tự train, tải dataset hay gửi job khi mở trang hoặc đổi bộ lọc.
+Cải tiến từ [LoylP/tabular-trees](https://github.com/LoylP/tabular-trees/tree/e9fce1eba2fb498b9571b33a331832a3eef63626).
+Giữ năm nhóm demo, Streamlit/Plotly và màu model; bổ sung kết quả tự chạy và phạm vi paper.
 
 ## Chạy
 
-Tại thư mục repository, dùng Python **3.11–3.12**, CPU đủ:
+Python 3.11–3.12; CPU đủ. Từ thư mục repository:
 
 ```powershell
 python -m venv .venv-demo
@@ -14,58 +13,68 @@ python -m venv .venv-demo
 .\demo\run.ps1 -Python .venv-demo\Scripts\python.exe
 ```
 
-Mở **http://127.0.0.1:8503/**. Đổi cổng bằng `-Port 8504`.
-Hoặc chạy trực tiếp:
+Mở http://127.0.0.1:8503/. `-Port 8504` để đổi cổng.
+`requirements-lock.txt` lưu môi trường đã kiểm tra. Chỉ bind localhost, không telemetry.
 
-```powershell
-python -m streamlit run demo/app.py --server.address 127.0.0.1 --server.port 8503 --server.headless true --browser.gatherUsageStats false --theme.base light
-```
+## Ba trang
 
-`demo/requirements-lock.txt` lưu phiên bản đã kiểm tra trên Windows/Python 3.12.
-Không cần PyTorch, CUDA hay model weights. Dữ liệu dùng lại từ `reproduce/`,
-`figures/` và `evidence/`; chạy được offline sau khi cài dependencies.
+**Demo tương tác** giữ năm module của bản gốc:
 
-## Dùng
+| Module | Thao tác |
+| --- | --- |
+| Benchmark | Xem đường Paper đã kiểm chứng; đọc CSV/CSV.GZ hoặc upload CSV, đổi nhóm, số hoán vị và ngân sách, tính lại phân tích. Có đường default và trục log. |
+| Decision boundary | Chuẩn bị dữ liệu; chọn hai feature hoặc tính top-2 theo RF; chạy RF/MLP; chỉnh vùng nhìn mà không train lại. |
+| Target smoothing | Chọn hệ số covariance, số feature và covariance thường/robust; chạy và xem tỷ lệ nhãn train đổi. |
+| Noise / removal | Chọn tỷ lệ thêm/bỏ feature; tùy chọn GBT học trên feature bị loại. |
+| Rotation | Có/không xoay và tùy chọn bỏ 50% feature trước khi xoay. |
 
-- **Thực nghiệm:** chọn Rotation, Noise features hoặc Target smoothing. Xem tổng hợp,
-  từng dataset, raw accuracy hay chuẩn hóa; bật/tắt model và xuất CSV.
-- **Chi tiết case:** validation/test, đủ seed, cấu hình công bố và nguồn output.
-  Confusion matrix chỉ xuất hiện cho ba mẫu RF/Electricity có numeric evidence.
-- **Benchmark:** chọn Paper hoặc Ours và nhóm dữ liệu. Hai nguồn giữ ngân sách,
-  tập dataset và normalization riêng; không overlay một phép so chưa cân bằng.
-- **Feature removal:** các case đại diện đã lưu, không tuyên bố full grid.
-- **Tiến độ:** độ phủ với mẫu số/đơn vị từng hàng; danh mục Figure 1–40,
-  Table 1–8 và các mục phụ lục. Có tìm kiếm, bộ lọc và link notebook.
+Dataset, target, số mẫu train/test, seed và model nằm trong **Dữ liệu demo** ở sidebar.
+Dataset công khai tải từ mirror Hugging Face được bản gốc sử dụng; cache tại
+`.cache/demo-live/`. Nhấn **Tải dataset** nếu chưa có, rồi **Chuẩn bị dữ liệu**.
+Model chỉ train sau khi bấm **Chạy demo** hoặc nút tính RF importance. Một action,
+một luồng CPU; giới hạn RAM và kích thước tải bảo vệ máy local. Không chạy Kaggle.
 
-Các lựa chọn được giữ khi đổi trang. Mở hoặc đổi tab không gọi `fit`.
-Không thêm upload CSV bất kỳ hoặc dự đoán dữ liệu mới bằng model đã bị dọn weights.
+Live demo dùng đúng lõi RF/GBT/MLP scikit-learn của repo tham khảo, giữ MLP 4×256,
+200 epoch tối đa và early stopping. Đây là minh họa mẫu nhỏ, không HPO; không được
+coi là train lại ResNet/FT-Transformer hoặc là tái hiện đầy đủ paper. Cấu hình live
+không thay đổi các kết quả V2 đã lưu. Demo 2D không được ghi là đã tái hiện Figure 19.
 
-## Dữ liệu và phạm vi
+**Kết quả tự chạy** tập trung Rotation, Noise features và Target smoothing.
+Chọn tổng hợp/từng dataset, normalized Paper/Ours hoặc accuracy thô, ẩn/hiện model.
+Đường liền là Paper; đứt là Ours. Có CSV, chi tiết validation/test/seed, JSON cấu hình
+và link notebook. Confusion matrix chỉ hiện ở ba mẫu RF/Electricity có numeric evidence.
+Benchmark tự chạy ít ngân sách được giữ dưới expander/bảng chứng cứ; không làm plot chính.
+Feature removal đại diện vẫn được lưu, không gắn nhãn full-paper.
 
-- Snapshot số liệu: **02:00 ngày 28/11/2026**, commit
-  `d78cfd6a9e35af50862b2c37fc1c62e52ae0ee48`. Training đã dừng theo yêu cầu người dùng.
-  Kết quả sau cutoff không tự cộng; không rebuild PDF trong lượt làm demo.
-- Ba grid dùng một cấu hình validation-selected tác giả công bố cho mỗi điều kiện,
-  đủ original auto repeats. Không replay toàn bộ HPO/shuffles và chưa full paper.
-- Paper/Ours ở ba cơ chế dùng cùng dataset và mốc chuẩn hóa **tác giả**, theo
-  `(score − q10) / (max − q10)` từng dataset/experiment. Bộ chọn model chỉ ẩn/hiện,
-  không tính lại mốc. Không clip điểm và không chọn model theo test.
-- Bảng per-dataset Figure18/21/23/24 của tác giả là accuracy thô; adapter chuẩn hóa
-  bằng cùng anchors rồi lấy trung bình. Kết quả được đối chiếu với Figure2/4b/5
-  ở sai số `1e-12`, kể cả cờ **rotation ON** của phụ lục và **deactivated** của hình chính.
-- Benchmark dùng các đường đã được kiểm chứng trong repository; không dùng lại
-  phiên bản sampler đơn giản hóa của demo tham khảo.
-- `%` trong danh mục Figure chỉ có nghĩa **đã phân tích lại CSV**, không là tự train.
-  Phần tự chạy có độ phủ riêng. Case đại diện không bị gán % tùy ý.
-- Figure35–38 là **40K estimators/patience**, không phải 40K mẫu train.
+**Tiến độ theo paper** dùng phạm vi thí nghiệm gốc, không dùng kế hoạch chạy đại diện
+làm mẫu số. Bảng nêu phần đã làm, yêu cầu paper và phần còn thiếu. **Chưa định lượng** nghĩa là
+chưa có mẫu số đầy đủ/comparable để cho một tỷ lệ tự train; không tự suy ra 100% từ
+168/168, 224/224 hoặc 240/240 ô của grid một cấu hình công bố/điều kiện.
+Khối lượng grid/HPO đã chạy nằm trong expander riêng và không có % paper giả định.
+27/40 Figure IDs (67,5%) chỉ là độ phủ **phân tích CSV tác giả**, được hiển thị riêng.
+Danh mục có Figure 1–40, Table 1–8 và các mục phụ lục, với tìm kiếm và nguồn notebook.
 
-`data/manifest.json` khóa hash của 32 nguồn nhỏ đang sử dụng. Nếu file thiếu hoặc bị
-thay, app báo lỗi và không hiển thị số liệu đó. Mốc chuẩn hóa và công thức được kiểm
-tra với `src.analysis.normalize`. Chỉ maintainer dùng `prepare_data.py` khi cố ý cập nhật
-nguồn đã audit; app không gọi script này. Nguồn kết quả và mọi công thức training gốc
-được giữ nguyên.
-Hash CSV/JSON chỉ chuẩn hóa xuống dòng CRLF thành LF để dùng được sau khi clone
-trên Windows/Linux; không sửa nội dung file. Numeric NPZ được hash nguyên byte.
+## Nguồn và kiểm chứng
+
+`upstream/` giữ app và sáu file lõi của demo gốc **nguyên byte**, commit
+`e9fce1eba2fb498b9571b33a331832a3eef63626`, kiểm tra bằng `source.json`.
+UI được tổ chức lại; adapter chỉ giới hạn RF/BLAS ở một luồng, ghi warning và kiểm soát
+khi chạy. Model/preprocessing/transforms của demo gốc không bị viết lại.
+Riêng phân tích CSV benchmark dùng `src.analysis` đã được repository đối chiếu R,
+thay cho sampler NumPy giản lược của demo tham khảo; giữ default-first, R RNG,
+normalization trước khi ẩn model, và validation-only selection. Test kiểm tra parity.
+
+Snapshot kết quả tự train giữ nguyên **02:00 ngày 28/11/2026**, baseline `d78cfd6`.
+Ba grid là một cấu hình validation-selected công bố/điều kiện, đủ original auto seeds;
+chưa replay toàn bộ HPO/shuffles và chưa full paper. Không sửa PDF trong lượt này.
+Paper/Ours ba cơ chế dùng cùng cohort và mốc normalization tác giả; không clip điểm.
+Bảng per-dataset Figure18/21/23/24 được chuẩn hóa để khớp Figure2/4b/5 tại `1e-12`.
+Ẩn model không thay mốc. Benchmark của hai nguồn vẫn giữ cohort/ngân sách riêng.
+
+`data/manifest.json` khóa 32 nguồn đã lưu. Hash CSV/JSON chỉ chuẩn hóa xuống dòng
+CRLF thành LF; numeric NPZ đối chiếu nguyên byte. Thiếu hoặc sửa nguồn sẽ báo lỗi.
+`prepare_data.py` chỉ là công cụ maintainer; app không gọi nó. Không upload dữ liệu
+live, CSV người dùng, weights hoặc cache khi push repository.
 
 ## Kiểm tra
 
@@ -73,25 +82,19 @@ trên Windows/Linux; không sửa nội dung file. Numeric NPZ được hash ngu
 python -m unittest discover -s demo/tests -v
 ```
 
-Kiểm tra bao gồm parity main/per-dataset figures, normalized/raw scores, độ phủ/repeats,
-numeric samples, không training, ngân sách HPO thật, trạng thái bộ lọc và các luồng app.
-Test dùng `streamlit.testing.v1.AppTest`; không train và không gửi request Kaggle.
-Kết quả kiểm chứng và giới hạn được lưu trong [VERIFICATION.md](VERIFICATION.md).
-
-## Cây thư mục
+[Test và giới hạn](VERIFICATION.md). Mọi output của smoke hiển thị cho người dùng
+đều tính từ dữ liệu thật; dữ liệu sinh trong unit test không được dùng làm kết quả demo.
 
 ```text
 demo/
-  app.py            hai trang và state
-  evidence.py       adapter dữ liệu, hash, normalization
-  charts.py         biểu đồ Plotly
-  inventory.py      danh mục paper và độ phủ
-  data/             anchors, provenance, manifest, execution state
-  tests/            parity và AppTest
-  prepare_data.py   công cụ maintainer, không được app gọi
-  run.ps1           chỉ bind localhost, không telemetry
+  app.py                 navigation và kết quả đã lưu
+  live.py, live_ui.py     adapter và UI cho demo gốc
+  benchmark*.py          CSV và engine phân tích đã đối chiếu R
+  evidence.py, charts.py đọc bằng chứng và plot
+  inventory.py          phạm vi paper và danh mục
+  progress_ui.py        tiến độ, không lấy pilot làm mẫu số
+  upstream/             source demo gốc đã pin
+  data/                 hash, normalization và trạng thái snapshot
+  tests/                parity và các luồng app
+  run.ps1               khởi động localhost
 ```
-
-Ứng dụng mới được viết để đọc bằng chứng của nhóm; không sao chép source của
-repo tham khảo không có LICENSE. Repo tham khảo được ghi nhận cho cách tổ chức demo
-và bảng màu. Code khoa học/tài liệu tác giả giữ nguồn riêng trong bộ `reproduce/`.

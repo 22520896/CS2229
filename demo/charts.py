@@ -56,11 +56,27 @@ def mechanism_chart(frame, mechanism, normalized):
     return fig
 
 
-def benchmark_chart(frame, show_range=True):
+def benchmark_chart(frame, show_range=True, log_x=False):
     fig = go.Figure()
     for model, block in frame.groupby("model", sort=False):
         block = block.sort_values("rank")
         color = COLORS.get(model, "#777777")
+        defaults = block.loc[block["rank"].eq(0)]
+        if log_x:
+            block = block.loc[block["rank"].gt(0)]
+        if block.empty:
+            continue
+        if log_x and not defaults.empty:
+            fig.add_trace(
+                go.Scatter(
+                    x=[block["rank"].min(), block["rank"].max()],
+                    y=[defaults["mean"].iloc[0]] * 2,
+                    mode="lines",
+                    name=model + " · default",
+                    showlegend=False,
+                    line=dict(color=color, dash="dot", width=1.2),
+                )
+            )
         if show_range:
             fig.add_trace(
                 go.Scatter(
@@ -94,7 +110,11 @@ def benchmark_chart(frame, show_range=True):
                 hovertemplate="n=%{x}<br>%{y:.4f}<extra>%{fullData.name}</extra>",
             )
         )
-    fig.update_xaxes(title="Random search iterations (0 = default)")
+    fig.update_xaxes(
+        title="Random search iterations"
+        + (" · chấm = default" if log_x else " (0 = default)"),
+        type="log" if log_x else "linear",
+    )
     return theme(fig, "Normalized test score")
 
 

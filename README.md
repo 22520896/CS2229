@@ -4,7 +4,7 @@ Tái lập phân tích của Grinsztajn, Oyallon và Varoquaux tại NeurIPS 202
 
 - [PDF chính: paper và toàn bộ phạm vi thực nghiệm, cập nhật 28/11](reproduce/report/bao-cao-tai-hien.pdf)
 - [Bộ nộp reproduce: kết quả, cấu hình, notebook và kiểm chứng](reproduce/README.md)
-- [Demo local: Paper/Ours, case tự chạy và tiến độ](demo/README.md) · Streamlit/Plotly, đọc output đã kiểm chứng, không tự train.
+- [Demo local: tương tác, Paper/Ours và tiến độ](demo/README.md) · Cải tiến từ demo gốc, chạy case nhỏ khi bấm nút và đọc output đã kiểm chứng.
 - [Báo cáo phân tích tác giả trước đó](report/bao-cao.pdf)
 - [Slide HTML](slides/index.html) · Clone hoặc tải ZIP, rồi mở file này trong trình duyệt. Dùng ←/→ để chuyển slide, F để bật hoặc thoát toàn màn hình.
 - [Kết quả đối chiếu Python–R](evidence/python_r_parity.json)

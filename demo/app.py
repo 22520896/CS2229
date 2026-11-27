@@ -1,4 +1,4 @@
-"""Two-page, local-only evidence viewer. Opening or filtering never trains."""
+"""Original interactive demo plus audited results and paper-level scope."""
 
 import json
 from pathlib import Path
@@ -10,15 +10,8 @@ sys.path.insert(0, str(ROOT))
 import streamlit as st  # noqa: E402 -- Streamlit script bootstrap above.
 
 from demo import evidence as E  # noqa: E402 -- Streamlit script needs the repository root.
-from demo import inventory as I  # noqa: E402
-from demo.charts import benchmark_chart, confusion_chart, mechanism_chart  # noqa: E402
+from demo.charts import confusion_chart, mechanism_chart  # noqa: E402
 
-PANEL_NAMES = {
-    "Numeric · classification": "numerical_classification_medium",
-    "Numeric · regression": "numerical_regression_medium",
-    "Categorical · classification": "categorical_classification_medium",
-    "Categorical · regression": "categorical_regression_medium",
-}
 PRETTY = dict(zip(E.NAMES.values(), E.DISPLAY.values()))
 
 
@@ -194,197 +187,63 @@ def show_mechanism(mechanism):
         )
 
 
-def show_removal():
-    own = E.cells()
-    own = own.loc[own.mechanism.eq("feature_removal") & own.full_repeats]
-    a, b = st.columns(2)
-    dataset = a.selectbox(
-        "Dataset", sorted(own.dataset.unique()), key="removal_dataset"
-    )
-    kept = (
-        b.radio(
-            "Train trên",
-            ["Feature giữ lại", "Feature bị loại"],
-            horizontal=True,
-            key="removal_part",
-        )
-        == "Feature giữ lại"
-    )
-    series = E.removal_series(dataset, kept)
-    models = model_picker(series.model.unique(), "removal_models")
-    series = series.loc[series.model.isin(models)]
-    st.caption("Đại diện · Accuracy thô · Không có tỷ lệ hoàn thành full paper")
-    if series.empty:
-        st.info("Không có output cho lựa chọn này.")
-        return
-    st.plotly_chart(
-        mechanism_chart(series, "feature_removal", False),
-        width="stretch",
-        key="removal_chart",
-    )
-    with st.expander("Số liệu"):
-        st.dataframe(series, hide_index=True, width="stretch")
-        download_table(series, "feature-removal.csv", "removal_export")
-    subset = own.loc[
-        own.dataset.eq(dataset) & own.parsed.map(lambda c: c[1] is not kept)
-    ]
-    subset = subset.loc[subset.model.map(E.NAMES).isin(models)]
-    show_case(subset, "feature_removal", "removal")
-
-
-def show_benchmark():
-    a, b = st.columns([2, 1])
-    panel_name = a.selectbox("Nhóm dữ liệu", list(PANEL_NAMES), key="benchmark_panel")
-    source = b.radio(
-        "Nguồn", ["Ours", "Paper"], horizontal=True, key="benchmark_source"
-    )
-    panel = PANEL_NAMES[panel_name]
-    frame = E.benchmark_series(source, panel)
-    chosen = model_picker(frame.model.unique(), "benchmark_models_" + source + panel)
-    visible = frame.loc[frame.model.isin(chosen)]
-    if visible.empty:
-        st.info("Chọn ít nhất một model.")
-        return
-    n = int(frame.datasets.iloc[0])
-    budget = int(frame["rank"].max())
-    st.caption(
-        f"{source} · {n} dataset · ngân sách {budget} · 15 hoán vị · default-first"
-    )
-    st.plotly_chart(benchmark_chart(visible), width="stretch", key="benchmark_chart")
-    with st.expander("Số liệu"):
-        last = visible.sort_values("rank").groupby("model", as_index=False).tail(1)
-        st.dataframe(
-            last[["model", "rank", "mean", "low", "high"]],
-            hide_index=True,
-            width="stretch",
-        )
-        download_table(
-            visible, "benchmark-" + source.lower() + ".csv", "benchmark_export"
-        )
-    with st.expander("Nguồn & phạm vi"):
-        st.write(
-            "Hai nguồn có tập dataset, ngân sách và mốc chuẩn hóa riêng; không ghép thành phép so trực tiếp."
-        )
-        st.write(
-            "Ours: bộ đối chứng cân bằng 24/57 thiết lập, gồm cả categorical và regression."
-        )
-        st.markdown(
-            f"[Notebook]({E.link('notebooks/figure_01_benchmark.ipynb')}) · "
-            f"[Đối chiếu Python–R]({E.link('evidence/python_r_parity.json')})"
-        )
-
-
 def experiments():
-    st.header("Thực nghiệm")
+    st.header("Kết quả tự chạy")
     choice = st.radio(
         "Thực nghiệm",
         [
             "Rotation",
             "Noise features",
             "Target smoothing",
-            "Benchmark",
-            "Feature removal · đại diện",
         ],
         horizontal=True,
         label_visibility="collapsed",
         key="experiment",
     )
-    if choice == "Benchmark":
-        show_benchmark()
-    elif choice.startswith("Feature removal"):
-        show_removal()
-    else:
-        show_mechanism(E.EXPERIMENTS[choice])
+    show_mechanism(E.EXPERIMENTS[choice])
 
 
-def progress():
-    st.header("Tiến độ & bằng chứng")
-    a, b, c = st.columns(3)
-    a.metric("Phân tích CSV tác giả", "27 / 40 hình")
-    a.caption("67,5%")
-    b.metric("Lưới cấu hình công bố", "3 / 3")
-    b.caption("632 ô · 1.556 fit")
-    c.metric("Thiết lập có output", "57 / 57")
-    c.caption("Không đồng nghĩa đủ HPO")
-    mode = st.radio(
-        "Danh mục",
-        ["Độ phủ thực nghiệm", "Hình & phụ lục"],
-        horizontal=True,
-        label_visibility="collapsed",
-        key="progress_mode",
+def is_control(key):
+    names = {
+        "experiment",
+        "rotation_fraction",
+        "removal_part",
+        "progress_mode",
+        "inventory_search",
+        "inventory_status",
+        "scope_detail",
+        "live_module",
+        "live_dataset",
+        "live_n_train",
+        "live_n_test",
+        "live_seed",
+        "live_models",
+        "live_f1",
+        "live_f2",
+        "live_xlim",
+        "live_ylim",
+        "live_smoothing_levels",
+        "live_smoothing_k",
+        "live_smoothing_robust",
+        "live_feature_mode",
+        "live_on_removed",
+        "live_remove_half",
+        "bench_source",
+        "bench_panel",
+        "bench_path",
+        "bench_csv_panel",
+        "bench_shuffles",
+        "bench_iterations",
+        "bench_custom_task",
+        "bench_paper_budget",
+    }
+    return (
+        key in names
+        or key.startswith(("live_target_", "live_repeats_", "live_levels_"))
+        or key.endswith(
+            ("_dataset", "_metric", "_models", "_case_condition", "_case_model")
+        )
     )
-    if mode == "Độ phủ thực nghiệm":
-        table = I.coverage()
-        st.caption("Snapshot đã audit · Mỗi hàng có mẫu số riêng · Training đã dừng")
-        st.dataframe(
-            table,
-            hide_index=True,
-            width="stretch",
-            height=540,
-            column_config={
-                "Độ phủ (%)": st.column_config.ProgressColumn(
-                    min_value=0, max_value=100, format="%.2f%%"
-                )
-            },
-        )
-    else:
-        table = I.paper_inventory()
-        a, b = st.columns([2, 1])
-        text = a.text_input(
-            "Tìm Figure / Table",
-            placeholder="Ví dụ: rotation, Figure 19, SAINT",
-            key="inventory_search",
-        )
-        status = b.selectbox(
-            "Phân tích tác giả", ["Tất cả", "Đã có", "Chưa có"], key="inventory_status"
-        )
-        if text:
-            mask = (
-                table.astype(str)
-                .apply(
-                    lambda column: column.str.contains(text, case=False, regex=False)
-                )
-                .any(axis=1)
-            )
-            table = table.loc[mask]
-        if status == "Chưa có":
-            table = table.loc[
-                table["Phân tích tác giả"].str.startswith(("Chưa", "Thiếu"))
-            ]
-        elif status == "Đã có":
-            table = table.loc[
-                ~table["Phân tích tác giả"].str.startswith(("Chưa", "Thiếu"))
-            ]
-        st.dataframe(
-            table,
-            hide_index=True,
-            width="stretch",
-            height="auto",
-            column_config={
-                "Bằng chứng": st.column_config.LinkColumn(display_text="Mở"),
-                "Phân tích (%)": st.column_config.ProgressColumn(
-                    min_value=0, max_value=100, format="%.0f%%"
-                ),
-            },
-        )
-    download_table(table, "paper-progress.csv", "progress_export")
-    with st.expander("Cách đọc độ phủ"):
-        st.write(
-            "Phân tích tác giả, cấu hình đủ repeats và thực nghiệm đại diện là các đơn vị khác nhau."
-        )
-        st.write(
-            "Phân tích (%) chỉ đo đã tính lại Figure từ CSV tác giả, không đo phần trăm tự training."
-        )
-        st.write(
-            "100% ba lưới công bố không phải toàn bộ HPO hoặc full paper. Không có một % chung."
-        )
-        st.write(
-            "Catalog tự chạy có 57 thiết lập; nhãn Figure1 tác giả có 59. Phạm vi được giữ riêng."
-        )
-        st.markdown(
-            f"[Nguồn kiểm chứng]({E.link('reproduce/results/source_audits.json')}) · "
-            f"[Phạm vi phụ lục]({E.link('evidence/appendix_sources.md')})"
-        )
 
 
 def main():
@@ -393,51 +252,44 @@ def main():
         "<style>.stMainBlockContainer{padding-top:1.25rem;padding-bottom:1rem}</style>"
     )
     saved = st.session_state.setdefault("_saved_controls", {})
-    for key, value in saved.items():
-        if key not in st.session_state:
+    for key, value in list(saved.items()):
+        if not is_control(key):
+            saved.pop(key)
+        elif key not in st.session_state:
             st.session_state[key] = value
     st.sidebar.title("Tabular Trees")
     page = st.sidebar.radio(
         "Điều hướng",
-        ["Thực nghiệm", "Tiến độ & bằng chứng"],
+        ["Demo tương tác", "Kết quả tự chạy", "Tiến độ theo paper"],
         label_visibility="collapsed",
         key="page",
     )
-    st.sidebar.caption("NeurIPS 2022 · Kết quả đã lưu")
-    st.sidebar.caption("Snapshot 28/11 · Training đã dừng")
+    st.sidebar.caption("NeurIPS 2022 · Demo & bằng chứng")
     st.sidebar.link_button(
         "PDF tổng hợp", E.link("reproduce/report/bao-cao-tai-hien.pdf")
     )
     try:
-        E.verify_sources()
-        if page.startswith("Tiến độ"):
-            progress()
+        if page == "Demo tương tác":
+            from demo import live, live_ui
+
+            live.verify_upstream()
+            live_ui.render()
         else:
-            experiments()
+            E.verify_sources()
+            if page.startswith("Tiến độ"):
+                from demo.progress_ui import render
+
+                render()
+            else:
+                experiments()
     except (ValueError, KeyError, FileNotFoundError, json.JSONDecodeError) as exc:
         st.error(
             "Không thể đọc bộ bằng chứng. Kiểm tra file hoặc khôi phục từ repository."
         )
         with st.expander("Chi tiết lỗi"):
             st.code(str(exc))
-    controls = {
-        "experiment",
-        "rotation_fraction",
-        "removal_part",
-        "progress_mode",
-        "inventory_search",
-        "inventory_status",
-        "benchmark_panel",
-        "benchmark_source",
-    }
     for key in st.session_state:
-        if (
-            key in controls
-            or key.endswith(
-                ("_dataset", "_metric", "_models", "_case_condition", "_case_model")
-            )
-            or key.startswith("benchmark_models_")
-        ):
+        if is_control(key):
             saved[key] = st.session_state[key]
 
 

@@ -1,0 +1,56 @@
+{
+  "repository": "LoylP/tabular-trees",
+  "commit": "e9fce1eba2fb498b9571b33a331832a3eef63626",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 4776,
+      "sha256": "aded3996391da141bf2d28c044e92f7340731a7aae39afb80dd1d9e493b3c43b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2857,
+      "sha256": "2ee68594a0b34c76fb5ddeb04979fa45fdb722df2c137637ae290428842c2825"
+    },
+    {
+      "path": "app.py",
+      "bytes": 23731,
+      "sha256": "f63ad20edc3d6f6af97a909fe2afca2900eb04086532ce1b1d714144476c03fc"
+    },
+    {
+      "path": "core/__init__.py",
+      "bytes": 257,
+      "sha256": "f98147d9f2c2fa4b8002f1c71abce4ff5c136620f649bd9da6fbd1a450dd2630"
+    },
+    {
+      "path": "core/benchmark.py",
+      "bytes": 5680,
+      "sha256": "b2cb14b53f672291d2cdf443b65450975b1e078b1db93b46a29621d066b5b241"
+    },
+    {
+      "path": "core/data.py",
+      "bytes": 4251,
+      "sha256": "70b2f36a0f0b71ef46789e6eb8fd56eb3aaf842a5d4567e84883a3b61430012e"
+    },
+    {
+      "path": "core/experiments.py",
+      "bytes": 5309,
+      "sha256": "861ae79b94c0432a86cd463d1c89b8259657a9fcfcdea85b9c72264816574567"
+    },
+    {
+      "path": "core/models.py",
+      "bytes": 2277,
+      "sha256": "2c78ba86378b047d6a3c136963404dc5122e5d9c8d03939263b392b0b1968bfb"
+    },
+    {
+      "path": "core/transforms.py",
+      "bytes": 4629,
+      "sha256": "dd389c040e2ffefe1d1b7c14ceaab163986cfe0e3df9b9bfebf12760907fb51a"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 95,
+      "sha256": "e66fbfbee2af0e3607802c5d6190d101b3b1de16539a5e6993200cc5bd8f65e5"
+    }
+  ]
+}

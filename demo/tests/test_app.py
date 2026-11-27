@@ -11,6 +11,8 @@ class AppFlows(unittest.TestCase):
     def open_app(self):
         app = AppTest.from_file(str(ROOT / "demo/app.py"), default_timeout=30).run()
         self.assertFalse(app.exception, str(app.exception))
+        app.radio(key="page").set_value("Kết quả tự chạy").run()
+        self.assertFalse(app.exception, str(app.exception))
         self.assertFalse(app.error, str(app.error))
         return app
 
@@ -31,21 +33,19 @@ class AppFlows(unittest.TestCase):
         for name in [
             "Noise features",
             "Target smoothing",
-            "Feature removal · đại diện",
-            "Benchmark",
         ]:
             app.radio(key="experiment").set_value(name).run()
             self.assertFalse(app.exception, name + str(app.exception))
             self.assertFalse(app.error, name + str(app.error))
-        app.radio(key="benchmark_source").set_value("Paper").run()
-        app.selectbox(key="benchmark_panel").set_value("Categorical · regression").run()
+        app.radio(key="page").set_value("Demo tương tác").run()
+        app.selectbox(key="bench_panel").set_value("Categorical · regression").run()
         self.assertFalse(app.exception)
         self.assertFalse(app.error)
 
     def test_progress_inventory_search_and_navigation_state(self):
         app = self.open_app()
         app.selectbox(key="rotation_dataset").set_value("electricity").run()
-        app.radio(key="page").set_value("Tiến độ & bằng chứng").run()
+        app.radio(key="page").set_value("Tiến độ theo paper").run()
         self.assertFalse(app.error)
         app.radio(key="progress_mode").set_value("Hình & phụ lục").run()
         app.text_input(key="inventory_search").set_value("Figure 19").run()
@@ -54,7 +54,7 @@ class AppFlows(unittest.TestCase):
         self.assertEqual(table.ID.tolist(), ["Figure 19"])
         app.selectbox(key="inventory_status").set_value("Chưa có").run()
         self.assertFalse(app.error)
-        app.radio(key="page").set_value("Thực nghiệm").run()
+        app.radio(key="page").set_value("Kết quả tự chạy").run()
         self.assertEqual(app.selectbox(key="rotation_dataset").value, "electricity")
 
     def test_bad_evidence_shows_error_without_presenting_scores(self):
@@ -63,6 +63,7 @@ class AppFlows(unittest.TestCase):
             side_effect=ValueError("Nguồn dữ liệu không khớp"),
         ):
             app = AppTest.from_file(str(ROOT / "demo/app.py"), default_timeout=30).run()
+            app.radio(key="page").set_value("Kết quả tự chạy").run()
         self.assertFalse(app.exception)
         self.assertTrue(app.error)
         self.assertEqual(len(app.get("plotly_chart")), 0)
