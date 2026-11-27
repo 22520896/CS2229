@@ -2,7 +2,9 @@
 
 Tái lập phân tích của Grinsztajn, Oyallon và Varoquaux tại NeurIPS 2022. **27/40 hình** được tính lại từ kết quả từng lượt tác giả công bố. Phần tự train V2 có phạm vi riêng, với số lượt và độ bao phủ được báo cáo riêng.
 
-- [Báo cáo PDF](report/bao-cao.pdf)
+- [PDF chính: paper và toàn bộ phạm vi thực nghiệm, cập nhật 28/11](reproduce/report/bao-cao-tai-hien.pdf)
+- [Bộ nộp reproduce: kết quả, cấu hình, notebook và kiểm chứng](reproduce/README.md)
+- [Báo cáo phân tích tác giả trước đó](report/bao-cao.pdf)
 - [Slide HTML](slides/index.html) · Clone hoặc tải ZIP, rồi mở file này trong trình duyệt. Dùng ←/→ để chuyển slide, F để bật hoặc thoát toàn màn hình.
 - [Kết quả đối chiếu Python–R](evidence/python_r_parity.json)
 

@@ -1,0 +1,50 @@
+[project]
+name = "tabular-study"
+version = "0.1.0"
+description = "Local workspace around the original NeurIPS 2022 tabular benchmark"
+requires-python = ">=3.8,<3.9"
+dependencies = [
+  "torch==1.10.1+cu113", "numpy==1.20.3", "scipy==1.6.2", "pandas==1.2.4",
+  "scikit-learn==1.1.2", "xgboost==1.5.2", "skorch==0.10.0",
+  "openml==0.12.2", "category-encoders==2.4.0", "einops==0.6.0",
+  "icecream==2.1.1", "pytomlpp==1.0.10", "pynvml==11.4.1", "zero==0.9.1",
+  "matplotlib==3.4.2", "pillow==9.2.0", "optuna==2.10.0", "wandb==0.13.5", "protobuf==3.20.3",
+  "fastapi==0.115.14", "pydantic==1.10.22", "uvicorn==0.33.0",
+  "python-multipart==0.0.20", "threadpoolctl==3.5.0"
+]
+
+[dependency-groups]
+dev = ["pytest==8.3.5", "httpx==0.28.1", "ruff==0.11.13", "mypy==1.14.1"]
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tabular_workbench"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu113" }
+
+[[tool.uv.index]]
+name = "pytorch-cu113"
+url = "https://download.pytorch.org/whl/cu113"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+files = ["src/tabular_workbench"]
+ignore_missing_imports = true
+check_untyped_defs = true
+

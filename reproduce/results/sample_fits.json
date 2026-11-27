@@ -1,0 +1,270 @@
+[
+  {
+    "id": "noise_features",
+    "file": "results/numeric/noise_features.npz",
+    "numeric_sha256": "37c9cb7dea62d8ea4b1198ebf07f4fd2f0cacb2fdc4bfcdffb3743955ea98fb0",
+    "scientific_key": "62fb8758ba5cab541795ec3e2c56a5b4ffe50408411faf5ff5fc523cf745768b",
+    "task": "361060",
+    "dataset": "electricity",
+    "model": "rf",
+    "seed": 0,
+    "condition": [
+      2.0
+    ],
+    "metrics": {
+      "train": {
+        "accuracy": 0.9962,
+        "confusion_matrix": [
+          [
+            4985,
+            26
+          ],
+          [
+            12,
+            4977
+          ]
+        ]
+      },
+      "validation": {
+        "accuracy": 0.83551861390775,
+        "confusion_matrix": [
+          [
+            3533,
+            742
+          ],
+          [
+            663,
+            3604
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.8386012442303833,
+        "confusion_matrix": [
+          [
+            8290,
+            1661
+          ],
+          [
+            1556,
+            8425
+          ]
+        ]
+      }
+    },
+    "source_record": 13595,
+    "source_record_sha256": "f08cf4586946d69f156394bfe9318ba772f005515c385e04b898a1034501ae9b",
+    "configuration": {
+      "model__bootstrap": false,
+      "model__criterion": "entropy",
+      "model__max_features": 0.6,
+      "model__min_samples_leaf": 5,
+      "model__min_samples_split": 2,
+      "model__n_estimators": 195,
+      "transform__0__method_name": "add_uninformative_features",
+      "transform__0__multiplier": 2.0,
+      "model__max_leaf_nodes": null,
+      "model__max_depth": null,
+      "model_name": "rf_c",
+      "model_type": "sklearn",
+      "n_iter": "auto",
+      "train_prop": 0.7,
+      "val_test_prop": 0.3,
+      "max_train_samples": 10000,
+      "max_val_samples": 50000,
+      "max_test_samples": 50000,
+      "regression": false,
+      "data__keyword": 361060,
+      "data__method_name": "openml_no_transform",
+      "data__regression": false,
+      "data__categorical": false,
+      "transform__0__apply_on": "all"
+    },
+    "scope": "One audited representative seed;not the entire grid",
+    "original_summary_sha256": "3e045024f6c09bed0d132b669eedb41e0373adfcc051eb4400244092eeae1a09"
+  },
+  {
+    "id": "target_smoothing",
+    "file": "results/numeric/target_smoothing.npz",
+    "numeric_sha256": "979de48d54c062e4456ed3bebf1f5fdfde3262a76def0e9f0f3145bfb8ff37d0",
+    "scientific_key": "1b694319baf581830bb161ae514ab483a325ada6cc4c4613b1625002c8f0ebf4",
+    "task": "361060",
+    "dataset": "electricity",
+    "model": "rf",
+    "seed": 0,
+    "condition": [
+      0.1,
+      "robust"
+    ],
+    "metrics": {
+      "train": {
+        "accuracy": 0.9999,
+        "confusion_matrix": [
+          [
+            5049,
+            0
+          ],
+          [
+            1,
+            4950
+          ]
+        ]
+      },
+      "validation": {
+        "accuracy": 0.8097635214235542,
+        "confusion_matrix": [
+          [
+            3464,
+            811
+          ],
+          [
+            814,
+            3453
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.809351796106763,
+        "confusion_matrix": [
+          [
+            8166,
+            1785
+          ],
+          [
+            2015,
+            7966
+          ]
+        ]
+      }
+    },
+    "source_record": 57604,
+    "source_record_sha256": "c84dc4d810b91b3112f7b2ef21b89051de860f9c61414b992fabf2a47cc453c5",
+    "configuration": {
+      "model__bootstrap": false,
+      "model__criterion": "entropy",
+      "model__max_features": "sqrt",
+      "model__min_samples_leaf": 2,
+      "model__min_samples_split": 2,
+      "model__n_estimators": 288,
+      "transform__0__method_name": "gaussienize",
+      "transform__0__type": "quantile",
+      "transform__1__method_name": "select_features_rf",
+      "transform__2__cov_mult": 0.1,
+      "transform__2__method_name": "remove_high_frequency_from_train",
+      "transform__1__num_features": 5,
+      "transform__2__covariance_estimation": "robust",
+      "model__max_leaf_nodes": null,
+      "model__max_depth": null,
+      "model_name": "rf_c",
+      "model_type": "sklearn",
+      "n_iter": "auto",
+      "train_prop": 0.7,
+      "val_test_prop": 0.3,
+      "max_train_samples": 10000,
+      "max_val_samples": 50000,
+      "max_test_samples": 50000,
+      "regression": false,
+      "data__keyword": 361060,
+      "data__method_name": "openml_no_transform",
+      "data__regression": false,
+      "data__categorical": false,
+      "transform__0__apply_on": "all",
+      "transform__1__apply_on": "all",
+      "transform__2__apply_on": "all"
+    },
+    "scope": "One audited representative seed;not the entire grid",
+    "original_summary_sha256": "3e045024f6c09bed0d132b669eedb41e0373adfcc051eb4400244092eeae1a09"
+  },
+  {
+    "id": "rotation",
+    "file": "results/numeric/rotation.npz",
+    "numeric_sha256": "a79993aa1d68efba5d1d930e9ddde9580f364084c021fdf65f0559d444b99a8e",
+    "scientific_key": "8235f6366a143ccaeb09bc9c3c9a07a6a604aae37ca3043587d5f94e130ec4c9",
+    "task": "361060",
+    "dataset": "electricity",
+    "model": "rf",
+    "seed": 0,
+    "condition": [
+      0.0,
+      false
+    ],
+    "metrics": {
+      "train": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            5011,
+            0
+          ],
+          [
+            0,
+            4989
+          ]
+        ]
+      },
+      "validation": {
+        "accuracy": 0.8090611098103488,
+        "confusion_matrix": [
+          [
+            3462,
+            813
+          ],
+          [
+            818,
+            3449
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.8110074252458358,
+        "confusion_matrix": [
+          [
+            8109,
+            1842
+          ],
+          [
+            1925,
+            8056
+          ]
+        ]
+      }
+    },
+    "source_record": 81735,
+    "source_record_sha256": "851f518dfb391cc0dd932100d511de30706f53801fa50c3e9baba5f1f146b4c0",
+    "configuration": {
+      "model__bootstrap": false,
+      "model__criterion": "gini",
+      "model__max_features": "sqrt",
+      "model__min_samples_leaf": 2,
+      "model__min_samples_split": 2,
+      "model__n_estimators": 1155,
+      "transform__0__method_name": "remove_features_rf",
+      "transform__0__model_to_use": "rf_c",
+      "transform__0__num_features_to_remove": 0.0,
+      "transform__1__method_name": "gaussienize",
+      "transform__1__type": "quantile",
+      "transform__2__method_name": "random_rotation",
+      "transform__2__deactivated": false,
+      "model__max_leaf_nodes": null,
+      "model__max_depth": null,
+      "model_name": "rf_c",
+      "model_type": "sklearn",
+      "n_iter": "auto",
+      "train_prop": 0.7,
+      "val_test_prop": 0.3,
+      "max_train_samples": 10000,
+      "max_val_samples": 50000,
+      "max_test_samples": 50000,
+      "regression": false,
+      "data__keyword": 361060,
+      "data__method_name": "openml_no_transform",
+      "data__regression": false,
+      "data__categorical": false,
+      "transform__0__apply_on": "all",
+      "transform__1__apply_on": "all",
+      "transform__2__apply_on": "all"
+    },
+    "scope": "One audited representative seed;not the entire grid",
+    "original_summary_sha256": "3e045024f6c09bed0d132b669eedb41e0373adfcc051eb4400244092eeae1a09"
+  }
+]

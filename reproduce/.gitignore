@@ -1,0 +1,8 @@
+.runtime/
+training/source/.venv/
+training/source/upstream/
+training/source/artifacts/
+training/source/data/
+training/source/runtime/
+**/__pycache__/
+**/.ipynb_checkpoints/

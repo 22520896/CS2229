@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "361060": {
+      "task": "361060",
+      "dataset_id": 44120,
+      "version": 12,
+      "md5": "b93422d46d9c5beed183267991a58a86",
+      "name": "electricity",
+      "suite": 337,
+      "regression": false,
+      "categorical": false,
+      "default_target_attribute": "class",
+      "source_url": "https://www.openml.org/t/361060"
+    }
+  }
+}

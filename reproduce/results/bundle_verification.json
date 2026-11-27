@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "cutoff": "Source snapshots from02:00batch28November2026Asia/Saigon;no newer queue output merged",
+  "exported_cells_match_frozen_source": true,
+  "source_report_sha256": "b3773096dc6177bfa08530bb8b26fd7aa3dcc7969738638884f8572593505043",
+  "results": {
+    "passed": true,
+    "cell_rows": 899,
+    "reference_cells": 632,
+    "reference_seed_fits": 1556,
+    "sample_numeric_fits_checked": 3,
+    "tolerance": 1e-12,
+    "training_refits": 0,
+    "all_source_fits_reaudited_in_this_bundle": false
+  },
+  "tests": {
+    "existing_analysis_unittest": 9,
+    "reproduce_unittest": 4,
+    "total": 13,
+    "optional_training_cli_help": "passed",
+    "training_started": false,
+    "bundle_lint": "E4/E7/E9/F passed;frozen training sources intentionally untouched"
+  },
+  "notebooks": {
+    "executed": 3,
+    "code_cells_each": 4,
+    "error_outputs": 0,
+    "image_outputs_each": 1,
+    "training_fits": 0
+  },
+  "pdf": {
+    "path": "report/bao-cao-tai-hien.pdf",
+    "pages": 9,
+    "sha256": "bfcb39fb8ad0d646d1651439c915b1eea66e11062adbca9b19c5900a25513935",
+    "rendered_pages": 9,
+    "visual_review": "All9pages inspected;legible text/no clipping/overlap/missing glyphs",
+    "glyph_errors": 0,
+    "reviewed_page_renders": [
+      {
+        "page": 1,
+        "sha256": "555466b3ac1c0076078c78e74e0ff589934426392f41778c8030e9483b5f1d66",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 2,
+        "sha256": "e9aed138658a4b2e3069961c82adfd7069003827af67acafc5ad789fba51706d",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 3,
+        "sha256": "27dbd5f6fc14e15c50cb6b7243055f8f85dcb7414a0a38fd2afac16b27524484",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 4,
+        "sha256": "96f5eb4cd1e2fd826773034f16bf2440608b8649f4292d03c2a8b3b7376f2fb7",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 5,
+        "sha256": "a4bf9d381b4cb342bf8c797c933247e15c7abf986d65ee1d4d6c73d4b872f4ae",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 6,
+        "sha256": "4ab636c5dcd407b4f9674cc7a9c14c78b25d570faa71d4e1029cf4801a9deeca",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 7,
+        "sha256": "cc700aa5d874ca41469617ddf3d3b7fc3141961feb3f3b7133cb9fdd7a3f9d66",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 8,
+        "sha256": "94ee8375acc44580c8ed5e391e542d5c802760dc9f8686a588c9d85fc5dfc7a3",
+        "pixels_match_reviewed_page": true
+      },
+      {
+        "page": 9,
+        "sha256": "b9d2bb0db51cb16c841f708674810fbcee1c9833efd4d78b84b0a84ba212b7b5",
+        "pixels_match_reviewed_page": true
+      }
+    ]
+  },
+  "source_pins": {
+    "author_source_verified_in_research_snapshot": 231,
+    "core18_included_byte_identical": true
+  },
+  "full_research_pytest": "Blocked at collection byWindowscommit/pagefile1455;not claimed passed",
+  "no_new_benchmark": true,
+  "no_active_queue_cancelled": true,
+  "privacy": {
+    "raw_features": false,
+    "weights": false,
+    "credentials": false,
+    "private_machine_IPs": false
+  }
+}

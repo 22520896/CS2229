@@ -1,0 +1,29 @@
+{
+  "paper": "https://papers.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html",
+  "upstream_repository": "https://github.com/LeoGrin/tabular-benchmark",
+  "upstream_commit": "9d54cf53d9fd3159e367e70a00005f4fcbf2c79d",
+  "research_repository": "https://github.com/NgVuxKhaiTam/CS2229.26.1.CH.02-Project",
+  "research_commit": "1157be4a034ee6a7b29362bdceacc11565559812",
+  "source_report_sha256": "b3773096dc6177bfa08530bb8b26fd7aa3dcc7969738638884f8572593505043",
+  "source_audit_index_sha256": "9e3539a5cb5150a5460a89365715b2a3737477b1896692ee2a963d27682516fb",
+  "author_files_verified": 231,
+  "worker_files_verified": 18,
+  "metric_tolerance": 1e-12,
+  "source_model_bodies_changed": false,
+  "source_training_requirements": "https://github.com/NgVuxKhaiTam/CS2229.26.1.CH.02-Project/blob/1157be4a034ee6a7b29362bdceacc11565559812/pyproject.toml",
+  "analysis_python": ">=3.11",
+  "baseline_counts_25November": {
+    "main": {
+      "completed": 25124,
+      "failed": 113,
+      "timeout": 107
+    },
+    "extensions": {
+      "completed": 208742,
+      "failed": 930,
+      "timeout": 3947
+    }
+  },
+  "pinned_project_training_python": "3.8",
+  "execution_environments_note": "Historical fits used verified compatible CPU/GPU environments;the optional example wrapper targets the pinned projectPython3.8environment,not a claim that every historical fit used that interpreter."
+}

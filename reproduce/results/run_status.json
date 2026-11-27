@@ -1,0 +1,21 @@
+{
+  "cutoff_utc": "2026-11-27T19:01:55.365432+00:00",
+  "mechanism_unique_successes": 2172,
+  "mechanism_full_repeat_cells": 899,
+  "reference_grid_cells": 632,
+  "reference_grid_seed_fits": 1556,
+  "native_attempt_counts": {
+    "failed": 5,
+    "timeout": 9,
+    "completed": 11
+  },
+  "native_pending_or_active": 1464,
+  "native_full_repeat_groups_added": 10,
+  "large_cap_hpo_groups": 38006,
+  "full_paper_complete": false,
+  "legacy_excluded": true,
+  "balanced_cohort_cutoff": "25/11/2026;unchanged by the new mechanism and gap fits",
+  "collection_only_no_training": true,
+  "no_jobs_cancelled": true,
+  "no_jobs_dispatched": true
+}

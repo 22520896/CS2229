@@ -1,0 +1,18 @@
+{
+  "selection": "validation only;test is reported after selection",
+  "mechanism_parameter_policy": "One source-published validation-selected configuration per condition;not a fresh HPO search",
+  "repeat_rule": "Original executable n_iter=auto;all required seeds must complete for a cell mean",
+  "source_record_csv_sha256": "25314ccb2d138dae43fd23840f729f62fba0b5f5ab559aeb3727403dedb4e429",
+  "HPO_denominator": "400 non-default configurations per model/setting in the frozen57-setting catalog;not an overall paper percent",
+  "sample_count_policy": "50K is a cap,not a guarantee of50000rows on every dataset",
+  "noise_multiplier": "1/1.5/2means0/50/100percent ADDED Gaussian features",
+  "rotation_flag": "deactivated=True means no rotation;False means rotated",
+  "smoothing": "Original train-label Gaussian kernel averaging andbinary threshold>0.5;validation/test labels unchanged;original robust-to-classic covariance fallback retained",
+  "remaining_method_limits": [
+    "Historical dataset bytes and versions are not proven identical to the historical author inputs.",
+    "Frozen NumPy configuration registry draws in self-run HPO do not reconstruct the historical W&B draw sequence.",
+    "Skorch V2 train scores are captured after best-checkpoint reload;original executable train scores are captured before reload;validation/test remain separate.",
+    "One published configuration per mechanism condition does not replay all source HPO orders/shuffles."
+  ],
+  "catalog_scope": "Self-run A.1catalog15/18numeric and7/17categorical=57settings;sourceFigure1CSV/PDF labels16/19numeric and7/17categorical. Do not silently equate those denominators.HELOC and numericabalone remain outside the frozen57-setting coverage."
+}

@@ -1,0 +1,31 @@
+data_kind,task_type,datasets,A1_settings,random_budget,shuffles,model,normalized_test
+numeric,classification,4,15,2,15,FT Transformer,0.8242536963690693
+numeric,classification,4,15,2,15,GradientBoostingTree,0.8537068560554042
+numeric,classification,4,15,2,15,MLP,0.644683860314728
+numeric,classification,4,15,2,15,RandomForest,0.8723140698587579
+numeric,classification,4,15,2,15,Resnet,0.6743094237802545
+numeric,classification,4,15,2,15,SAINT,0.7947344441639936
+numeric,classification,4,15,2,15,XGBoost,0.9079442833374174
+numeric,regression,3,18,3,15,FT Transformer,0.37158331581096793
+numeric,regression,3,18,3,15,GradientBoostingTree,0.6947860353782891
+numeric,regression,3,18,3,15,MLP,0.5075590038171524
+numeric,regression,3,18,3,15,RandomForest,0.8457876163394067
+numeric,regression,3,18,3,15,Resnet,0.4385710002296848
+numeric,regression,3,18,3,15,SAINT,0.6666507540285832
+numeric,regression,3,18,3,15,XGBoost,0.8290442697510493
+categorical,classification,5,7,29,15,FT Transformer,0.681690094517689
+categorical,classification,5,7,29,15,GradientBoostingTree,0.7587072312708549
+categorical,classification,5,7,29,15,HistGradientBoostingTree,0.8056372711030594
+categorical,classification,5,7,29,15,MLP,0.592616472439501
+categorical,classification,5,7,29,15,RandomForest,0.7996117189152152
+categorical,classification,5,7,29,15,Resnet,0.5820304212762987
+categorical,classification,5,7,29,15,SAINT,0.7057303168066404
+categorical,classification,5,7,29,15,XGBoost,0.8159325654892643
+categorical,regression,12,17,22,15,FT Transformer,0.8374962611112711
+categorical,regression,12,17,22,15,GradientBoostingTree,0.8483358288870734
+categorical,regression,12,17,22,15,HistGradientBoostingTree,0.8748747626738362
+categorical,regression,12,17,22,15,MLP,0.7261114261601556
+categorical,regression,12,17,22,15,RandomForest,0.8129040181993828
+categorical,regression,12,17,22,15,Resnet,0.7241607066721938
+categorical,regression,12,17,22,15,SAINT,0.8071230974997421
+categorical,regression,12,17,22,15,XGBoost,0.9028029298785888

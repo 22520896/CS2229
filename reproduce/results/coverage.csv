@@ -1,0 +1,15 @@
+key,label,complete,reference,percent,unit
+settings_numeric,Numeric settings with output,33,33,100.0,setting
+settings_categorical,Categorical settings with output,24,24,100.0,setting
+default_numeric_trees,Numeric tree defaults,99,99,100.0,full-repeat configuration
+default_categorical_trees,Categorical tree defaults,72,72,100.0,full-repeat configuration
+numeric_hpo,numeric_hpo,39058,39600,98.63131313131314,full-repeat configuration
+categorical_hpo,categorical_hpo,28508,28800,98.98611111111111,full-repeat configuration
+hgbt,hgbt,9600,9600,100.0,full-repeat configuration
+numeric_neural_hpo,numeric_neural_hpo,4729,52800,8.956439393939394,full-repeat configuration
+categorical_neural_hpo,categorical_neural_hpo,8416,38400,21.916666666666668,full-repeat configuration
+saint,saint,56,57,98.24561403508773,full-repeat configuration
+50k,50k,393,399,98.49624060150376,full-repeat configuration
+noise_features,noise_features,168,168,100.0,published-parameter condition cell
+rotation,rotation,224,224,100.0,published-parameter condition cell
+target_smoothing,target_smoothing,240,240,100.0,published-parameter condition cell
